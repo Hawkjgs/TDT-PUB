@@ -1,0 +1,28 @@
+@import url(./reset.css);
+@import url(./fonts.css);
+@import url(./ds.css);
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.blind {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin-top: -1px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+  .skip-nav {
+		display: none;
+	}
+}

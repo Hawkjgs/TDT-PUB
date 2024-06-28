@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+
+.tourney {
+  font-family: "Tourney", sans-serif;
+  font-optical-sizing: auto;
+}
+
+/* 한글 폰트- Pretendard */
+@font-face {
+	font-family: 'TDT FontSet';
+	font-weight: 900;
+	font-display: swap;
+	src: local('Pretendard Black'), 
+      url('../fonts/pretendard/woff2-subset/Pretendard-Black.subset.woff2') format('woff2'), 
+      url('../fonts/pretendard/woff-subset/Pretendard-Black.subset.woff') format('woff');
+  unicode-range: U+AC00-FFFF, U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+}
+
+@font-face {
+	font-family: 'TDT FontSet';
+	font-weight: 800;
+	font-display: swap;
+	src: local('Pretendard ExtraBold'), 
+      url('../fonts/pretendard/woff2-subset/Pretendard-ExtraBold.subset.woff2') format('woff2'), 
+      url('../fonts/pretendard/woff-subset/Pretendard-ExtraBold.subset.woff') format('woff');
+  unicode-range: U+AC00-FFFF, U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+}
+
+@font-face {
+	font-family: 'TDT FontSet';
+	font-weight: 700;
+	font-display: swap;
+	src: local('Pretendard Bold'), 
+      url('../fonts/pretendard/woff2-subset/Pretendard-Bold.subset.woff2') format('woff2'), 
+      url('../fonts/pretendard/woff-subset/Pretendard-Bold.subset.woff') format('woff');
+  unicode-range: U+AC00-FFFF, U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+}
+
+@font-face {
+	font-family: 'TDT FontSet';
+	font-weight: 600;
+	font-display: swap;
+	src: local('Pretendard SemiBold'), 
+      url('../fonts/pretendard/woff2-subset/Pretendard-SemiBold.subset.woff2') format('woff2'), 
+      url('../fonts/pretendard/woff-subset/Pretendard-SemiBold.subset.woff') format('woff');
+  unicode-range: U+AC00-FFFF, U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+}
+
+@font-face {
+	font-family: 'TDT FontSet';
+	font-weight: 500;
+	font-display: swap;
+	src: local('Pretendard Medium'), 
+      url('../fonts/pretendard/woff2-subset/Pretendard-Medium.subset.woff2') format('woff2'), 
+      url('../fonts/pretendard/woff-subset/Pretendard-Medium.subset.woff') format('woff');
+  unicode-range: U+AC00-FFFF, U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+}
+
+@font-face {
+	font-family: 'TDT FontSet';
+	font-weight: 400;
+	font-display: swap;
+	src: local('Pretendard Regular'), 
+      url('../fonts/pretendard/woff2-subset/Pretendard-Regular.subset.woff2') format('woff2'), 
+      url('../fonts/pretendard/woff-subset/Pretendard-Regular.subset.woff') format('woff');
+  unicode-range: U+AC00-FFFF, U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+}
+
+@font-face {
+	font-family: 'TDT FontSet';
+	font-weight: 300;
+	font-display: swap;
+	src: local('Pretendard Light'), 
+      url('../fonts/pretendard/woff2-subset/Pretendard-Light.subset.woff2') format('woff2'), 
+      url('../fonts/pretendard/woff-subset/Pretendard-Light.subset.woff') format('woff');
+  unicode-range: U+AC00-FFFF, U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+}
+
+@font-face {
+	font-family: 'TDT FontSet';
+	font-weight: 200;
+	font-display: swap;
+	src: local('Pretendard ExtraLight'), 
+      url('../fonts/pretendard/woff2-subset/Pretendard-ExtraLight.subset.woff2') format('woff2'), 
+      url('../fonts/pretendard/woff-subset/Pretendard-ExtraLight.subset.woff') format('woff');
+  unicode-range: U+AC00-FFFF, U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+}
+
+@font-face {
+	font-family: 'TDT FontSet';
+	font-weight: 100;
+	font-display: swap;
+	src: local('Pretendard Thin'), 
+      url('../fonts/pretendard/woff2-subset/Pretendard-Thin.subset.woff2') format('woff2'), 
+      url('../fonts/pretendard/woff-subset/Pretendard-Thin.subset.woff') format('woff');
+  unicode-range: U+AC00-FFFF, U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+}
+
+/* 영문자, 기본 특수 문자, 숫자 폰트 - bebaskai */
+@font-face {
+  font-family: 'TDT FontSet';
+  src: url('../fonts/bebaskai/BebasKai.otf') format('opentype'),
+       url('../fonts/bebaskai/BebasKai.woff') format('woff');
+  font-display: swap;
+  unicode-range: U+0020-007E, U+2000-206F, U+0030-0039; /* 영문자, 기본 특수 문자, 숫자 범위 */
+}
