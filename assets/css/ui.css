@@ -1,0 +1,638 @@
+/* Default UI 정의 */
+
+.mo-only {
+  display: none;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 32px;
+}
+
+html {
+  font-size: 10px;
+  overflow-y: scroll;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+img {
+  object-fit: cover;
+}
+
+.skip-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: .8rem 1.6rem;
+  z-index: 100;
+  translate: 0 -100%;
+  transition: translate 0.3s;
+}
+
+.skip-nav:focus,
+.skip-nav:focus-visible,
+.skip-nav:focus-within {
+  translate: 0 0;
+}
+
+.blind {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin-top: -1px;
+  overflow: hidden;
+}
+
+.ic {
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.ic-shortcut {
+  width: 5.4rem;
+  height: 5.4rem;
+}
+
+.ic svg {
+  width: 100%;
+  height: 100%;
+}
+
+.btn-xs,
+.btn-sm,
+.btn-lg,
+.btn-base {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3.2rem;
+  height: 5.4rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 5.4rem;
+  border-radius: .4rem;
+  color: var(--outline-color, var(--black-color));
+}
+.btn-xs::before,
+.btn-sm::before,
+.btn-lg::before,
+.btn-base::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  pointer-events: none;
+}
+.btn-full {
+  width: 100%;
+}
+.btn-round {
+  border-radius: 999px;
+}
+.btn-xs {
+  height: 4rem;
+  font-size: 1.6rem;
+  line-height: 4rem;
+}
+.btn-sm {
+  height: 4.3rem;
+  font-size: 1.6rem;
+  line-height: 4.3rem;
+}
+.btn-lg {
+  height: 6.4rem;
+  font-size: 2rem;
+  line-height: 6.4rem;
+  border-radius: .8rem;
+}
+.btn-white {
+  background-color: #fff;
+}
+.btn-primary {
+  background-color: var(--primary-color);
+}
+.btn-white.btn-outline {
+  --outline-color: #fff;
+}
+.btn-primary.btn-outline {
+  --outline-color: var(--primary-color);
+}
+.btn-outline {
+  background-color: transparent;
+}
+.btn-outline::before {
+  border-color: var(--outline-color);
+}
+
+.btn-more-box {
+  display: flex;
+}
+.btn-more {
+  margin: 0 auto;
+  padding: 1rem 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  line-height: 1;
+  color: var(--primary-color);
+}
+.btn-more .ic {
+  margin-top: -0.4rem;
+  width: 3.6rem;
+  height: 3.6rem;
+}
+.btn-more-outline {
+  margin: 0 auto;
+  padding: .9rem 3rem;
+  font-size: 2rem;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 0.4rem;
+}
+
+.component-slot-list {
+  /* overflow: hidden; */
+}
+.component-slot-list > ul {
+  display: flex;
+  margin: 0 -2rem;
+  row-gap: 4rem;
+}
+.component-slot-list.is-wrap > ul {
+  flex-wrap: wrap;
+}
+.component-slot-list .slot-item {
+  flex-basis: 20%;
+  padding: 0 2rem;
+}
+.component-slot-list .slot-item-inner {
+  position: relative;
+}
+.component-slot-list .goods-thumb {
+  position: absolute;
+  left: -1.2rem;
+  top: -1.2rem;
+  width: 7.6rem;
+  height: 7.6rem;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 2;
+}
+.component-slot-list .goods-thumb img {
+  width: 100%;
+  height: 100%;
+}
+.component-slot-list .player-thumb,
+.component-slot-list .none-thumb {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 0;
+  padding-top: 54.0865%;
+  padding-bottom: 54.0865%;
+  background: #181818;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+.component-slot-list .player-thumb::before,
+.component-slot-list .none-thumb::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.8rem;
+  pointer-events: none;
+}
+
+.component-slot-list .player-thumb {
+  background: radial-gradient(61% 162.45% at 7% 26.26%, rgba(0, 42, 32, 0.6) 0%, rgba(24, 24, 24, 0.6) 100%);
+}
+.component-slot-list .player-thumb img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: calc(100% - 3.2rem);
+}
+.component-slot-list .none-thumb {
+  gap: .4rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: "Pretendard";
+  color: #333;
+}
+.component-slot-list .btn-group {
+  margin-top: 1.2rem;
+}
+
+.component-slot-list .slot-slider .slot-item {
+  padding: 0;
+  flex-basis: auto;
+}
+
+.component-player-list {
+  /* overflow: hidden; */
+}
+.component-player-list .player-list {
+  display: flex;
+}
+.component-player-list .player-list:not(.swiper-wrapper) {
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.component-player-list .player-item {
+  width: 38rem;
+}
+.component-player-list .player-item .item-inner {
+  position: relative;
+  padding: 4rem 7rem 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #181818;
+  border-radius: 0.8rem;
+  /* overflow: hidden; */
+}
+.component-player-list .player-item .item-inner::before {
+  left: -1px;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+}
+/* .component-player-list .player-item .item-inner::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.8rem;
+  pointer-events: none;
+} */
+.component-player-list .rank {
+  margin: 0 auto;
+  padding: 0 1.9rem;
+  font-family: "Pretendard";
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 3.8rem;
+  letter-spacing: 0.02em;
+  border: 1px solid var(--primary-color);
+  border-radius: 4rem;
+}
+.component-player-list .rank em {
+  color: var(--primary-color);
+}
+.component-player-list .name {
+  margin-top: 4rem;
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 3.1rem;
+  letter-spacing: 0.02em;
+  color: var(--primary-color);
+  text-align: center;
+}
+.component-player-list .number {
+  position: absolute;
+  left: 0;
+  right: 4rem;
+  top: 15rem;
+  font-family: "Tourney", sans-serif;
+  font-size: 16rem;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--primary-color);
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+.component-player-list .player-thumb {
+  position: relative;
+  margin-top: 8.7rem;
+  z-index: 2;
+}
+.component-player-list .btn-group {
+  margin-top: 4rem;
+}
+.component-player-list .btn-detail {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  background-color: #252525;
+  border-radius: 0 .8rem .8rem 0;
+}
+
+.component-goods-list {
+  /* overflow: hidden; */
+}
+.component-goods-list > ul {
+  margin: 0 -1.7rem;
+  padding: 0 1.2rem;
+  display: flex;
+  row-gap: 4rem;
+}
+.component-goods-list.is-wrap > ul {
+  flex-wrap: wrap;
+}
+.component-goods-list .goods-item {
+  flex-basis: 20%;
+  padding: 0 1.7rem;
+}
+.component-goods-list .item-inner {
+  position: relative;
+}
+.component-goods-list .item-inner .dim {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(15, 15, 15, .7);
+  z-index: 3;
+}
+.component-goods-list .item-inner .complete {
+  padding: 1px 12px;
+  line-height: 2.1rem;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+.component-goods-list .goods-thumb,
+.component-goods-list .none-thumb {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 0;
+  padding-top: 50%;
+  padding-bottom: 50%;
+  background: #181818;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+.component-goods-list .goods-thumb::before,
+.component-goods-list .none-thumb::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.8rem;
+  pointer-events: none;
+}
+.component-goods-list .goods-thumb img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.component-goods-list .none-thumb {
+  gap: .4rem;
+  font-size: 1.8rem;
+  font-family: "Pretendard";
+  color: #333;
+}
+.component-goods-list .goods-info {
+  margin-top: 2.4rem;
+  font-family: "Pretendard";
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+  color: #666;
+  text-align: center;
+}
+.component-goods-list .btn-group {
+  margin-top: 2.4rem;
+}
+.component-goods-list .btn-play {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+.component-goods-list .btn-play .ic {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.component-goods-list .goods-slider .goods-item {
+  flex-basis: auto;
+  padding: 0;
+}
+
+.text-box-outline {
+  padding: 2.4rem;
+  display: flex;
+  gap: .5rem;
+  border: 1px solid rgba(255, 255, 255, .1);
+  border-radius: 0.8rem;
+}
+.text-box-outline .ic {
+  color: var(--primary-color);
+}
+.text-box-outline .text-inner {
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+  letter-spacing: 0.02em;
+}
+.text-box-outline .text {
+  font-weight: 600;
+  line-height: 2.1rem;
+  color: #999;
+}
+.text-box-outline .text-small {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: #666;
+}
+
+.border-gradient {
+  position: relative;
+  margin: 1px;
+}
+.border-gradient::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  z-index: -1;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .skip-nav {
+		display: none;
+	}
+
+  html {
+    font-size: calc(1px + 0.75vw);
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .mo-only {
+    display: block;
+  }
+  .pc-only {
+    display: none !important;
+  }
+
+  html {
+    font-size: calc(1px + 2.5vw);
+  }
+
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    font-size: 0;
+    bottom: 3rem;
+  }
+
+  .btn-sm {
+    height: 3.7rem;
+    font-size: 1.4rem;
+  }
+  .btn-more {
+    font-size: 2rem;
+  }
+  .btn-more .ic {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+  .btn-more-outline {
+    border-width: 2px;
+  }
+
+  .text-box-outline {
+    gap: .3rem;
+  }
+  .text-box-outline .ic {
+    flex-shrink: 0;
+    translate: 0 -2px;
+  }
+
+  .component-slot-list .slot-slider .slot-item {
+    width: 53.7313%;
+  }
+
+  .component-slot-list .goods-thumb {
+    width: 6.4rem;
+    height: 6.4rem;
+  }
+  .component-slot-list .player-thumb img {
+    height: calc(100% - 2.2rem);
+  }
+  .component-slot-list .player-thumb, 
+  .component-slot-list .none-thumb {
+    padding-top: 53.6111%;
+    padding-bottom: 53.6111%;
+  }
+  .component-slot-list .none-thumb {
+    font-size: 1.6rem;
+  }
+  .component-slot-list .none-thumb img {
+    width: 4.8rem;
+  }
+
+  .component-player-list .player-item .item-inner {
+    padding: 4rem 2rem 6rem;
+  }
+  .component-player-list .btn-detail {
+    top: auto;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+    border-radius: 0 0 .8rem .8rem;
+  }
+  .component-player-list .btn-detail .ic {
+    rotate: 90deg;
+  }
+
+  .component-player-list .player-thumb {
+    position: relative;
+    margin-top: 8.8rem;
+    height: 0;
+    padding-bottom: 74.9152%;
+  }
+  .component-player-list .player-thumb img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .component-player-list .rank {
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+  }
+  .component-player-list .name {
+    margin-top: 3rem;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+  }
+  .component-player-list .number {
+    right: 0;
+    top: 13.2rem;
+  }
+
+  .component-goods-list .goods-slider .goods-item {
+    width: 62.0895%;
+  }
+  .component-goods-list .none-thumb img {
+    width: 4.8rem;
+  }
+  .component-goods-list > ul {
+    margin: 0 -0.8rem;
+    padding: 0;
+    row-gap: 5rem;
+  }
+  .component-goods-list .goods-item {
+    flex-basis: 50%;
+    padding: 0 0.8rem;
+  }
+  .component-goods-list .btn-play .ic {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+  .component-goods-list .goods-info {
+    font-size: 1.5rem;
+  }
+}

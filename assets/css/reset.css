@@ -201,6 +201,10 @@ button,
   cursor: default;
 }
 
+em {
+  font-style: normal;
+}
+
 img,
 svg,
 video,

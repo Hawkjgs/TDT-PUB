@@ -1,28 +1,32 @@
 @import url(./reset.css);
 @import url(./fonts.css);
-@import url(./ds.css);
+@import url(./ui.css);
+@import url(./layout.css);
+@import url(./main.css);
+@import url(./sub.css);
 
-html {
-  font-size: 16px;
+:root {
+  --header-height: 7rem;
+  --swiper-pagination-bullet-width: 8px;
+  --swiper-pagination-bullet-height: 8px;
+  --swiper-pagination-bullet-horizontal-gap: 4px;
+  --swiper-pagination-color: #fff;
+  --swiper-pagination-bullet-inactive-color: #444;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --primary-color: #6EF0D2;
+  --green-color: #68FAE4;
+  --black-color: #0F0F0F;
 }
 
-body {
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #fff;
+@media screen and (max-width: 1200px) {
+  
 }
 
-.blind {
-  position: absolute;
-  clip: rect(0, 0, 0, 0);
-  width: 1px;
-  height: 1px;
-  margin-top: -1px;
-  overflow: hidden;
-}
-
-@media screen and (max-width: 1000px) {
-  .skip-nav {
-		display: none;
-	}
+@media screen and (max-width: 1023px) {
+  :root {
+    --header-height: 6rem;
+    --swiper-pagination-bullet-width: .8rem;
+    --swiper-pagination-bullet-height: .8rem;
+    --swiper-pagination-bullet-horizontal-gap: .4rem;
+  }
 }
