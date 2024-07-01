@@ -452,14 +452,28 @@ img {
 }
 
 .text-box-outline {
+  position: relative;
   padding: 2.4rem;
   display: flex;
   gap: .5rem;
-  border: 1px solid rgba(255, 255, 255, .1);
   border-radius: 0.8rem;
 }
+.text-box-outline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid rgba(255, 255, 255, .1);
+  border-radius: inherit;
+  pointer-events: none;
+}
 .text-box-outline .ic {
+  width: 3rem;
+  height: 3rem;
   color: var(--primary-color);
+  translate: 0 -.5rem;
 }
 .text-box-outline .text-inner {
   display: flex;
@@ -518,7 +532,7 @@ img {
   }
 
   html {
-    font-size: calc(1px + 2.5vw);
+    font-size: calc(1px + 2.4vw);
   }
 
   .swiper-pagination-bullets.swiper-pagination-horizontal {
@@ -546,7 +560,7 @@ img {
   }
   .text-box-outline .ic {
     flex-shrink: 0;
-    translate: 0 -2px;
+    translate: 0 -.6rem;
   }
 
   .component-slot-list .slot-slider .slot-item {
@@ -631,8 +645,5 @@ img {
   .component-goods-list .btn-play .ic {
     width: 2.8rem;
     height: 2.8rem;
-  }
-  .component-goods-list .goods-info {
-    font-size: 1.5rem;
   }
 }
