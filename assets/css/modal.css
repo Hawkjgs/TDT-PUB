@@ -1,0 +1,269 @@
+.modal-wrapper {
+  display: none;
+}
+.modal-wrapper.is-active {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(47, 47, 47, .9);
+  overflow-y: auto;
+  z-index: 1001;
+}
+.modal-wrapper .modal-inner {
+  margin: auto;
+}
+
+.modal-wrapper .player-info-area {
+  position: relative;
+  padding: 4rem 7rem 3rem 3rem;
+  width: 1200px;
+  background-color: var(--black-color);
+  border-radius: 0.8rem;
+}
+.modal-wrapper .player-info-area::before {
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0) 30%
+  );
+}
+.modal-wrapper .player-info-area .player-info {
+  position: relative;
+  display: flex;
+  gap: 3rem;
+}
+.modal-wrapper .player-info-area .player-info::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -1px;
+  width: 1px;
+  height: 100%;
+  background: rgba(255, 255, 255, .1);
+}
+.modal-wrapper .player-info-area .player-intro {
+  flex: 1;
+}
+.modal-wrapper .player-info-area .player-detail {
+  flex: 1;
+  padding-left: 6.5rem;
+}
+.modal-wrapper .player-info-area .player-intro-inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.modal-wrapper .player-info-area .rank {
+  margin: 0 auto;
+  padding: 0 1.9rem;
+  font-family: "Pretendard";
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 3.8rem;
+  letter-spacing: 0.02em;
+  border: 1px solid var(--primary-color);
+  border-radius: 4rem;
+}
+.modal-wrapper .player-info-area .rank em {
+  color: var(--primary-color);
+}
+.modal-wrapper .player-info-area .name {
+  margin-top: 4rem;
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 3.1rem;
+  letter-spacing: 0.02em;
+  color: var(--primary-color);
+  text-align: center;
+}
+.modal-wrapper .player-info-area .number {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 10.8rem;
+  font-family: "Tourney", sans-serif;
+  font-size: 16.4rem;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--primary-color);
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+.modal-wrapper .player-info-area .player-thumb {
+  position: relative;
+  margin-top: 8.7rem;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+.modal-wrapper .player-info-area .player-thumb img {
+  max-width: none;
+  height: 100%;
+}
+.modal-wrapper .player-info-area .btn-group {
+  margin-top: 4rem;
+  display: flex;
+  gap: 3rem;
+}
+.modal-wrapper .player-info-area .btn-group button {
+  flex: 1;
+}
+.modal-wrapper .player-info-area .btn-detail {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  background-color: #252525;
+  border-radius: 0 .8rem .8rem 0;
+}
+.modal-wrapper .player-info-area .btn-detail .ic {
+  rotate: 180deg;
+}
+
+.modal-wrapper .player-info-area .player-detail .tit {
+  margin-bottom: 4rem;
+  font-size: 3.2rem;
+  letter-spacing: 0.02em;
+  color: var(--primary-color);
+}
+.modal-wrapper .player-info-area .detail-list > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+.modal-wrapper .player-info-area .detail-item {
+  display: flex;
+}
+.modal-wrapper .player-info-area .detail-item p,
+.modal-wrapper .player-info-area .detail-item a {
+  font-family: "Pretendard";
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 3rem;
+  letter-spacing: 0.02em;
+}
+.modal-wrapper .player-info-area .detail-item .label {
+  flex-shrink: 0;
+  padding-right: 1rem;
+  width: 13.4rem;
+  color: #666;
+}
+.modal-wrapper .player-info-area .detail-item .link {
+  color: var(--primary-color);
+}
+
+@media screen and (max-width: 1300px) {
+  .modal-wrapper.is-active {
+    padding: 2rem;
+  }
+  .modal-wrapper .modal-inner {
+    margin: auto 0;
+  }
+  .modal-wrapper .player-info-area {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .modal-wrapper .player-info-area {
+    padding: 3rem 2rem 7rem;
+  }
+  .modal-wrapper .player-info-area::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    border: 1px solid rgba(255, 255, 255, .2);
+    pointer-events: none;
+    z-index: 10;
+  }
+  .modal-wrapper .player-info-area::before {
+    display: none;
+  }
+  .modal-wrapper .player-info-area .player-info {
+    flex-direction: column;
+    gap: 0;
+  }
+  .modal-wrapper .player-info-area .player-info::before {
+    display: none;
+  }
+  .modal-wrapper .player-info-area .player-thumb {
+    margin: 7.2rem -2rem 0;
+    height: auto;
+  }
+  .modal-wrapper .player-info-area .player-thumb img {
+    width: 100%;
+  }
+  .modal-wrapper .player-info-area .rank {
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+  }
+  .modal-wrapper .player-info-area .name {
+    margin-top: 3.1rem;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+  }
+  .modal-wrapper .player-info-area .number {
+    top: 9rem;
+    font-size: 12rem;
+  }
+  .modal-wrapper .player-info-area .player-intro {
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+  }
+  .modal-wrapper .player-info-area .player-detail {
+    padding-left: 0;
+  }
+  .modal-wrapper .player-info-area .player-detail .tit {
+    margin-bottom: 2rem;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+  }
+  .modal-wrapper .player-info-area .detail-list > ul {
+    gap: .4rem;
+  }
+  .modal-wrapper .player-info-area .detail-item p, 
+  .modal-wrapper .player-info-area .detail-item a {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+  .modal-wrapper .player-info-area .detail-item .label {
+    width: 10rem;
+  }
+  .modal-wrapper .player-info-area .btn-group {
+    gap: .8rem;
+  }
+  .modal-wrapper .player-info-area .btn-group .btn-base {
+    padding: 0;
+    font-size: 1.7rem;
+    height: 4.8rem;
+  }
+  .modal-wrapper .player-info-area .btn-detail {
+    top: auto;
+    left: 0;
+    width: auto;
+    height: 4rem;
+    border-radius: 0 0 .8rem .8rem;
+  }
+  .modal-wrapper .player-info-area .btn-detail .ic {
+    rotate: 90deg;
+  }
+}

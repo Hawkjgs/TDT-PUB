@@ -1,4 +1,8 @@
 /* Default Layout 정의 */
+body {
+  background: var(--black-color);
+}
+
 .wrapper {}
 
 .header {
@@ -128,13 +132,26 @@
 }
 
 #container {
-  background: #0F0F0F;
+  min-height: 100vh;
 }
 
 .container {
   max-width: 120rem;
   width: 100%;
   margin: 0 auto;
+}
+
+.gnb-mo {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  padding-left: 8.7rem;
+  opacity: 0;
+  translate: 100% 0;
+  will-change: opacity, translate;
 }
 
 @media screen and (max-width: 1240px) {
@@ -144,18 +161,6 @@
 }
 
 @media screen and (max-width: 1023px) {
-  html[data-page-scroll="false"] {
-		overflow: hidden;
-	}
-	html[data-page-scroll="false"] body {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		overflow: visible;
-	}
-
   /* .header {
     position: fixed;
     top: 0;
@@ -173,19 +178,6 @@
     height: 3.4rem;
   }
 
-  .gnb-mo {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1000;
-    padding-left: 8.7rem;
-    opacity: 0;
-    translate: 100% 0;
-    will-change: opacity, translate;
-    transition: opacity .5s ease, translate .5s ease;
-  }
   .gnb-mo .gnb-inner {
     position: relative;
     padding: 1.8rem 0 9.4rem;
@@ -262,6 +254,7 @@
   .gnb-mo.is-active {
     opacity: 1;
     translate: 0 0;
+    transition: opacity .5s ease, translate .5s ease;
   }
   .gnb-mo.is-active .dim {
     opacity: 1;

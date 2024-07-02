@@ -271,28 +271,6 @@
   width: 100%;
   margin-top: -3rem;
 }
-.main-wrapper .match-section .driver-matching .player-area .slider-btn {
-  position: absolute;
-  top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 6rem;
-  height: 6rem;
-  color: #fff;
-  background-color: rgba(86, 236, 209, 0.42);
-  border-radius: 50%;
-}
-.main-wrapper .match-section .driver-matching .player-area .slider-btn-prev {
-  left: -9rem;
-}
-.main-wrapper .match-section .driver-matching .player-area .slider-btn-next {
-  right: -9rem;
-}
-.main-wrapper .match-section .driver-matching .player-area .slider-btn .ic {
-  width: 3.6rem;
-  height: 3.6rem;
-}
 
 .main-wrapper .goods-section .sec-head {
   margin-bottom: 10rem;
@@ -434,10 +412,13 @@
   padding-top: 66rem;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1420px) {
   .main-wrapper .match-section .driver-matching .player-area .slider-controls {
     display: none;
   }
+}
+@media screen and (max-width: 1200px) {
+  
 }
 
 @media screen and (max-width: 1023px) {
@@ -643,6 +624,28 @@
 
   .main-wrapper .match-section .driver-matching .player-slider {
     overflow: visible;
+  }
+  .main-wrapper .match-section .driver-matching .slider-progress {
+    margin-top: 3rem;
+  }
+  .main-wrapper .match-section .driver-matching .slider-progress-inner {}
+  .main-wrapper .match-section .driver-matching .progress {
+    position: relative;
+    height: 0.3rem;
+    background-color: #252525;
+  }
+  .main-wrapper .match-section .driver-matching .progress .bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    scale: 0 1;
+    background-color: #C5C5C5;
+    border-radius: 10px;
+    will-change: scale;
+    transition: scale .5s ease;
+    transform-origin: left top;
   }
   
   .main-wrapper .goods-section .goods-area .text-box-outline {

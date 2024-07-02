@@ -176,17 +176,84 @@ export const scrollTab = {
 };
 
 export const modal = {
+  scrollY: 0,
   elements: {
     modals: undefined,
     modalBtns: undefined,
   },
+  modalFind(id) {
+    return this.elements.modals.findIndex(el => el.dataset.modalId === id);
+  },
+  open(id) {
+    const findIdx = this.modalFind(id);
+    if (findIdx > -1) {
+      this.scrollY = window.scrollY;
+      scrollLock(this.scrollY);
+      this.elements.modals[findIdx].classList.add("is-active");
+      this.elements.modals[findIdx].scrollTop = 0;
+    };
+  },
+  close(id) {
+    const findIdx = this.modalFind(id);
+    if (findIdx > -1) {
+      scrolled(this.scrollY);
+      this.elements.modals[findIdx].classList.remove("is-active");
+    };
+  },
   bindEvents() {
-
+    this.elements.modalBtns.forEach(el => {
+      const id = el.dataset.modalId;
+      el.addEventListener("click", () => {
+        this.open(id);
+      });
+    });
+    this.elements.modals.forEach(el => {
+      const id = el.dataset.modalId;
+      el.addEventListener("click", (e) => {
+        if (e.target === e.currentTarget) {
+          // 모달 여백 클릭 시 닫기
+          this.close(id);
+          return;
+        }
+        if (e.target.classList.contains("btn-modal-close") || e.target.closest(".btn-modal-close")) {
+          // 모달안에 btn-modal-close 클래스 요소 클릭 시 닫기
+          this.close(id);
+          return;
+        }
+      });
+    })
   },
   init() {
-    this.elements.modals = Array.from(document.querySelectorAll("[data-modal-id]"));
-    this.elements.modalBtns = Array.from(document.querySelectorAll("[data-modal-id]"));
+    this.elements.modals = Array.from(document.querySelectorAll(":not(.modal-btn)[data-modal-id]"));
+    this.elements.modalBtns = Array.from(document.querySelectorAll(".modal-btn[data-modal-id]"));
 
+    this.bindEvents();
+  }
+}
+
+export const goods = {
+  elements: {
+    items: undefined,
+  },
+  bindEvents() {
+    if (this.elements.items.length > 1) {
+      this.elements.items.forEach(el => {
+        const btnPlay = el.querySelector(".btn-play");
+        const video = el.querySelector("video");
+        if (video) {
+          btnPlay.addEventListener("click", () => {
+            el.classList.add("is-play");
+            video.play();
+            video.onended = () => {
+              el.classList.remove("is-play");
+            }
+          })
+        }
+      });
+    }
+  },
+  init() {
+    this.elements.items = Array.from(document.querySelectorAll(".component-goods-list .goods-item"));
     this.bindEvents();
   }
 }

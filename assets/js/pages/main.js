@@ -69,6 +69,7 @@ const match = {
     if (!this.elements.playerSlider) this.elements.playerSlider = this.elements.conatiner.querySelector(".player-slider");
     if (!this.elements.goodsSlider) this.elements.goodsSlider = this.elements.conatiner.querySelector(".goods-slider");
     const btns = this.elements.conatiner.querySelectorAll(".slider-btn");
+    const progress = this.elements.conatiner.querySelector(".progress .bar");
 
     if (!this.playerSwiper) {
       this.playerSwiper = new Swiper(this.elements.playerSlider, {
@@ -84,6 +85,14 @@ const match = {
           1024: {
             spaceBetween: 30,
             slidesPerView: 3,
+          }
+        },
+        on: {
+          init(v) {
+            progress.style.scale = `${(v.activeIndex + 1) / v.slides.length} 1`;
+          },
+          slideChange(v) {
+            progress.style.scale = `${(v.activeIndex + 1) / v.slides.length} 1`;
           }
         }
       })
