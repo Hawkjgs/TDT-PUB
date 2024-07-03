@@ -34,6 +34,7 @@
 
 .main-wrapper .sec-head-desc {
   font-family: "Pretendard";
+  font-weight: 500;
   color: var(--primary-color);
 }
 

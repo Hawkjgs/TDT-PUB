@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- S: 파비콘 설정 -->
+  <link rel="icon" type="image/png" sizes="32x32" href="">
+  <link rel="icon" type="image/png" sizes="16x16" href="">
+  <!-- E: 파비콘 설정 -->
+
+  <!-- S: SEO META TAGS -->
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="키워드1, 키워드2, 키워드3">
+  <meta name="description" content="여기에 페이지 설명을 입력하세요">
+  <link rel="canonical" href="주요 페이지 URL">
+  <meta property="og:title" content="여기에 페이지 제목을 입력하세요">
+  <meta property="og:description" content="여기에 페이지 설명을 입력하세요">
+  <meta property="og:url" content="https://example.com/page">
+  <meta property="og:image" content="https://example.com/image.jpg">
+  <meta property="og:site_name" content="사이트 이름">
+  <meta property="og:type" content="website">
+  <!-- E: SEO META TAGS -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.css" integrity="sha512-+pwQ1JBCDk3EJnDMJkIylD98GjOygtUbTAIN2J4s8GXuOvB9j8THTJZBmwhw59oI75Wl8FpIJkbw72/tlFDGhA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js" integrity="sha512-h5Vv+n+z0eRnlJoUlWMZ4PLQv4JfaCVtgU9TtRjNYuNltS5QCqi4D4eZn4UkzZZuG2p4VBz3YIlsB7A2NVrbww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- S: STYLE CSS -->
+  <link rel="stylesheet" href="../../assets/css/fonts.css">
+  <link rel="stylesheet" href="../../assets/css/reset.css">
+  <link rel="stylesheet" href="../../assets/css/ui.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/modal.css">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link rel="stylesheet" href="../../assets/css/sub.css">
+  <link rel="stylesheet" href="../../assets/css/styles.css">
+  <!-- E: STYLE CSS -->
+
+  <!-- S: SCRIPT -->
+  <script defer src="../../assets/js/utils.js"></script>
+  <script defer src="../../assets/js/components.js"></script>
+  <script defer src="../../assets/js/pages/main.js"></script>
+  <script defer src="../../assets/js/app.js"></script>
+  <!-- E: SCRIPT -->
+
+  <title>TDT PUB</title>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- S: SKIP D: Included Area -->
+    <div class="skip-nav">
+      <a href="#container"><span>콘텐츠 바로가기</span></a>
+    </div>
+    <!-- E: SKIP D: Included Area -->
+
+    <!-- S: HEADER D: Included Area -->
+    <header class="header">
+      <div class="header-inner">
+        <div class="logo">
+          <h1>
+            <a href="/html/main/index.html">
+              TDT LOGO
+              <i class="ic ic-logo" aria-hidden="true">
+                <svg>
+                  <use href="#Logo"></use>
+                </svg>
+              </i>
+            </a>
+          </h1>
+        </div>
+        <nav class="gnb pc-only">
+          <div class="gnb-inner">
+            <ul class="gnb-list">
+              <li class="gnb-item">
+                <a href="#" class="gnb-btn is-active">TDT Championship</a>
+              </li>
+              <li class="gnb-item">
+                <a href="#" class="gnb-btn">STORAGE</a>
+              </li>
+              <li class="gnb-item">
+                <a href="#" class="gnb-btn">Data center</a>
+              </li>
+              <li class="gnb-item">
+                <a href="#" class="gnb-btn">market</a>
+              </li>
+              <li class="gnb-item">
+                <a href="#" class="gnb-btn">notice</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="utils pc-only">
+          <div class="btn-group">
+            <a href="/html/account/login.html" class="btn sign-in">LOG IN</a>
+            <a href="/html/account/signup.html" class="btn sign-up">JOIN</a>
+          </div>
+          <button class="btn-sound is-muted" aria-label="사운드 재생">
+            <i class="ic ic-on">
+              <svg>
+                <use href="#SoundOn"></use>
+              </svg>
+            </i>
+            <i class="ic ic-off">
+              <svg>
+                <use href="#SoundOff"></use>
+              </svg>
+            </i>
+          </button>
+        </div>
+        <nav class="gnb-mo mo-only">
+          <div class="gnb-inner">
+            <div class="gnb-top">
+              <button class="btn-gnb-close" aria-label="모바일 메뉴 닫기">
+                <i class="ic">
+                  <svg>
+                    <use href="#ArrowRightBold"></use>
+                  </svg>
+                </i>
+              </button>
+              <button class="btn-sound is-muted" aria-label="사운드 재생">
+                <i class="ic ic-on">
+                  <svg>
+                    <use href="#SoundOn"></use>
+                  </svg>
+                </i>
+                <i class="ic ic-off">
+                  <svg>
+                    <use href="#SoundOff"></use>
+                  </svg>
+                </i>
+              </button>
+            </div>
+            <div class="gnb-menu">
+              <ul class="gnb-menu-list">
+                <li class="gnb-menu-item">
+                  <a href="#" class="gnb-menu-btn">TDT Championship</a>
+                </li>
+                <li class="gnb-menu-item">
+                  <a href="#" class="gnb-menu-btn">STORAGE</a>
+                </li>
+                <li class="gnb-menu-item">
+                  <a href="#" class="gnb-menu-btn">Data center</a>
+                </li>
+                <li class="gnb-menu-item">
+                  <a href="#" class="gnb-menu-btn">market</a>
+                </li>
+                <li class="gnb-menu-item">
+                  <a href="#" class="gnb-menu-btn">notice</a>
+                </li>
+              </ul>
+            </div>
+            <div class="gnb-bottom">
+              <div class="btn-group">
+                <a href="/html/account/login.html" class="btn">LOGIN</a>
+                <a href="/html/account/signup.html" class="btn">JOIN</a>
+              </div>
+            </div>
+          </div>
+          <div class="dim"></div>
+        </nav>
+        <button class="btn-menu mo-only" aria-label="메뉴 열기">
+          <i class="ic">
+            <svg>
+              <use href="#Menu"></use>
+            </svg>
+          </i>
+        </button>
+      </div>
+    </header>
+    <!-- E: HEADER D: Included Area -->
+    
+    <!-- S: CONTAINER -->
+    <main id="container">
+      <div id="content" class="sub-wrapper account-wrapper signup-goods-wrapper">
+        <div class="sub-content-head">
+          <h2 class="sub-content-tit">
+            <span class="title-text-gradient">SIGN IN</span>
+          </h2>
+          <p class="sub-content-desc">
+            2024년에는 참여의<br class="mo-only" /> 폭이 더욱 넓어집니다.
+          </p>
+        </div>
+
+        <div class="signup-goods-area"> 
+          <div class="signup-goods-area-inner border-gradient">
+            <div class="signup-goods-head">
+              <p class="tit">디지털 굿즈 선택하기</p>
+            </div>
+            <div class="signup-goods-body">
+              <div class="signup-goods-slider-area">
+                <div class="signup-goods-slider swiper">
+                  <ul class="swiper-wrapper">
+                    <li class="signup-goods-item swiper-slide">
+                      <button class="item-inner">
+                        <div class="img-box">
+                          <img src="../../assets/images/temp/account_select_goods_img_01.png" alt="">
+                          <i class="ic ic-check">
+                            <svg>
+                              <use href="#CircleCheckFill"></use>
+                            </svg>
+                          </i>
+                        </div>
+                      </button>
+                    </li>
+                    <li class="signup-goods-item swiper-slide">
+                      <button class="item-inner">
+                        <div class="img-box">
+                          <img src="../../assets/images/temp/account_select_goods_img_01.png" alt="">
+                          <i class="ic ic-check">
+                            <svg>
+                              <use href="#CircleCheckFill"></use>
+                            </svg>
+                          </i>
+                        </div>
+                      </button>
+                    </li>
+                    <li class="signup-goods-item swiper-slide">
+                      <button class="item-inner">
+                        <div class="img-box">
+                          <img src="../../assets/images/temp/account_select_goods_img_01.png" alt="">
+                          <i class="ic ic-check">
+                            <svg>
+                              <use href="#CircleCheckFill"></use>
+                            </svg>
+                          </i>
+                        </div>
+                      </button>
+                    </li>
+                    <li class="signup-goods-item swiper-slide">
+                      <button class="item-inner">
+                        <div class="img-box">
+                          <img src="../../assets/images/temp/account_select_goods_img_01.png" alt="">
+                          <i class="ic ic-check">
+                            <svg>
+                              <use href="#CircleCheckFill"></use>
+                            </svg>
+                          </i>
+                        </div>
+                      </button>
+                    </li>
+                    <li class="signup-goods-item swiper-slide">
+                      <button class="item-inner">
+                        <div class="img-box">
+                          <img src="../../assets/images/temp/account_select_goods_img_01.png" alt="">
+                          <i class="ic ic-check">
+                            <svg>
+                              <use href="#CircleCheckFill"></use>
+                            </svg>
+                          </i>
+                        </div>
+                      </button>
+                    </li>
+                    <li class="signup-goods-item swiper-slide">
+                      <button class="item-inner">
+                        <div class="img-box">
+                          <img src="../../assets/images/temp/account_select_goods_img_01.png" alt="">
+                          <i class="ic ic-check">
+                            <svg>
+                              <use href="#CircleCheckFill"></use>
+                            </svg>
+                          </i>
+                        </div>
+                      </button>
+                    </li>
+                    <li class="signup-goods-item swiper-slide">
+                      <button class="item-inner">
+                        <div class="img-box">
+                          <img src="../../assets/images/temp/account_select_goods_img_01.png" alt="">
+                          <i class="ic ic-check">
+                            <svg>
+                              <use href="#CircleCheckFill"></use>
+                            </svg>
+                          </i>
+                        </div>
+                      </button>
+                    </li>
+                    <li class="signup-goods-item swiper-slide">
+                      <button class="item-inner">
+                        <div class="img-box">
+                          <img src="../../assets/images/temp/account_select_goods_img_01.png" alt="">
+                          <i class="ic ic-check">
+                            <svg>
+                              <use href="#CircleCheckFill"></use>
+                            </svg>
+                          </i>
+                        </div>
+                      </button>
+                    </li>
+                    <li class="signup-goods-item swiper-slide">
+                      <button class="item-inner">
+                        <div class="img-box">
+                          <img src="../../assets/images/temp/account_select_goods_img_01.png" alt="">
+                          <i class="ic ic-check">
+                            <svg>
+                              <use href="#CircleCheckFill"></use>
+                            </svg>
+                          </i>
+                        </div>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="slider-controls">
+                  <button class="slider-btn-arrow slider-btn-prev">
+                    <i class="ic">
+                      <svg>
+                        <use href="#AngleRightBold" />
+                      </svg>
+                    </i>
+                  </button>
+                  <button class="slider-btn-arrow slider-btn-next">
+                    <i class="ic">
+                      <svg>
+                        <use href="#AngleRightBold" />
+                      </svg>
+                    </i>
+                  </button>
+                </div>
+              </div>
+              <div class="noti-text">
+                <p>
+                  - 신규 회원가입 후 첫 접속한 분들께 디지털 굿즈 1개를 드립니다.
+                </p>
+                <p>
+                  - 수령하신 디지털 굿즈는 STORAGE 메뉴에서 확인할 수 있습니다.
+                </p>
+                <p>
+                  - 이벤트 참여를 통해 디지털 굿즈를 추가로 받을 수 있습니다.
+                </p>
+                <p>
+                  - 디지털 굿즈와 선수를 매칭하여 슈퍼레이스 6000을 더 생생하게<br class="pc-only" /> 즐겨 보세요!
+                </p>
+              </div>
+            </div>
+            <div class="signup-goods-foot">
+              <div class="btn-group">
+                <button class="btn btn-base btn-primary">선택 완료</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- E: CONTAINER -->
+
+    <script>
+      const container = document.querySelector(".signup-goods-area")
+      const slider = container.querySelector(".signup-goods-slider");
+      const items = Array.from(container.querySelectorAll(".signup-goods-item"));
+      const sliderBtns = container.querySelectorAll(".slider-btn-arrow")
+
+      const swiper = new Swiper(slider, {
+        slidesPerView: 2,
+        grid: {
+          rows: 2,
+        },
+        spaceBetween: 12,
+        navigation: {
+          nextEl: sliderBtns[1],
+          prevEl: sliderBtns[0],
+        },
+        breakpoints: {
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            grid: {
+              rows: 2,
+            },
+          },
+        },
+      });
+
+      items.forEach(item => {
+        const btn = item.querySelector("button");
+        btn.addEventListener("click", (e) => {
+          items.forEach(el => el.classList.remove("is-active"));
+          item.classList.add("is-active");
+        });
+      })
+    </script>
+
+    <!-- S: MODALS D: Included Area -->
+    <!-- E: MODALS D: Included Area -->
+
+    <!-- S: SVG SPLITE D: Included Area -->
+    <svg hidden>
+      <symbol id="CheckOff" viewBox="0 0 22 22" fill="none">
+        <path d="M3.5 1.25C2.23438 1.25 1.25 2.28125 1.25 3.5V18.5C1.25 19.7656 2.23438 20.75 3.5 20.75H18.5C19.7188 20.75 20.75 19.7656 20.75 18.5V3.5C20.75 2.28125 19.7188 1.25 18.5 1.25H3.5ZM0.5 3.5C0.5 1.85938 1.8125 0.5 3.5 0.5H18.5C20.1406 0.5 21.5 1.85938 21.5 3.5V18.5C21.5 20.1875 20.1406 21.5 18.5 21.5H3.5C1.8125 21.5 0.5 20.1875 0.5 18.5V3.5ZM15.7344 8.28125L9.73438 14.2812C9.59375 14.4219 9.35938 14.4219 9.21875 14.2812L6.21875 11.2812C6.07812 11.1406 6.07812 10.9062 6.21875 10.7656C6.35938 10.625 6.59375 10.625 6.73438 10.7656L9.5 13.4844L15.2188 7.76562C15.3594 7.625 15.5938 7.625 15.7344 7.76562C15.875 7.90625 15.875 8.14062 15.7344 8.28125Z" fill="var(--ic-color, currentColor)"/>
+      </symbol>
+        
+      <symbol id="CheckOn" viewBox="0 0 22 22" fill="none">
+        <path d="M3.5 0.5H18.5C20.1406 0.5 21.5 1.85938 21.5 3.5V18.5C21.5 20.1875 20.1406 21.5 18.5 21.5H3.5C1.8125 21.5 0.5 20.1875 0.5 18.5V3.5C0.5 1.85938 1.8125 0.5 3.5 0.5ZM16.2969 8.79688H16.25C16.7188 8.375 16.7188 7.67188 16.25 7.20312C15.8281 6.78125 15.125 6.78125 14.7031 7.20312L9.5 12.4531L7.29688 10.25C6.82812 9.78125 6.125 9.78125 5.70312 10.25C5.23438 10.6719 5.23438 11.375 5.70312 11.7969L8.70312 14.7969C9.125 15.2656 9.82812 15.2656 10.2969 14.7969L16.2969 8.79688Z" fill="var(--ic-color, currentColor)"/>
+      </symbol>
+
+      <symbol id="Logo" viewBox="0 0 82 16" fill="none">
+        <g clip-path="url(#clip0_204_1497)">
+          <path d="M77.3283 0.5V1.97459H68.6568H63.9869H36.9084V0.5L33.6387 3.7573L36.9084 7.01461V5.40996H63.9869V15.5H68.6568V5.40996H77.3283V7.38475H81.9992V4.7487V1.97459V0.5H77.3283Z" fill="var(--ic-color, currentColor)"/>
+          <path d="M52.9884 5.69108L49.651 8.88335H50.6452V9.0084C50.6452 10.6941 49.24 12.0656 47.5129 12.0656H32.3828V5.40996H32.4177V1.97459H4.67093V0.5H0V7.38475H4.67093V5.40996H13.9984V15.501H18.6693V5.40996H27.7129V15.501H47.5139C51.8168 15.501 55.3172 13.2611 55.3172 9.06142V8.88335H56.3268L52.9894 5.69108H52.9884Z" fill="var(--ic-color, currentColor)"/>
+        </g>
+        <defs>
+          <clipPath id="clip0_204_1497">
+            <rect width="82" height="15" fill="var(--ic-color, currentColor)" transform="translate(0 0.5)"/>
+          </clipPath>
+        </defs>
+      </symbol>
+        
+      <symbol id="ScreenUsers" viewBox="0 0 24 24" fill="none">
+        <path d="M19 5H5C4.4375 5 4 5.46875 4 6V11.1875C3.625 11.3125 3.28125 11.5312 3 11.7812V6C3 4.90625 3.875 4 5 4H19C20.0938 4 21 4.90625 21 6V11.7812C20.6875 11.5312 20.3438 11.3125 20 11.1875V6C20 5.46875 19.5312 5 19 5ZM5 15C5.53125 15 6 14.5625 6 14C6 13.4688 5.53125 13 5 13C4.4375 13 4 13.4688 4 14C4 14.5625 4.4375 15 5 15ZM5 12C5.6875 12 6.34375 12.4062 6.71875 13C7.0625 13.625 7.0625 14.4062 6.71875 15C6.34375 15.625 5.6875 16 5 16C4.28125 16 3.625 15.625 3.25 15C2.90625 14.4062 2.90625 13.625 3.25 13C3.625 12.4062 4.28125 12 5 12ZM12 15C12.5312 15 13 14.5625 13 14C13 13.4688 12.5312 13 12 13C11.4375 13 11 13.4688 11 14C11 14.5625 11.4375 15 12 15ZM12 12C12.6875 12 13.3438 12.4062 13.7188 13C14.0625 13.625 14.0625 14.4062 13.7188 15C13.3438 15.625 12.6875 16 12 16C11.2812 16 10.625 15.625 10.25 15C9.90625 14.4062 9.90625 13.625 10.25 13C10.625 12.4062 11.2812 12 12 12ZM20 14C20 13.4688 19.5312 13 19 13C18.4375 13 18 13.4688 18 14C18 14.5625 18.4375 15 19 15C19.5312 15 20 14.5625 20 14ZM17 14C17 13.3125 17.375 12.6562 18 12.2812C18.5938 11.9375 19.375 11.9375 20 12.2812C20.5938 12.6562 21 13.3125 21 14C21 14.7188 20.5938 15.375 20 15.75C19.375 16.0938 18.5938 16.0938 18 15.75C17.375 15.375 17 14.7188 17 14ZM3 19V19.5C3 19.7812 2.75 20 2.5 20C2.21875 20 2 19.7812 2 19.5V19C2 17.9062 2.875 17 4 17H6C7.09375 17 8 17.9062 8 19V19.5C8 19.7812 7.75 20 7.5 20C7.21875 20 7 19.7812 7 19.5V19C7 18.4688 6.53125 18 6 18H4C3.4375 18 3 18.4688 3 19ZM11 18C10.4375 18 10 18.4688 10 19V19.5C10 19.7812 9.75 20 9.5 20C9.21875 20 9 19.7812 9 19.5V19C9 17.9062 9.875 17 11 17H13C14.0938 17 15 17.9062 15 19V19.5C15 19.7812 14.75 20 14.5 20C14.2188 20 14 19.7812 14 19.5V19C14 18.4688 13.5312 18 13 18H11ZM17 19V19.5C17 19.7812 16.75 20 16.5 20C16.2188 20 16 19.7812 16 19.5V19C16 17.9062 16.875 17 18 17H20C21.0938 17 22 17.9062 22 19V19.5C22 19.7812 21.75 20 21.5 20C21.2188 20 21 19.7812 21 19.5V19C21 18.4688 20.5312 18 20 18H18C17.4375 18 17 18.4688 17 19Z" fill="var(--ic-color, currentColor)"></path>
+      </symbol>
+    
+      <symbol id="CircleUser" viewBox="0 0 24 24" fill="none">
+        <path d="M16.875 17.0312C18.1875 15.75 19 13.9688 19 12C19 8.15625 15.8438 5 12 5C8.125 5 5 8.15625 5 12C5 13.9688 5.8125 15.75 7.09375 17.0312C7.53125 15.3125 9.125 14 11 14H13C14.8438 14 16.4375 15.3125 16.875 17.0312ZM15.9688 17.75V17.7812C15.8438 16.2188 14.5625 15 13 15H11C9.40625 15 8.125 16.2188 8 17.7812C9.125 18.5625 10.5 19 12 19C13.4688 19 14.8438 18.5625 15.9688 17.75ZM12 20C9.125 20 6.5 18.5 5.0625 16C3.625 13.5312 3.625 10.5 5.0625 8C6.5 5.53125 9.125 4 12 4C14.8438 4 17.4688 5.53125 18.9062 8C20.3438 10.5 20.3438 13.5312 18.9062 16C17.4688 18.5 14.8438 20 12 20ZM12 12C12.5312 12 13 11.7188 13.2812 11.25C13.5625 10.8125 13.5625 10.2188 13.2812 9.75C13 9.3125 12.5312 9 12 9C11.4375 9 10.9688 9.3125 10.6875 9.75C10.4062 10.2188 10.4062 10.8125 10.6875 11.25C10.9688 11.7188 11.4375 12 12 12ZM9.5 10.5C9.5 9.625 9.96875 8.8125 10.75 8.34375C11.5 7.90625 12.4688 7.90625 13.25 8.34375C14 8.8125 14.5 9.625 14.5 10.5C14.5 11.4062 14 12.2188 13.25 12.6875C12.4688 13.125 11.5 13.125 10.75 12.6875C9.96875 12.2188 9.5 11.4062 9.5 10.5Z" fill="var(--ic-color, currentColor)"></path>
+      </symbol>
+    
+      <symbol id="HexVerticalNft" viewBox="0 0 24 24" fill="none">
+        <path d="M12.9688 19.5312C12.375 19.875 11.5938 19.875 10.9688 19.5312L6 16.6562C5.375 16.2812 5 15.625 5 14.9062V9.15625C5 8.4375 5.375 7.78125 6 7.40625L10.9688 4.53125C11.5938 4.1875 12.375 4.1875 12.9688 4.53125L17.9688 7.40625C18.5938 7.78125 18.9688 8.4375 18.9688 9.15625V14.9062C18.9688 15.625 18.5938 16.2812 17.9688 16.6562L12.9688 19.5312ZM11.4688 18.6562C11.7812 18.8438 12.1562 18.8438 12.4688 18.6562L17.4688 15.7812C17.7812 15.5938 17.9688 15.2812 17.9688 14.9062V9.15625C17.9688 8.78125 17.7812 8.46875 17.4688 8.28125L12.4688 5.40625C12.1562 5.21875 11.7812 5.21875 11.4688 5.40625L6.5 8.28125C6.1875 8.46875 6 8.78125 6 9.15625V14.9062C6 15.2812 6.1875 15.5938 6.5 15.7812L11.4688 18.6562ZM7.9375 9.34375L8.96875 11.9375V9.53125C8.96875 9.25 9.21875 9.03125 9.46875 9.03125C9.75 9.03125 9.96875 9.25 9.96875 9.53125V14.5312C9.96875 14.7812 9.8125 14.9688 9.5625 15.0312C9.34375 15.0625 9.09375 14.9375 9 14.7188L7.96875 12.125V14.5312C7.96875 14.8125 7.75 15.0312 7.46875 15.0312C7.21875 15.0312 6.96875 14.8125 6.96875 14.5312V9.53125C6.96875 9.28125 7.15625 9.09375 7.375 9.03125C7.625 9 7.84375 9.125 7.9375 9.34375ZM10.9688 9.53125C10.9688 9.25 11.2188 9.03125 11.4688 9.03125H12.9688C13.25 9.03125 13.4688 9.25 13.4688 9.53125C13.4688 9.8125 13.25 10.0312 12.9688 10.0312H11.9688V11.5312H12.9688C13.25 11.5312 13.4688 11.75 13.4688 12.0312C13.4688 12.3125 13.25 12.5312 12.9688 12.5312H11.9688V14.5312C11.9688 14.8125 11.75 15.0312 11.4688 15.0312C11.2188 15.0312 10.9688 14.8125 10.9688 14.5312V12.0312V9.53125ZM14.4688 9.03125H16.4688C16.75 9.03125 16.9688 9.25 16.9688 9.53125C16.9688 9.8125 16.75 10.0312 16.4688 10.0312H15.9688V14.5312C15.9688 14.8125 15.75 15.0312 15.4688 15.0312C15.2188 15.0312 14.9688 14.8125 14.9688 14.5312V10.0312H14.4688C14.2188 10.0312 13.9688 9.8125 13.9688 9.53125C13.9688 9.25 14.2188 9.03125 14.4688 9.03125Z" fill="var(--ic-color, currentColor)"></path>
+      </symbol>
+    
+      <symbol id="Trophy" viewBox="0 0 24 24" fill="none">
+        <path d="M8.4999 5C8.21865 5 7.9999 5.25 7.9999 5.46875C8.21865 10.5938 9.40615 12.9688 10.3749 14.0312C10.8749 14.5625 11.3124 14.8125 11.6249 14.9062C11.7499 14.9688 11.8749 15 11.9374 15C11.9686 15 11.9686 15 11.9686 15C11.9999 15 11.9999 15 12.0311 15C12.0936 15 12.1874 14.9688 12.3436 14.9062C12.6561 14.8125 13.0936 14.5625 13.5936 14.0312C14.5624 12.9688 15.7499 10.5938 15.9686 5.46875C15.9686 5.25 15.7811 5 15.4999 5H8.4999ZM15.4999 4C16.3124 4 16.9999 4.6875 16.9686 5.53125C16.9374 5.6875 16.9374 5.84375 16.9374 6H19.4999C20.3124 6 21.0311 6.6875 20.9374 7.5625C20.6249 10.5 18.9999 12.5 17.2499 13.8125C15.4999 15.125 13.5936 15.7188 12.5624 15.9062C12.5311 15.9062 12.4999 15.9062 12.4999 15.9375V19H15.4999C15.7499 19 15.9999 19.25 15.9999 19.5C15.9999 19.7812 15.7499 20 15.4999 20H11.9999H8.4999C8.21865 20 7.9999 19.7812 7.9999 19.5C7.9999 19.25 8.21865 19 8.4999 19H11.4999V15.9062C11.4686 15.9062 11.4374 15.9062 11.4061 15.9062C10.4061 15.7188 8.46865 15.0938 6.71865 13.8125C4.96865 12.5 3.34365 10.5 3.03115 7.5625C2.9374 6.6875 3.6874 6 4.4999 6H7.03115C7.03115 5.84375 7.03115 5.6875 6.9999 5.53125C6.96865 4.6875 7.65615 4 8.4999 4H15.4999ZM16.8749 7C16.5624 10.6562 15.7186 12.8125 14.7811 14.125C15.4061 13.8438 16.0311 13.4688 16.6561 13C18.2499 11.8438 19.6561 10.0625 19.9374 7.46875C19.9686 7.25 19.7811 7 19.4999 7H16.8749ZM9.1874 14.125C8.28115 12.8125 7.40615 10.6562 7.09365 7H4.4999C4.1874 7 3.9999 7.25 4.03115 7.46875C4.3124 10.0625 5.71865 11.8438 7.34365 13C7.9374 13.4688 8.59365 13.8438 9.1874 14.125Z" fill="var(--ic-color, currentColor)"></path>
+      </symbol>
+    
+      <symbol id="ArrowLeft" viewBox="0 0 24 24" fill="none">
+        <path d="M5.125 11.6562L10.625 6.15625C10.8125 5.96875 11.1562 5.96875 11.3438 6.15625C11.5312 6.34375 11.5312 6.6875 11.3438 6.875L6.6875 11.5H18.5C18.75 11.5 19 11.75 19 12C19 12.2812 18.75 12.5 18.5 12.5H6.6875L11.3438 17.1562C11.5312 17.3438 11.5312 17.6875 11.3438 17.875C11.1562 18.0625 10.8125 18.0625 10.625 17.875L5.125 12.375C4.9375 12.1875 4.9375 11.8438 5.125 11.6562Z" fill="var(--ic-color, currentColor)"></path>
+      </symbol>
+    
+      <symbol id="ArrowRight" viewBox="0 0 24 24" fill="none">
+        <path d="M18.8438 12.375L13.3438 17.875C13.1562 18.0625 12.8125 18.0625 12.625 17.875C12.4375 17.6875 12.4375 17.3438 12.625 17.1562L17.2812 12.5H5.5C5.21875 12.5 5 12.2812 5 12C5 11.75 5.21875 11.5 5.5 11.5H17.2812L12.625 6.875C12.4375 6.6875 12.4375 6.34375 12.625 6.15625C12.8125 5.96875 13.1562 5.96875 13.3438 6.15625L18.8438 11.6562C19.0312 11.8438 19.0312 12.1875 18.8438 12.375Z" fill="var(--ic-color, currentColor)"></path>
+      </symbol>
+
+      <symbol id="ArrowRightBold" viewBox="0 0 24 24" fill="none">
+        <path d="M21.625 12.8438L13.375 20.7188C12.9062 21.1406 12.2031 21.1406 11.7812 20.6719C11.3594 20.2031 11.3594 19.5 11.8281 19.0781L18.0625 13.125H2.125C1.46875 13.125 1 12.6562 1 12C1 11.3906 1.46875 10.875 2.125 10.875H18.0625L11.8281 4.96875C11.3594 4.54688 11.3594 3.79688 11.7812 3.375C12.2031 2.90625 12.9531 2.90625 13.375 3.32812L21.625 11.2031C21.8594 11.4375 22 11.7188 22 12C22 12.3281 21.8594 12.6094 21.625 12.8438Z" fill="var(--ic-color, currentColor)"/>
+      </symbol>
+        
+    
+      <symbol id="AngleLeft" viewBox="0 0 24 24" fill="none">
+        <path d="M8.625 12.375C8.4375 12.1875 8.4375 11.8438 8.625 11.6562L13.625 6.65625C13.8125 6.46875 14.1562 6.46875 14.3438 6.65625C14.5312 6.84375 14.5312 7.1875 14.3438 7.375L9.6875 12L14.3438 16.6562C14.5312 16.8438 14.5312 17.1875 14.3438 17.375C14.1562 17.5625 13.8125 17.5625 13.625 17.375L8.625 12.375Z" fill="var(--ic-color, currentColor)"></path>
+      </symbol>
+    
+      <symbol id="AngleRight" viewBox="0 0 24 24" fill="none">
+        <path d="M15.3438 11.6562C15.5312 11.8438 15.5312 12.1875 15.3438 12.375L10.3438 17.375C10.1562 17.5625 9.8125 17.5625 9.625 17.375C9.4375 17.1875 9.4375 16.8438 9.625 16.6562L14.2812 12L9.625 7.375C9.4375 7.1875 9.4375 6.84375 9.625 6.65625C9.8125 6.46875 10.1562 6.46875 10.3438 6.65625L15.3438 11.6562Z" fill="var(--ic-color, currentColor)"></path>
+      </symbol>
+
+      <symbol id="AngleRightBold" viewBox="0 0 24 24" fill="none">
+        <path opacity="0.8" d="M16.5234 11.4766C16.9805 11.8984 16.9805 12.6367 16.5234 13.0586L10.8984 18.6836C10.4766 19.1406 9.73828 19.1406 9.31641 18.6836C8.85937 18.2617 8.85937 17.5234 9.31641 17.1016L14.1328 12.25L9.31641 7.43359C8.85937 7.01172 8.85937 6.27344 9.31641 5.85156C9.73828 5.39453 10.4766 5.39453 10.8984 5.85156L16.5234 11.4766Z" fill="var(--ic-color, currentColor)"/>
+      </symbol>
+        
+    
+      <symbol id="AngleUp" viewBox="0 0 24 24" fill="none">
+        <path d="M11.625 8.65625C11.8125 8.46875 12.1562 8.46875 12.3438 8.65625L17.3438 13.6562C17.5312 13.8438 17.5312 14.1875 17.3438 14.375C17.1562 14.5625 16.8125 14.5625 16.625 14.375L12 9.71875L7.34375 14.375C7.15625 14.5625 6.8125 14.5625 6.625 14.375C6.4375 14.1875 6.4375 13.8438 6.625 13.6562L11.625 8.65625Z" fill="var(--ic-color, currentColor)"></path>
+      </symbol>
+    
+      <symbol id="AngleDown" viewBox="0 0 24 24" fill="none">
+        <path d="M11.625 14.375L6.625 9.375C6.4375 9.1875 6.4375 8.84375 6.625 8.65625C6.8125 8.46875 7.15625 8.46875 7.34375 8.65625L12 13.3125L16.625 8.65625C16.8125 8.46875 17.1562 8.46875 17.3438 8.65625C17.5312 8.84375 17.5312 9.1875 17.3438 9.375L12.3438 14.375C12.1562 14.5625 11.8125 14.5625 11.625 14.375Z" fill="var(--ic-color, currentColor)"></path>
+      </symbol>
+    
+      <symbol id="Camera" viewBox="0 0 24 24" fill="none">
+        <path d="M9.96875 5H14C14.6562 5 15.2188 5.4375 15.4375 6.03125L15.75 7H18C19.0938 7 20 7.90625 20 9V17C20 18.125 19.0938 19 18 19H6C4.875 19 4 18.125 4 17V9C4 7.90625 4.875 7 6 7H8.21875L8.53125 6.03125C8.75 5.4375 9.3125 5 9.96875 5ZM9.46875 6.34375L9.03125 7.6875C8.96875 7.875 8.78125 8 8.5625 8H6C5.4375 8 5 8.46875 5 9V17C5 17.5625 5.4375 18 6 18H18C18.5312 18 19 17.5625 19 17V9C19 8.46875 18.5312 8 18 8H15.4062C15.1875 8 15 7.875 14.9375 7.65625L14.5 6.34375C14.4062 6.15625 14.2188 6 14 6H9.96875C9.75 6 9.5625 6.15625 9.46875 6.34375ZM12 16.5C10.7188 16.5 9.59375 15.8438 8.96875 14.75C8.3125 13.6875 8.3125 12.3438 8.96875 11.25C9.59375 10.1875 10.7188 9.5 12 9.5C13.25 9.5 14.375 10.1875 15 11.25C15.6562 12.3438 15.6562 13.6875 15 14.75C14.375 15.8438 13.25 16.5 12 16.5ZM9.5 13C9.5 13.9062 9.96875 14.7188 10.75 15.1875C11.5 15.625 12.4688 15.625 13.25 15.1875C14 14.7188 14.5 13.9062 14.5 13C14.5 12.125 14 11.3125 13.25 10.8438C12.4688 10.4062 11.5 10.4062 10.75 10.8438C9.96875 11.3125 9.5 12.125 9.5 13Z" fill="var(--ic-color, currentColor)"></path>
+      </symbol>
+    
+      <symbol id="Pen" viewBox="0 0 24 24" fill="none">
+        <path d="M16.3438 5.25L14.6563 6.96875L17.0313 9.34375L18.75 7.65625C19.0313 7.34375 19.0313 6.875 18.75 6.59375L17.4063 5.25C17.125 4.96875 16.6563 4.96875 16.3438 5.25ZM13.9375 7.65625L6.59379 15.0312C6.34379 15.25 6.15629 15.5625 6.06254 15.875L5.21879 18.7812L8.12504 17.9062C8.43754 17.8125 8.75004 17.6562 8.96879 17.4062L16.3438 10.0625L13.9375 7.65625ZM18.125 4.53125L19.4688 5.875C20.125 6.5625 20.125 7.65625 19.4688 8.34375L9.68754 18.125C9.31254 18.4688 8.87504 18.75 8.40629 18.875L4.62504 20C4.43754 20.0312 4.25004 20 4.12504 19.875C4.00004 19.75 3.96879 19.5625 4.00004 19.375L5.12504 15.5938C5.25004 15.125 5.53129 14.6875 5.87504 14.3125L15.6563 4.53125C16.3438 3.875 17.4375 3.875 18.125 4.53125Z" fill="var(--ic-color, currentColor)"></path>
+      </symbol>
+    
+      <symbol id="CircleExclam" viewBox="0 0 24 24" fill="none">
+        <path d="M12 5C9.46875 5 7.1875 6.34375 5.9375 8.5C4.65625 10.6875 4.65625 13.3438 5.9375 15.5C7.1875 17.6875 9.46875 19 12 19C14.5 19 16.7812 17.6875 18.0312 15.5C19.3125 13.3438 19.3125 10.6875 18.0312 8.5C16.7812 6.34375 14.5 5 12 5ZM12 20C9.125 20 6.5 18.5 5.0625 16C3.625 13.5312 3.625 10.5 5.0625 8C6.5 5.53125 9.125 4 12 4C14.8438 4 17.4688 5.53125 18.9062 8C20.3438 10.5 20.3438 13.5312 18.9062 16C17.4688 18.5 14.8438 20 12 20ZM12 8C12.25 8 12.5 8.25 12.5 8.5V12.5C12.5 12.7812 12.25 13 12 13C11.7188 13 11.5 12.7812 11.5 12.5V8.5C11.5 8.25 11.7188 8 12 8ZM12.75 15C12.75 15.4375 12.4062 15.75 12 15.75C11.5625 15.75 11.25 15.4375 11.25 15C11.25 14.5938 11.5625 14.25 12 14.25C12.4062 14.25 12.75 14.5938 12.75 15Z" fill="var(--ic-color, currentColor)"></path>
+      </symbol>
+    
+      <symbol id="Plus" viewBox="0 0 24 24" fill="none">
+        <path d="M12.5 6V11.5H18C18.25 11.5 18.5 11.75 18.5 12C18.5 12.2812 18.25 12.5 18 12.5H12.5V18C12.5 18.2812 12.25 18.5 12 18.5C11.7188 18.5 11.5 18.2812 11.5 18V12.5H6C5.71875 12.5 5.5 12.2812 5.5 12C5.5 11.75 5.71875 11.5 6 11.5H11.5V6C11.5 5.75 11.7188 5.5 12 5.5C12.25 5.5 12.5 5.75 12.5 6Z" fill="var(--ic-color, currentColor)"></path>
+      </symbol>
+    
+      <symbol id="Calendar" viewBox="0 0 24 24" fill="none">
+        <path d="M8.5 4C8.75 4 9 4.25 9 4.5V6H15V4.5C15 4.25 15.2188 4 15.5 4C15.75 4 16 4.25 16 4.5V6H17C18.0938 6 19 6.90625 19 8V9V10V18C19 19.125 18.0938 20 17 20H7C5.875 20 5 19.125 5 18V10V9V8C5 6.90625 5.875 6 7 6H8V4.5C8 4.25 8.21875 4 8.5 4ZM18 10H6V18C6 18.5625 6.4375 19 7 19H17C17.5312 19 18 18.5625 18 18V10ZM17 7H7C6.4375 7 6 7.46875 6 8V9H18V8C18 7.46875 17.5312 7 17 7Z" fill="var(--ic-color, currentColor)"></path>
+      </symbol>
+    
+      <symbol id="ArrowRightLeft" viewBox="0 0 24 24" fill="none">
+        <path d="M18.8438 8.375L15.8438 11.375C15.6562 11.5625 15.3125 11.5625 15.125 11.375C14.9375 11.1875 14.9375 10.8438 15.125 10.6562L17.2812 8.5H5.5C5.21875 8.5 5 8.28125 5 8C5 7.75 5.21875 7.5 5.5 7.5H17.2812L15.125 5.375C14.9375 5.1875 14.9375 4.84375 15.125 4.65625C15.3125 4.46875 15.6562 4.46875 15.8438 4.65625L18.8438 7.65625C19.0312 7.84375 19.0312 8.1875 18.8438 8.375ZM8.125 19.375L5.125 16.375C4.9375 16.1875 4.9375 15.8438 5.125 15.6562L8.125 12.6562C8.3125 12.4688 8.65625 12.4688 8.84375 12.6562C9.03125 12.8438 9.03125 13.1875 8.84375 13.375L6.6875 15.5H18.5C18.75 15.5 19 15.75 19 16C19 16.2812 18.75 16.5 18.5 16.5H6.6875L8.84375 18.6562C9.03125 18.8438 9.03125 19.1875 8.84375 19.375C8.65625 19.5625 8.3125 19.5625 8.125 19.375Z" fill="var(--ic-color, currentColor)"></path>
+      </symbol>
+    
+      <symbol id="MessageLines" viewBox="0 0 24 24" fill="none">
+        <path d="M10 17V18.5L13.0625 16.2188C13.2188 16.0938 13.4375 16 13.6562 16H18C18.5312 16 19 15.5625 19 15V6C19 5.46875 18.5312 5 18 5H6C5.4375 5 5 5.46875 5 6V15C5 15.5625 5.4375 16 6 16H9C9.53125 16 10 16.4688 10 17ZM6 4H18C19.0938 4 20 4.90625 20 6V15C20 16.125 19.0938 17 18 17H13.6562L9.78125 19.9062C9.625 20.0312 9.4375 20.0312 9.25 19.9688C9.09375 19.875 9 19.7188 9 19.5V18V17H8H6C4.875 17 4 16.125 4 15V6C4 4.90625 4.875 4 6 4ZM8.5 8.5H15.5C15.75 8.5 16 8.75 16 9C16 9.28125 15.75 9.5 15.5 9.5H8.5C8.21875 9.5 8 9.28125 8 9C8 8.75 8.21875 8.5 8.5 8.5ZM8.5 11.5H12.5C12.75 11.5 13 11.75 13 12C13 12.2812 12.75 12.5 12.5 12.5H8.5C8.21875 12.5 8 12.2812 8 12C8 11.75 8.21875 11.5 8.5 11.5Z" fill="var(--ic-color, currentColor)"></path>
+      </symbol>
+    
+      <symbol id="Magnifying" viewBox="0 0 24 24" fill="none">
+        <path d="M16 10.5C16 8.5625 14.9375 6.75 13.25 5.75C11.5312 4.78125 9.4375 4.78125 7.75 5.75C6.03125 6.75 5 8.5625 5 10.5C5 12.4688 6.03125 14.2812 7.75 15.2812C9.4375 16.25 11.5312 16.25 13.25 15.2812C14.9375 14.2812 16 12.4688 16 10.5ZM14.7188 15.4375C13.5938 16.4375 12.0938 17 10.5 17C6.90625 17 4 14.0938 4 10.5C4 6.9375 6.90625 4 10.5 4C14.0625 4 17 6.9375 17 10.5C17 12.125 16.4062 13.5938 15.4375 14.75L19.8438 19.1562C20.0312 19.3438 20.0312 19.6875 19.8438 19.875C19.6562 20.0625 19.3125 20.0625 19.125 19.875L14.7188 15.4375Z" fill="var(--ic-color, currentColor)"></path>
+      </symbol>
+    
+      <symbol id="Check" viewBox="0 0 24 24" fill="none">
+        <path d="M18.8438 7.15625C19.0312 7.34375 19.0312 7.6875 18.8438 7.875L10.3438 16.375C10.1562 16.5625 9.8125 16.5625 9.625 16.375L5.125 11.875C4.9375 11.6875 4.9375 11.3438 5.125 11.1562C5.3125 10.9688 5.65625 10.9688 5.84375 11.1562L10 15.3125L18.125 7.15625C18.3125 6.96875 18.6562 6.96875 18.8438 7.15625Z" fill="var(--ic-color, currentColor)"></path>
+      </symbol>
+    
+      <symbol id="CircleCheck" viewBox="0 0 24 24" fill="none">
+        <path d="M12 5C9.46875 5 7.1875 6.34375 5.9375 8.5C4.65625 10.6875 4.65625 13.3438 5.9375 15.5C7.1875 17.6875 9.46875 19 12 19C14.5 19 16.7812 17.6875 18.0312 15.5C19.3125 13.3438 19.3125 10.6875 18.0312 8.5C16.7812 6.34375 14.5 5 12 5ZM12 20C9.125 20 6.5 18.5 5.0625 16C3.625 13.5312 3.625 10.5 5.0625 8C6.5 5.53125 9.125 4 12 4C14.8438 4 17.4688 5.53125 18.9062 8C20.3438 10.5 20.3438 13.5312 18.9062 16C17.4688 18.5 14.8438 20 12 20ZM15.3438 10.375L11.3438 14.375C11.1562 14.5625 10.8125 14.5625 10.625 14.375L8.625 12.375C8.4375 12.1875 8.4375 11.8438 8.625 11.6562C8.8125 11.4688 9.15625 11.4688 9.34375 11.6562L11 13.3125L14.625 9.65625C14.8125 9.46875 15.1562 9.46875 15.3438 9.65625C15.5312 9.84375 15.5312 10.1875 15.3438 10.375Z" fill="var(--ic-color, currentColor)"></path>
+      </symbol>
+    
+      <symbol id="CircleCheckFill" viewBox="0 0 24 24" fill="none">
+        <path d="M12 20C9.125 20 6.5 18.5 5.0625 16C3.625 13.5312 3.625 10.5 5.0625 8C6.5 5.53125 9.125 4 12 4C14.8438 4 17.4688 5.53125 18.9062 8C20.3438 10.5 20.3438 13.5312 18.9062 16C17.4688 18.5 14.8438 20 12 20ZM15.5312 10.5312H15.5C15.8125 10.25 15.8125 9.78125 15.5 9.46875C15.2188 9.1875 14.75 9.1875 14.4688 9.46875L11 12.9688L9.53125 11.5C9.21875 11.1875 8.75 11.1875 8.46875 11.5C8.15625 11.7812 8.15625 12.25 8.46875 12.5312L10.4688 14.5312C10.75 14.8438 11.2188 14.8438 11.5312 14.5312L15.5312 10.5312Z" fill="var(--ic-color, currentColor)"></path>
+      </symbol>
+  
+      <symbol id="Exclude" viewBox="0 0 24 24" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.18772 3.69405L17.6877 2.81905C18.125 2.78261 18.5 3.12768 18.5 3.56646V7.94858C18.5 8.14601 18.4416 8.33902 18.3321 8.50328L17.6679 9.49943C17.5584 9.6637 17.5 9.85671 17.5 10.0541V13.9486C17.5 14.146 17.5584 14.339 17.6679 14.5033L18.3321 15.4994C18.4416 15.6637 18.5 15.8567 18.5 16.0541V19.9415C18.5 20.3783 18.1281 20.7227 17.6925 20.6892L6.19248 19.8046C5.80173 19.7746 5.5 19.4487 5.5 19.0568V15.4874C5.5 15.3322 5.53615 15.1791 5.60557 15.0402L6.39443 13.4625C6.46385 13.3236 6.5 13.1705 6.5 13.0153V4.44146C6.5 4.05139 6.799 3.72644 7.18772 3.69405ZM12.3536 8.89781C12.1583 8.70254 11.8417 8.70254 11.6464 8.89781L10.1464 10.3978C9.95118 10.5931 9.95118 10.9096 10.1464 11.1049C10.3417 11.3002 10.6583 11.3002 10.8536 11.1049L11.5 10.4585V14.2514C11.5 14.5275 11.7239 14.7514 12 14.7514C12.2761 14.7514 12.5 14.5275 12.5 14.2514V10.4585L13.1464 11.1049C13.3417 11.3002 13.6583 11.3002 13.8536 11.1049C14.0488 10.9096 14.0488 10.5931 13.8536 10.3978L12.3536 8.89781Z" fill="var(--ic-color, currentColor)"></path>
+      </symbol>
+
+      <symbol id="Engine" viewBox="0 0 54 54" fill="none">
+        <path d="M9 17H41V41H20L16 36H9V17Z" fill="currentColor"></path>
+        <path d="M17 11H34V14H17V11Z" fill="currentColor"></path>
+        <rect x="1" y="19" width="3" height="15" fill="currentColor"></rect>
+        <path d="M46 22H52V39H46V22Z" fill="currentColor"></path>
+      </symbol>
+    
+      <symbol id="Transmission" viewBox="0 0 54 54" fill="none">
+        <rect x="10" y="16" width="3" height="22" fill="currentColor"></rect>
+        <rect x="25" y="16" width="3" height="22" fill="currentColor"></rect>
+        <rect x="12" y="25" width="29" height="3" fill="currentColor"></rect>
+        <rect x="40" y="16" width="3" height="22" fill="currentColor"></rect>
+        <rect x="7" y="7" width="9" height="9" fill="currentColor"></rect>
+        <rect x="22" y="7" width="9" height="9" fill="currentColor"></rect>
+        <rect x="37" y="7" width="9" height="9" fill="currentColor"></rect>
+        <rect x="7" y="38" width="9" height="9" fill="currentColor"></rect>
+        <rect x="22" y="38" width="9" height="9" fill="currentColor"></rect>
+        <rect x="37" y="38" width="9" height="9" fill="currentColor"></rect>
+      </symbol>
+    
+      <symbol id="Drivetrain" viewBox="0 0 54 54" fill="none">
+        <rect x="10" y="15" width="2" height="24" fill="currentColor"></rect>
+        <rect x="42" y="15" width="2" height="24" fill="currentColor"></rect>
+        <rect x="4" y="8" width="14" height="7" fill="currentColor"></rect>
+        <rect x="8" y="24" width="7" height="5" fill="currentColor"></rect>
+        <rect x="36" y="8" width="14" height="7" fill="currentColor"></rect>
+        <rect x="4" y="39" width="14" height="7" fill="currentColor"></rect>
+        <rect x="36" y="39" width="14" height="7" fill="currentColor"></rect>
+        <path d="M32 21H47V32H32L26 29H18V26.5V24H26L32 21Z" fill="currentColor"></path>
+      </symbol>
+    
+      <symbol id="Weight" viewBox="0 0 54 54" fill="none">
+        <path d="M21 24L17.3896 15.5757C16.2584 12.9362 18.1945 10 21.0662 10H32.9338C35.8055 10 37.7416 12.9362 36.6104 15.5757L33 24" stroke="currentColor" stroke-width="5"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M27 17C17.6112 17 10 24.6112 10 34C10 40.8934 14.103 46.8285 20 49.4965H34C39.897 46.8285 44 40.8934 44 34C44 24.6112 36.3888 17 27 17ZM19 30V39H21.1622V36.5387L22.0779 35.4323L24.4054 39H27L23.655 34.0152L26.9491 30H24.38L21.2893 33.8412H21.1622V30H19ZM31.1865 31.8145C32.0466 31.8085 32.6361 32.244 32.8346 32.9758H34.9158C34.6932 31.2278 33.1474 30 31.1383 30C28.8226 30 27 31.6512 27 34.5121C27 37.2823 28.6842 39 31.1744 39C33.406 39 35 37.5968 35 35.2621V34.1129H31.2707V35.625H33.0271C32.997 36.5746 32.3474 37.1855 31.1865 37.1855C29.8692 37.1855 29.0932 36.1996 29.0932 34.4879C29.0932 32.7883 29.9053 31.8085 31.1865 31.8145Z" fill="currentColor"></path>
+      </symbol>
+    
+      <symbol id="Car" viewBox="0 0 54 54" fill="none">
+        <path d="M6 43H12V49H7L6 43Z" fill="currentColor"></path>
+        <path d="M42 43H48L47 49H42V43Z" fill="currentColor"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M27 5H12L8 19L3 29L4 42H50L51 29L46 19L42 5H27ZM6 36H15L14 33L6 31V36ZM39 36H48V31L40 33L39 36ZM40 7H14L10 20H44L40 7Z" fill="currentColor"></path>
+      </symbol>
+    
+      <symbol id="Brake" viewBox="0 0 54 54" fill="none">
+        <path d="M9.32233 9.32422C7.00086 11.6457 5.15938 14.4017 3.90301 17.4348C2.64664 20.4679 2 23.7188 2 27.0019C2 30.2849 2.64665 33.5358 3.90301 36.569C5.15938 39.6021 7.00087 42.3581 9.32233 44.6796L14.6256 39.3763C13.0006 37.7512 11.7116 35.822 10.8321 33.6988C9.95265 31.5757 9.5 29.3 9.5 27.0019C9.5 24.7038 9.95265 22.4281 10.8321 20.3049C11.7116 18.1817 13.0006 16.2525 14.6256 14.6275L9.32233 9.32422Z" fill="currentColor"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M27 48C38.598 48 48 38.598 48 27C48 15.402 38.598 6 27 6C21.9212 6 17.2635 7.80291 13.6321 10.8036L17.4541 14.6256L16.0398 16.0398C14.6005 17.4791 13.4588 19.1879 12.6799 21.0684C11.9009 22.9489 11.5 24.9645 11.5 27C11.5 29.0355 11.9009 31.051 12.6799 32.9316C13.4588 34.8121 14.6005 36.5208 16.0398 37.9602L17.4541 39.3744L13.6321 43.1964C17.2635 46.1971 21.9212 48 27 48ZM27 39.6C20.0412 39.6 14.4 33.9588 14.4 27C14.4 20.0412 20.0412 14.4 27 14.4C33.9588 14.4 39.6 20.0412 39.6 27C39.6 33.9588 33.9588 39.6 27 39.6Z" fill="currentColor"></path>
+        <circle cx="27" cy="27" r="4" fill="currentColor"></circle>
+        <circle cx="27" cy="35" r="1" fill="currentColor"></circle>
+        <circle cx="19" cy="27" r="1" fill="currentColor"></circle>
+        <circle cx="35" cy="27" r="1" fill="currentColor"></circle>
+        <circle cx="27" cy="19" r="1" fill="currentColor"></circle>
+      </symbol>
+    
+      <symbol id="ShockAbsorber" viewBox="0 0 54 54" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M18 43H10L8 49L9 51H19L20 49L18 43ZM17 49H11L12 45H16L17 49Z" fill="currentColor"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M19 2H9V9H14H19V2ZM14 9C12.8954 9 12 8.10457 12 7V5H16V7C16 8.10457 15.1046 9 14 9Z" fill="currentColor"></path>
+        <path d="M4 12L9 9H19L24 12V15L4 19V12Z" fill="currentColor"></path>
+        <path d="M4 30L24 26V29L4 33V30Z" fill="currentColor"></path>
+        <path d="M4 23L24 19V22L4 26V23Z" fill="currentColor"></path>
+        <path d="M24 40H4V37L24 33V40Z" fill="currentColor"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M44 43H36L34 49L35 51H45L46 49L44 43ZM43 49H37L38 45H42L43 49Z" fill="currentColor"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M45 2H35V9H40H45V2ZM40 9C38.8954 9 38 8.10457 38 7V5H42V7C42 8.10457 41.1046 9 40 9Z" fill="currentColor"></path>
+        <path d="M30 12L35 9H40H45L50 12V15L30 19V12Z" fill="currentColor"></path>
+        <path d="M30 30L50 26V29L30 33V30Z" fill="currentColor"></path>
+        <path d="M30 23L50 19V22L30 26V23Z" fill="currentColor"></path>
+        <path d="M50 40H30V37L50 33V40Z" fill="currentColor"></path>
+      </symbol>
+    
+      <symbol id="Tire" viewBox="0 0 54 54" fill="none">
+        <path d="M50 27C50 39.7025 39.7025 50 27 50C14.2975 50 4 39.7025 4 27C4 14.2975 14.2975 4 27 4C39.7025 4 50 14.2975 50 27ZM10.9 27C10.9 35.8918 18.1082 43.1 27 43.1C35.8918 43.1 43.1 35.8918 43.1 27C43.1 18.1082 35.8918 10.9 27 10.9C18.1082 10.9 10.9 18.1082 10.9 27Z" fill="currentColor"></path>
+        <path d="M27 14C24.718 14 22.4763 14.6007 20.5 15.7417L25.05 23.6225C25.6429 23.2802 26.3154 23.1 27 23.1L27 14Z" fill="currentColor"></path>
+        <path d="M38.2583 20.5C39.3993 22.4762 40 24.718 40 27L30.9 27C30.9 26.3154 30.7198 25.6429 30.3775 25.05L38.2583 20.5Z" fill="currentColor"></path>
+        <path d="M33.5 38.2583C31.5237 39.3993 29.282 40 27 40L27 30.9C27.6846 30.9 28.3571 30.7198 28.95 30.3775L33.5 38.2583Z" fill="currentColor"></path>
+        <path d="M15.7417 33.5C14.6007 31.5238 14 29.282 14 27L23.1 27C23.1 27.6846 23.2802 28.3571 23.6225 28.95L15.7417 33.5Z" fill="currentColor"></path>
+        <circle cx="27" cy="27" r="2" fill="currentColor"></circle>
+      </symbol>
+
+      <symbol id="Home" viewBox="0 0 24 24" fill="none">
+        <path d="M3.42871 11.1417L12.0001 2.57031L20.5716 11.1417V22.2846H3.42871V11.1417Z" stroke="currentColor"></path>
+        <path d="M9.42871 18H14.5716" stroke="currentColor"></path>
+      </symbol>
+    
+      <symbol id="Folder" viewBox="0 0 24 24" fill="none">
+        <path d="M3.42871 3.42969H20.5716V21.4297H3.42871V3.42969Z" stroke="currentColor"></path>
+        <path d="M6 6.85547H9.42857" stroke="currentColor"></path>
+        <path d="M14.5713 6.85547H17.9999" stroke="currentColor"></path>
+        <path d="M12 3.42969V21.4297" stroke="currentColor"></path>
+      </symbol>
+    
+      <symbol id="FilesStack" viewBox="0 0 24 24" fill="none">
+        <path d="M11.9999 2.57031L21.4284 7.71317L11.9999 12.856L2.57129 7.71317L11.9999 2.57031Z" stroke="currentColor"></path>
+        <path d="M21.4284 16.2852L11.9999 21.428L2.57129 16.2852" stroke="currentColor" stroke-linecap="round"></path>
+        <path d="M21.4284 12L11.9999 17.1429L2.57129 12" stroke="currentColor" stroke-linecap="round"></path>
+      </symbol>
+    
+      <symbol id="Bag" viewBox="0 0 24 24" fill="none">
+        <path d="M5.14272 7.71484H18.857L21.4284 22.2863H2.57129L5.14272 7.71484Z" stroke="currentColor"></path>
+        <path d="M15.4284 5.99888V2.57031H8.57129V5.99888" stroke="currentColor"></path>
+        <path d="M10.2861 10.7148H13.7147" stroke="currentColor"></path>
+      </symbol>
+    
+      <symbol id="Gift" viewBox="0 0 24 24" fill="none">
+        <path d="M3.42871 6H20.5716V21.4286H3.42871V6Z" stroke="currentColor"></path>
+        <path d="M3.42871 11.1445H20.5716" stroke="currentColor"></path>
+        <path d="M12 6V21.4286" stroke="currentColor"></path>
+        <path d="M16.2857 1.71484L12 6.00056" stroke="currentColor"></path>
+        <path d="M7.71429 1.71484L12 6.00056" stroke="currentColor"></path>
+      </symbol>
+    
+      <symbol id="Menu" viewBox="0 0 24 24" fill="none">
+        <path d="M5 6.75C5 6.34375 5.3125 6 5.75 6H18.25C18.6562 6 19 6.34375 19 6.75C19 7.1875 18.6562 7.5 18.25 7.5H5.75C5.3125 7.5 5 7.1875 5 6.75ZM5 11.75C5 11.3438 5.3125 11 5.75 11H18.25C18.6562 11 19 11.3438 19 11.75C19 12.1875 18.6562 12.5 18.25 12.5H5.75C5.3125 12.5 5 12.1875 5 11.75ZM19 16.75C19 17.1875 18.6562 17.5 18.25 17.5H5.75C5.3125 17.5 5 17.1875 5 16.75C5 16.3438 5.3125 16 5.75 16H18.25C18.6562 16 19 16.3438 19 16.75Z" fill="var(--ic-color, currentColor)"></path>
+      </symbol>
+    
+      <symbol id="SoundOn" viewBox="0 0 24 24" fill="none">
+        <path d="M8.96875 10.3125C8.84375 10.4375 8.65625 10.5 8.5 10.5H5.75C5.59375 10.5 5.5 10.625 5.5 10.75V13.25C5.5 13.4062 5.59375 13.5 5.75 13.5H8.5C8.65625 13.5 8.84375 13.5938 8.96875 13.7188L12.5 16.8125V7.21875L8.96875 10.3125ZM13.0625 5C13.5625 5 14 5.4375 14 5.9375V18.0938C14 18.5938 13.5625 19 13.0625 19C12.8125 19 12.5938 18.9375 12.4375 18.7812L8.1875 15H5.75C4.78125 15 4 14.2188 4 13.25V10.75C4 9.8125 4.78125 9 5.75 9H8.1875L12.4375 5.25C12.5938 5.09375 12.8125 5 13.0625 5ZM18.7812 7.34375V7.375C20.125 8.46875 21 10.125 21 12.0312C21 13.9062 20.125 15.5625 18.7812 16.6875C18.4375 16.9375 17.9688 16.875 17.7188 16.5625C17.4688 16.25 17.5 15.7812 17.8125 15.5C18.8438 14.6875 19.5 13.4375 19.5 12C19.5 10.5938 18.8438 9.34375 17.8125 8.53125C17.5 8.25 17.4375 7.78125 17.7188 7.46875C17.9688 7.15625 18.4375 7.09375 18.7812 7.34375ZM16.875 9.6875C17.5625 10.25 18 11.0625 18 12C18 12.9688 17.5625 13.7812 16.875 14.3438C16.5625 14.5938 16.0938 14.5625 15.8125 14.25C15.5625 13.9062 15.625 13.4375 15.9375 13.1875C16.2812 12.9062 16.5 12.4688 16.5 12C16.5 11.5312 16.2812 11.125 15.9375 10.8438C15.625 10.5938 15.5625 10.125 15.8125 9.78125C16.0938 9.46875 16.5625 9.4375 16.875 9.6875Z" fill="var(--ic-color, currentColor)"></path>
+      </symbol>
+    
+      <symbol id="SoundOff" viewBox="0 0 24 24" fill="none">
+        <path d="M7.96875 10.3125C7.84375 10.4375 7.65625 10.5 7.5 10.5H4.75C4.59375 10.5 4.5 10.625 4.5 10.75V13.25C4.5 13.4062 4.59375 13.5 4.75 13.5H7.5C7.65625 13.5 7.84375 13.5938 7.96875 13.7188L11.5 16.8125V7.21875L7.96875 10.3125ZM12.0625 5C12.5625 5 13 5.4375 13 5.9375V18.0938C13 18.5938 12.5625 19 12.0625 19C11.8125 19 11.5938 18.9375 11.4375 18.7812L7.1875 15H4.75C3.78125 15 3 14.2188 3 13.25V10.75C3 9.8125 3.78125 9 4.75 9H7.1875L11.4375 5.25C11.5938 5.09375 11.8125 5 12.0625 5ZM16.2812 9.21875L18 10.9375L19.7188 9.21875C20 8.9375 20.4688 8.9375 20.75 9.21875C21.0625 9.53125 21.0625 10 20.75 10.2812L19.0312 12L20.75 13.7188C21.0625 14.0312 21.0625 14.5 20.75 14.7812C20.4688 15.0938 20 15.0938 19.7188 14.7812L18 13.0625L16.2812 14.7812C15.9688 15.0938 15.5 15.0938 15.2188 14.7812C14.9062 14.5 14.9062 14.0312 15.2188 13.7188L16.9375 12L15.2188 10.2812C14.9062 10 14.9062 9.53125 15.2188 9.21875C15.5 8.9375 15.9688 8.9375 16.2812 9.21875Z" fill="var(--ic-color, currentColor)"></path>
+      </symbol>
+
+      <symbol id="ArrowRotate" viewBox="0 0 24 24" fill="none">
+        <path d="M6.09375 10.875C5.71094 10.875 5.4375 10.6016 5.4375 10.2188V6.28125C5.4375 5.92578 5.71094 5.625 6.09375 5.625C6.44922 5.625 6.75 5.92578 6.75 6.28125V8.49609L7.29688 7.83984C8.41797 6.5 10.0859 5.625 12 5.625C15.3633 5.625 18.125 8.38672 18.125 11.75C18.125 15.1406 15.3633 17.875 12 17.875C10.6055 17.875 9.34766 17.4375 8.30859 16.6719C8.03516 16.4531 7.95312 16.043 8.17188 15.7422C8.39062 15.4414 8.80078 15.3867 9.10156 15.6055C9.89453 16.207 10.9062 16.5625 12 16.5625C14.6523 16.5625 16.8125 14.4297 16.8125 11.75C16.8125 9.09766 14.6523 6.9375 12 6.9375C10.4961 6.9375 9.18359 7.62109 8.28125 8.6875L7.54297 9.5625H10.0312C10.3867 9.5625 10.6875 9.86328 10.6875 10.2188C10.6875 10.6016 10.3867 10.875 10.0312 10.875H6.09375Z" fill="var(--ic-color, currentColor)"/>
+      </symbol>
+
+      <symbol id="CirclePlay" viewBox="0 0 32 32" fill="none">
+        <circle cx="16" cy="16" r="16" fill="black" fill-opacity="0.5"/>
+        <circle cx="16" cy="16" r="15.75" stroke="white" stroke-opacity="0.25" stroke-width="0.5"/>
+        <path d="M12.8125 21.875C12.0469 21.875 11.5 21.2734 11.5 20.5625V10.9375C11.5 10.2539 12.0469 9.65234 12.8125 9.65234C13.0312 9.65234 13.2773 9.70703 13.4961 9.84375L21.3711 14.6562C21.7539 14.875 22 15.3125 22 15.75C22 16.2148 21.7539 16.6523 21.3711 16.8711L13.4961 21.6836C13.2773 21.8203 13.0312 21.875 12.8125 21.875Z" fill="white"/>
+      </symbol>        
+    </svg>
+    <!-- E: SVG SPLITE D: Included Area -->
+  </div>
+</body>
+</html>
