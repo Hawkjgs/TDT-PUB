@@ -373,6 +373,8 @@ img {
 .component-player-list .player-thumb {
   position: relative;
   margin-top: 8.7rem;
+  display: flex;
+  justify-content: center;
   z-index: 2;
 }
 .component-player-list .btn-group {
