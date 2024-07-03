@@ -3,11 +3,15 @@ body {
   background: var(--black-color);
 }
 
-.wrapper {}
+.wrapper {
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+}
 
 .header {
   position: absolute;
-  left: 0;
+  top: 0;
   width: 100%;
   z-index: 1000;
 }
@@ -152,6 +156,12 @@ body {
   opacity: 0;
   translate: 100% 0;
   will-change: opacity, translate;
+}
+
+@media screen and (min-width: 1919px) {
+  .main-wrapper .main-section {
+    min-height: auto !important;
+  }
 }
 
 @media screen and (max-width: 1240px) {
