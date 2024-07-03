@@ -403,14 +403,58 @@
   display: none;
 }
 
+.main-wrapper .event-section .event-list {
+  position: relative;
+}
+.main-wrapper .event-section .event-list::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -1px;
+  width: 1px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, .1);
+}
 .main-wrapper .event-section .event-list > ul {
   display: flex;
 }
 .main-wrapper .event-section .event-item {
   flex: 1;
+  padding: 0 9.7rem;
+}
+.main-wrapper .event-section .img-box {
+  position: relative;
+  padding-bottom: 100%;
+  height: 0;
+}
+.main-wrapper .event-section .img-box img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.main-wrapper .event-section .text-box {
+  margin-top: 0.8rem;
+  text-align: center;
+}
+.main-wrapper .event-section .text-box .label {
+  font-size: 2.4rem;
+  letter-spacing: 0.005em;
+}
+.main-wrapper .event-section .text-box .tit {
+  margin-top: 2.1rem;
+  font-family: "Pretendard";
+  font-size: 3.6rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.main-wrapper .event-section .text-box .tit span {
+  color: var(--primary-color);
 }
 .main-wrapper .event-section .btn-more-box {
-  
+  margin-top: 3.4rem;
 }
 
 @media screen and (max-width: 1420px) {
@@ -440,7 +484,7 @@
   }
   .main-wrapper .event-section {
     padding: 8rem 0;
-    height: 65rem;
+    height: auto;
     background: transparent url("../images/main/event_bg_mo.jpg") center top no-repeat;
     background-size: 100% auto;
   }
@@ -727,10 +771,29 @@
     display: flex !important;
   }
 
+  .main-wrapper .event-section {
+    min-height: auto;
+  }
   .main-wrapper .event-section .container {
     padding: 0;
   }
+
+  .main-wrapper .event-section .event-item {
+    padding: 0 2.4rem
+  }
+  .main-wrapper .event-section .text-box {
+    margin-top: 2.4rem;
+  }
+  .main-wrapper .event-section .text-box .label {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+  .main-wrapper .event-section .text-box .tit {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+  }
   .main-wrapper .event-section .btn-more-box {
-    
+    margin-top: 2.4rem;
   }
 }
