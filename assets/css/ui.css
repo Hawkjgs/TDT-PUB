@@ -588,7 +588,13 @@ img {
   pointer-events: none;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1919px) {
   html {
     font-size: 0.625vw;
   }

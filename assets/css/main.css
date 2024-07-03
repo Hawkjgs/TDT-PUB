@@ -136,23 +136,23 @@
 .main-wrapper .match-section {
   padding: 15rem 0 6rem;
   background: transparent url("../images/main/match_bg_pc.jpg") center top no-repeat;
-  background-size: max(160rem, 100%) auto;
+  background-size: clamp(160rem, 100%, 1920px) auto;
 }
 .main-wrapper .goods-section {
   padding: 15rem 0 6rem;
   background: transparent url("../images/main/goods_bg_pc.jpg") center top no-repeat;
-  background-size: max(160rem, 100%) auto;
+  background-size: clamp(160rem, 100%, 1920px) auto;
 }
 .main-wrapper .ranking-section {
   padding: 15rem 0;
   background: transparent url("../images/main/ranking_bg_pc.jpg") center top no-repeat;
-  background-size: max(160rem, 100%) auto;
+  background-size: clamp(160rem, 100%, 1920px) auto;
 }
 .main-wrapper .event-section {
   padding: 15rem 0;
   height: 130.2rem;
   background: transparent url("../images/main/event_bg_pc.jpg") center top no-repeat;
-  background-size: max(160rem, 100%) auto;
+  background-size: clamp(160rem, 100%, 1920px) auto;
 }
 
 .main-wrapper .match-section .content-head {
@@ -187,6 +187,10 @@
 .main-wrapper .match-section .game-schedule .game-thumb {
   border-radius: 0.8rem;
   overflow: hidden;
+}
+.main-wrapper .match-section .game-schedule .game-thumb img {
+  max-width: none;
+  width: 100%;
 }
 .main-wrapper .match-section .driver-matching {
   margin-top: 8rem;
