@@ -588,6 +588,15 @@ img {
   pointer-events: none;
 }
 
+.title-text-gradient {
+  background: radial-gradient(54.37% 137.35% at 50% 50%, #6EF0D2 0%, rgba(110, 240, 210, 0) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+
 @media screen and (min-width: 1920px) {
   html {
     font-size: 12px;

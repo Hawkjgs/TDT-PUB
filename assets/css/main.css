@@ -13,13 +13,10 @@
   text-align: center;
 }
 .main-wrapper .sec-head-tit {
-  font-size: 8rem;
+  display: flex;
+  justify-content: center;
+  font-size: 9rem;
   line-height: 1.2;
-  background: radial-gradient(54.37% 137.35% at 50% 50%, #6EF0D2 0%, rgba(110, 240, 210, 0) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
   letter-spacing: 0.02em;
 }
 .main-wrapper .sec-head-tit-img {
@@ -136,23 +133,23 @@
 .main-wrapper .match-section {
   padding: 15rem 0 6rem;
   background: transparent url("../images/main/match_bg_pc.jpg") center top no-repeat;
-  background-size: clamp(160rem, 100%, 1920px) auto;
+  background-size: max(160rem, 100%) auto;
 }
 .main-wrapper .goods-section {
   padding: 15rem 0 6rem;
   background: transparent url("../images/main/goods_bg_pc.jpg") center top no-repeat;
-  background-size: clamp(160rem, 100%, 1920px) auto;
+  background-size: max(160rem, 100%) auto;
 }
 .main-wrapper .ranking-section {
   padding: 15rem 0;
   background: transparent url("../images/main/ranking_bg_pc.jpg") center top no-repeat;
-  background-size: clamp(160rem, 100%, 1920px) auto;
+  background-size: max(160rem, 100%) auto;
 }
 .main-wrapper .event-section {
   padding: 15rem 0;
   height: 130.2rem;
   background: transparent url("../images/main/event_bg_pc.jpg") center top no-repeat;
-  background-size: clamp(160rem, 100%, 1920px) auto;
+  background-size: max(160rem, 100%) auto;
 }
 
 .main-wrapper .match-section .content-head {
@@ -413,7 +410,7 @@
   flex: 1;
 }
 .main-wrapper .event-section .btn-more-box {
-  padding-top: 66rem;
+  
 }
 
 @media screen and (max-width: 1420px) {
@@ -455,6 +452,12 @@
   .main-wrapper .sec-head-inner {
     gap: 1.2rem;
   }
+
+  .main-wrapper .sec-head-tit {
+    font-size: 4rem;
+    line-height: 1;
+  }
+
   .main-wrapper .sec-head-tit-img,
   .main-wrapper .match-section .sec-head-tit-img {
     height: 4rem;
@@ -728,6 +731,6 @@
     padding: 0;
   }
   .main-wrapper .event-section .btn-more-box {
-    padding-top: 29rem;
+    
   }
 }
