@@ -16,6 +16,7 @@
 .sub-wrapper .sub-content-desc {
   margin-top: 0.8rem;
   font-family: "Pretendard";
+  font-weight: 500;
   color: var(--primary-color);
 }
 
@@ -56,8 +57,13 @@
   gap: 0.6rem;
   width: 100%;
   height: 5.4rem;
+  font-size: 1.8rem;
   font-weight: 600;
   border-radius: 4px;
+}
+.login-area .btn .ic {
+  width: auto;
+  height: auto;
 }
 .login-area .btn-login-kakao {
   background-color: #F9E000;
@@ -68,7 +74,32 @@
 }
 
 /* SignUp Style */
-
+.signup-area {
+  margin: 0 auto;
+  width: 402px;
+}
+.signup-area-inner {
+  background-color: #181818;
+  border-radius: 0.8rem;
+}
+.signup-area .signup-head {
+  padding: 3.2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+.signup-area .signup-head .tit {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.1rem;
+  color: var(--primary-color);
+}
+.signup-area .signup-head .desc {
+  margin-top: 1.6rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+  color: #999;
+}
+.signup-area .signup-body {}
+.signup-area .signup-foot {}
 
 @media screen and (max-width: 1200px) {
 
@@ -76,7 +107,36 @@
 
 @media screen and (max-width: 1023px) {
   /* Sub Common Style */
+  .sub-wrapper .sub-content-head {
+    margin-bottom: 7rem;
+  }
+  .sub-wrapper .sub-content-tit {
+    font-size: 6rem;
+    line-height: 1;
+  }
+  .sub-wrapper .sub-content-desc {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
 
   /* Login Style */
-  
+
+}
+
+@media screen and (max-width: 480px) {
+  /* Login Style */
+  .account-wrapper {
+    background: transparent url("../images/pages_bg/account_bg_mo.jpg") center top no-repeat;
+    background-size: 100% auto;
+  }
+  .login-area-inner {
+    width: 100%;
+    padding: 0 2rem;
+  }
+  .login-area .login-btn-group {
+    width: 100%;
+  }
+  .login-area .login-tit {
+
+  }
 }

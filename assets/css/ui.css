@@ -596,6 +596,27 @@ img {
   text-fill-color: transparent;
 }
 
+.check-type {
+  display: flex;
+}
+.check-type .check-view {
+  color: #666;
+}
+.check-type .check-view .ic {}
+.check-type .ic-check-on {
+  display: none;
+}
+.check-type .input-check:checked + .check-view .ic-check-on {
+  display: block;
+}
+.check-type .input-check:checked + .check-view {
+  color: var(--primary-color);
+}
+.check-type .input-check:checked + .check-view .ic-check-off {
+  display: none;
+}
+.check-type .check-label {}
+
 
 @media screen and (min-width: 1920px) {
   html {

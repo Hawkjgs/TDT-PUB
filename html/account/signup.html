@@ -172,123 +172,212 @@
     
     <!-- S: CONTAINER -->
     <main id="container">
-      <div id="content" class="main-wrapper">
-        
+      <div id="content" class="sub-wrapper account-wrapper signup-wrapper">
+        <div class="sub-content-head">
+          <h2 class="sub-content-tit">
+            <span class="title-text-gradient">SIGN IN</span>
+          </h2>
+          <p class="sub-content-desc">
+            2024년에는 참여의<br class="mo-only" /> 폭이 더욱 넓어집니다.
+          </p>
+        </div>
+
+        <div class="signup-area"> 
+          <div class="signup-area-inner border-gradient">
+            <div class="signup-head">
+              <p class="tit">이용약관</p>
+              <p class="desc">체크박스를 선택하여 약관에 동의해 주세요.</p>
+            </div>
+            <div class="signup-body">
+              <div class="form-group-area">
+                <div class="terms-check-group">
+                  <div class="check-all-box">
+                    <div class="check-item">
+                      <label class="check-type">
+                        <input type="checkbox" class="input-check" hidden>
+                        <span class="check-view">
+                          <i class="ic ic-check-on">
+                            <svg>
+                              <use href="#CheckOn"></use>
+                            </svg>
+                          </i>
+                          <i class="ic ic-check-off">
+                            <svg>
+                              <use href="#CheckOff"></use>
+                            </svg>
+                          </i>
+                        </span>
+                        <em class="check-label">모두 동의하기</em>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="check-list-box">
+                    <div class="check-item">
+                      <label class="check-type">
+                        <input type="checkbox" class="input-check" hidden>
+                        <span class="check-view">
+                          <i class="ic ic-check-on">
+                            <svg>
+                              <use href="#CheckOn"></use>
+                            </svg>
+                          </i>
+                          <i class="ic ic-check-off">
+                            <svg>
+                              <use href="#CheckOff"></use>
+                            </svg>
+                          </i>
+                        </span>
+                        <em class="check-label">(필수) 이용약관</em>
+                      </label>
+                      <a href="#" class="link" aria-label="(필수) 이용약관 열기">
+                        <i class="ic">
+                          <svg>
+                            <use href="#AngleRight"></use>
+                          </svg>
+                        </i>
+                      </a>
+                    </div>
+                    <div class="check-item">
+                      <label class="check-type">
+                        <input type="checkbox" class="input-check" hidden>
+                        <span class="check-view">
+                          <i class="ic ic-check-on">
+                            <svg>
+                              <use href="#CheckOn"></use>
+                            </svg>
+                          </i>
+                          <i class="ic ic-check-off">
+                            <svg>
+                              <use href="#CheckOff"></use>
+                            </svg>
+                          </i>
+                        </span>
+                        <em class="check-label">(필수) 개인정보 처리 방침</em>
+                      </label>
+                      <a href="#" class="link" aria-label="(필수) 개인정보 처리 방침">
+                        <i class="ic">
+                          <svg>
+                            <use href="#AngleRight"></use>
+                          </svg>
+                        </i>
+                      </a>
+                    </div>
+                    <div class="check-item">
+                      <label class="check-type">
+                        <input type="checkbox" class="input-check" hidden>
+                        <span class="check-view">
+                          <i class="ic ic-check-on">
+                            <svg>
+                              <use href="#CheckOn"></use>
+                            </svg>
+                          </i>
+                          <i class="ic ic-check-off">
+                            <svg>
+                              <use href="#CheckOff"></use>
+                            </svg>
+                          </i>
+                        </span>
+                        <em class="check-label">(선택) 마케팅 정보 수신 동의</em>
+                      </label>
+                      <a href="#" class="link" aria-label="(선택) 마케팅 정보 수신 동의">
+                        <i class="ic">
+                          <svg>
+                            <use href="#AngleRight"></use>
+                          </svg>
+                        </i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row-group">
+                  <div class="label-group">
+                    <label for="" class="label">닉네임 입력 (필수)</label>
+                  </div>
+                  <div class="input-group">
+                    <input type="text" class="input input-text" placeholder="Enter nickname">
+                  </div>
+                </div>
+                <div class="form-row-group">
+                  <div class="label-group">
+                    <label for="" class="label">성별 정보 (필수)</label>
+                  </div>
+                  <div class="check-group">
+                    <div class="check-item">
+                      <label class="check-type">
+                        <input type="radio" class="input-check" hidden>
+                        <span class="check-view">
+                          <i class="ic ic-check-on">
+                            <svg>
+                              <use href="#CheckOn"></use>
+                            </svg>
+                          </i>
+                          <i class="ic ic-check-off">
+                            <svg>
+                              <use href="#CheckOff"></use>
+                            </svg>
+                          </i>
+                        </span>
+                        <em class="check-label">여성</em>
+                      </label>
+                    </div>
+                    <div class="check-item">
+                      <label class="check-type">
+                        <input type="radio" class="input-check" hidden>
+                        <span class="check-view">
+                          <i class="ic ic-check-on">
+                            <svg>
+                              <use href="#CheckOn"></use>
+                            </svg>
+                          </i>
+                          <i class="ic ic-check-off">
+                            <svg>
+                              <use href="#CheckOff"></use>
+                            </svg>
+                          </i>
+                        </span>
+                        <em class="check-label">남성</em>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row-group">
+                  <div class="label-group">
+                    <label for="" class="label">추천 코드 입력 (선택)</label>
+                  </div>
+                  <div class="input-group">
+                    <input type="text" class="input input-text" placeholder="Enter referral code">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="signup-foot">
+              <div class="btn-gorup">
+                <button class="btn btn-base btn-cancel">취소</button>
+                <button class="btn btn-base btn-primary">확인</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <!-- E: CONTAINER -->
 
-    <!-- S: FOOTER D: Included Area -->
-    <footer class="footer">
-      <div class="footer-inner">
-        <div class="copy pretendard">
-          <p>
-            Copyright by WIZFIT PTE LTD. All rights reserved.<br />
-            Contact us at team@300fit.io
-          </p>
-        </div>
-        <div class="links">
-          <div class="policy-group pretendard">
-            <a href="https://spiral-salsa-ae6.notion.site/TDT-f943287495ea47baaebe41c003962777?pvs=4" target="_blank" class="btn">Terms of Service</a>
-            <a href="https://spiral-salsa-ae6.notion.site/TDT-b703fe564e4c40b6979e600f25c1b344?pvs=4" target="_blank" class="btn">Privacy Policy</a>
-          </div>
-          <div class="sns-group">
-            <a href="https://x.com/300FIT_Official" class="btn" aria-label="TDT 트위터 이동">
-              <img src="../../assets/images/common/ic_foot_twiiter.svg" alt="">
-            </a>
-            <a href="https://instagram.com/300fit_meta" class="btn" aria-label="TDT 인스타그램 이동">
-              <img src="../../assets/images/common/ic_foot_instagram.svg" alt="">
-            </a>
-            <a href="http://pf.kakao.com/_EcUxkG" class="btn" aria-label="TDT 카카오채널 이동">
-              <img src="../../assets/images/common/ic_foot_kakaoch.svg" alt="">
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- E: FOOTER D: Included Area -->
-
     <!-- S: MODALS D: Included Area -->
     <!-- S: 선수 상세 모달 -->
-    <div class="modal-wrapper" data-modal-id="playerDetail">
-      <div class="modal-inner">
-        <div class="modal-content">
-          <div class="player-info-area border-gradient">
-            <div class="player-info">
-              <div class="player-intro">
-                <div class="player-intro-inner">
-                  <p class="rank">
-                    슈퍼 6000 / <em>1위</em>
-                  </p>
-                  <p class="name">정희철</p>
-                  <p class="number">04</p>
-                  <div class="player-thumb">
-                    <img src="../../assets/images/temp/player_01.png" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="player-detail">
-                <div class="tit">PROFILE</div>
-                <div class="detail-list">
-                  <ul>
-                    <li class="detail-item">
-                      <p class="label">생년월일</p>
-                      <p class="desc">1986년 11월 20일</p>
-                    </li>
-                    <li class="detail-item">
-                      <p class="label">국적</p>
-                      <p class="desc">대한민국</p>
-                    </li>
-                    <li class="detail-item">
-                      <p class="label">신장</p>
-                      <p class="desc">170cm</p>
-                    </li>
-                    <li class="detail-item">
-                      <p class="label">데뷔 연도</p>
-                      <p class="desc">1998</p>
-                    </li>
-                    <li class="detail-item">
-                      <p class="label">데뷔 클래스</p>
-                      <p class="desc">발보린 카트 주니어</p>
-                    </li>
-                    <li class="detail-item">
-                      <p class="label">데뷔 성적</p>
-                      <p class="desc">3위</p>
-                    </li>
-                    <li class="detail-item">
-                      <p class="label">소개 영상</p>
-                      <a href="javascript:void(0);" class="desc link">
-                        링크링크링크
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="btn-group">
-              <button class="btn-base btn-primary btn-outline btn-modal-close">
-                최근 기록 확인하기
-              </button>
-              <button class="btn-base btn-primary btn-modal-close">
-                매칭 하기
-              </button>
-            </div>
-            <button class="btn-detail" aria-label="선수 상세 닫기" onclick="modalClose('playerDetail')">
-              <i class="ic">
-                <svg>
-                  <use href="#AngleRightBold"></use>
-                </svg>
-              </i>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+    
     <!-- E: 선수 상세 모달 -->
     <!-- E: MODALS D: Included Area -->
 
     <!-- S: SVG SPLITE D: Included Area -->
     <svg hidden>
+      <symbol id="CheckOff" viewBox="0 0 22 22" fill="none">
+        <path d="M3.5 1.25C2.23438 1.25 1.25 2.28125 1.25 3.5V18.5C1.25 19.7656 2.23438 20.75 3.5 20.75H18.5C19.7188 20.75 20.75 19.7656 20.75 18.5V3.5C20.75 2.28125 19.7188 1.25 18.5 1.25H3.5ZM0.5 3.5C0.5 1.85938 1.8125 0.5 3.5 0.5H18.5C20.1406 0.5 21.5 1.85938 21.5 3.5V18.5C21.5 20.1875 20.1406 21.5 18.5 21.5H3.5C1.8125 21.5 0.5 20.1875 0.5 18.5V3.5ZM15.7344 8.28125L9.73438 14.2812C9.59375 14.4219 9.35938 14.4219 9.21875 14.2812L6.21875 11.2812C6.07812 11.1406 6.07812 10.9062 6.21875 10.7656C6.35938 10.625 6.59375 10.625 6.73438 10.7656L9.5 13.4844L15.2188 7.76562C15.3594 7.625 15.5938 7.625 15.7344 7.76562C15.875 7.90625 15.875 8.14062 15.7344 8.28125Z" fill="var(--ic-color, currentColor)"/>
+      </symbol>
+        
+      <symbol id="CheckOn" viewBox="0 0 22 22" fill="none">
+        <path d="M3.5 0.5H18.5C20.1406 0.5 21.5 1.85938 21.5 3.5V18.5C21.5 20.1875 20.1406 21.5 18.5 21.5H3.5C1.8125 21.5 0.5 20.1875 0.5 18.5V3.5C0.5 1.85938 1.8125 0.5 3.5 0.5ZM16.2969 8.79688H16.25C16.7188 8.375 16.7188 7.67188 16.25 7.20312C15.8281 6.78125 15.125 6.78125 14.7031 7.20312L9.5 12.4531L7.29688 10.25C6.82812 9.78125 6.125 9.78125 5.70312 10.25C5.23438 10.6719 5.23438 11.375 5.70312 11.7969L8.70312 14.7969C9.125 15.2656 9.82812 15.2656 10.2969 14.7969L16.2969 8.79688Z" fill="var(--ic-color, currentColor)"/>
+      </symbol>
+
       <symbol id="Logo" viewBox="0 0 82 16" fill="none">
         <g clip-path="url(#clip0_204_1497)">
           <path d="M77.3283 0.5V1.97459H68.6568H63.9869H36.9084V0.5L33.6387 3.7573L36.9084 7.01461V5.40996H63.9869V15.5H68.6568V5.40996H77.3283V7.38475H81.9992V4.7487V1.97459V0.5H77.3283Z" fill="var(--ic-color, currentColor)"/>
