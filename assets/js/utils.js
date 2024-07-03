@@ -1,4 +1,4 @@
-export function debounce(func, wait) {
+function debounce(func, wait) {
   let timeout;
   return function(...args) {
       const context = this;
@@ -8,7 +8,7 @@ export function debounce(func, wait) {
 }
 
 let scrollAnimationId = null;
-export function smoothScrollTo(endX, endY, duration) {
+function smoothScrollTo(endX, endY, duration) {
   if (scrollAnimationId !== null) {
       cancelAnimationFrame(scrollAnimationId);
       scrollAnimationId = null;
@@ -45,12 +45,12 @@ export function smoothScrollTo(endX, endY, duration) {
   scrollAnimationId = requestAnimationFrame(scroll);
 }
 
-export function scrollLock (scrollY) {
+function scrollLock (scrollY) {
   document.documentElement.setAttribute("data-page-scroll", "false");
   document.body.style.marginTop = `-${scrollY}px`;
 }
 
-export function scrolled (scrollY) {
+function scrolled (scrollY) {
   document.documentElement.removeAttribute("data-page-scroll");
   document.body.removeAttribute("style");
   window.scrollTo(0, scrollY);

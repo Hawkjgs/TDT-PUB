@@ -1,6 +1,4 @@
-import { scrollLock, scrolled, smoothScrollTo } from "./utils.js";
-
-export const header = {
+const header = {
   elements: {
     container: undefined,
     btnSounds: undefined,
@@ -27,7 +25,7 @@ export const header = {
   },
 };
 
-export const gnb = {
+const gnb = {
   scrollY: 0,
   elements: {
     header: undefined,
@@ -61,7 +59,7 @@ export const gnb = {
   }
 }
 
-export const scrollTab = {
+const scrollTab = {
   values: {
     parentRect: {},
   },
@@ -175,7 +173,7 @@ export const scrollTab = {
   },
 };
 
-export const modal = {
+const modal = {
   scrollY: 0,
   elements: {
     modals: undefined,
@@ -231,7 +229,101 @@ export const modal = {
   }
 }
 
-export const goods = {
+const modalSlider = {
+  playerSwipers: [],
+  goodsSwipers: [],
+  elements: {
+    playerSliders: undefined,
+    goodsSliders: undefined
+  },
+  destroy() {
+    if (this.playerSwipers.length) {
+      this.playerSwipers.forEach(el => {
+        el.destroy();
+      });
+      this.playerSwipers.length = 0;
+    }
+
+    if (this.goodsSwipers.length) {
+      this.goodsSwipers.forEach(el => {
+        el.destroy();
+      });
+      this.goodsSwipers.length = 0;
+    }
+  },
+  init() {
+    if (!this.elements.playerSliders) this.elements.playerSliders = Array.from(document.querySelectorAll(".modal-wrapper .player-slider"));
+    if (!this.elements.goodsSliders) this.elements.goodsSliders = Array.from(document.querySelectorAll(".modal-wrapper .goods-slider"));
+
+    if (!this.playerSwipers.length) {
+      this.elements.playerSliders.forEach(el => {
+        const btns = el.parentNode.querySelectorAll(".slider-btn");
+        const pagination = el.parentNode.querySelector(".swiper-pagination");
+
+        const swiper = new Swiper(el, {
+          speed: 450,
+          spaceBetween: 20,
+          slidesPerView: "auto",
+          centeredSlides: true,
+          navigation: {
+            nextEl: btns.length ? btns[1] : null,
+            prevEl: btns.length ? btns[0] : null,
+          },
+          pagination: {
+            el: pagination ? pagination : null,
+            clickable: true,
+          },
+          breakpoints: {
+            1024: {
+              slidesPerView: 3,
+            }
+          },
+          on: {
+            init(v) {},
+            slideChange(v) {}
+          }
+        });
+
+        this.playerSwipers.push(swiper);
+      })
+    }
+
+    if (!this.goodsSwipers.length) {
+      this.elements.goodsSliders.forEach(el => {
+        const btns = el.parentNode.querySelectorAll(".slider-btn");
+        const pagination = el.parentNode.querySelector(".swiper-pagination");
+
+        const swiper = new Swiper(el, {
+          speed: 450,
+          spaceBetween: 10,
+          slidesPerView: "auto",
+          centeredSlides: true,
+          navigation: {
+            nextEl: btns.length ? btns[1] : null,
+            prevEl: btns.length ? btns[0] : null,
+          },
+          pagination: {
+            el: pagination ? pagination : null,
+            clickable: true,
+          },
+          breakpoints: {
+            1024: {
+              slidesPerView: 3,
+            }
+          },
+          on: {
+            init(v) {},
+            slideChange(v) {}
+          }
+        });
+
+        this.goodsSwipers.push(swiper);
+      })
+    }
+  }
+}
+
+const goods = {
   elements: {
     items: undefined,
   },

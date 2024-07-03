@@ -17,10 +17,48 @@
 .modal-wrapper .modal-inner {
   margin: auto;
 }
+.modal-wrapper:not(.none-style) .modal-content {
+  background-color: rgba(15, 15, 15, 1);
+  box-shadow: 20px 20px 40px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 0.8rem;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.modal-wrapper .confirm-area {
+  width: 50rem;
+}
+.modal-wrapper .confirm-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 18rem;
+  padding: 6rem 3rem;
+  font-family: "Pretendard";
+}
+.modal-wrapper .confirm-tit {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.modal-wrapper .confirm-desc {
+  margin-top: 1.2rem;
+  font-weight: 600;
+  line-height: 2.1rem;
+  color: rgba(102, 102, 102, 1);
+}
+.modal-wrapper .modal-foot .btn-group {
+  display: flex;
+}
+.modal-wrapper .modal-foot .btn-group .btn {
+  flex: 1;
+  border-radius: 0;
+}
 
 .modal-wrapper .player-info-area {
   position: relative;
-  padding: 4rem 7rem 3rem 3rem;
+  padding: 4rem 3rem 3rem 3rem;
   width: 1200px;
   background-color: var(--black-color);
   border-radius: 0.8rem;
@@ -166,11 +204,259 @@
   color: var(--primary-color);
 }
 
+.modal-wrapper .driver-matching-area {
+  padding: 6rem 10rem 12rem;
+  width: 110rem;
+}
+.modal-wrapper .driver-matching-area .player-info-area {
+  width: 100%;
+  padding: 4rem 0;
+}
+.modal-wrapper .driver-matching-area .player-info-area .player-info {
+  gap: 0;
+}
+.modal-wrapper .driver-matching-area .player-info-area .player-intro,
+.modal-wrapper .driver-matching-area .player-info-area .player-detail {
+  flex-shrink: 0;
+  width: 50%;
+  padding: 0 6.5rem;
+}
+.modal-wrapper .driver-matching-area .player-info-area .player-intro {}
+.modal-wrapper .driver-matching-area .player-info-area .player-detail {}
+.modal-wrapper .driver-matching-area .player-info-area .player-detail .tit {
+  margin-bottom: 3.6rem;
+  font-size: 2.8rem;
+}
+.modal-wrapper .driver-matching-area .player-info-area .detail-list > ul {
+  gap: 1.2rem;
+}
+.modal-wrapper .driver-matching-area .player-info-area .detail-item p,
+.modal-wrapper .driver-matching-area .player-info-area .detail-item a {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+}
+.modal-wrapper .driver-matching-area .player-info-area .player-detail .label {
+  width: 12.4rem;
+}
+.modal-wrapper .driver-matching-area .player-info-area .player-detail .desc {}
+.modal-wrapper .driver-matching-area .player-info-area .rank {
+  font-size: 2rem;
+}
+.modal-wrapper .driver-matching-area .player-info-area .name {
+  margin-top: 3rem;
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+.modal-wrapper .driver-matching-area .player-info-area .number {
+  top: 9.2rem;
+  font-size: 13rem;
+}
+.modal-wrapper .driver-matching-area .player-info-area .player-thumb {
+  margin: 7.5rem auto 0;
+  width: 29rem;
+  height: 20rem;
+}
+.modal-wrapper .driver-matching-area .player-info-area .player-thumb img {
+  width: 100%;
+}
+.modal-wrapper .driver-matching-area .player-info-area::before {
+  background: linear-gradient(137.86deg, rgba(255, 255, 255, 0.5) -0.67%, rgba(255, 255, 255, 0) 57.67%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
+    linear-gradient(94.79deg, rgba(255, 255, 255, 0.5) -15.28%, rgba(255, 255, 255, 0) 4.53%);
+}
+.modal-wrapper .driver-matching-area .player-info-area .logo-box {
+  position: absolute;
+  right: 4rem;
+  bottom: 4rem;
+}
+.modal-wrapper .driver-matching-area .player-info-area .logo-box .ic {
+  width: 8.8rem;
+  height: 1.6rem;
+}
+.modal-wrapper .driver-matching-head {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+.modal-wrapper .driver-matching-tit {
+  margin-bottom: 0.8rem;
+  font-size: 3.2rem;
+  line-height: 1;
+}
+.modal-wrapper .driver-matching-desc {
+  font-family: "Pretendard";
+  line-height: 2.1rem;
+  color: rgba(102, 102, 102, 1);
+}
+.modal-wrapper .driver-matching-count {
+  margin-top: 6rem;
+}
+.modal-wrapper .driver-matching-count .desc {
+  line-height: 2.1rem;
+  color: rgba(102, 102, 102, 1);
+}
+.modal-wrapper .driver-matching-count .date-group {
+  margin-top: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 3.2rem;
+  line-height: 3.8rem;
+  color: #fff;
+  letter-spacing: 0.005em;
+}
+.modal-wrapper .driver-matching-count .date-group .time {
+  display: flex;
+  align-items: center;
+  color: var(--primary-color);
+}
+.modal-wrapper .driver-matching-count .date-group .cr {
+  translate: 0 -.3rem;
+}
+.modal-wrapper .driver-matching-area .goods-slider-area {
+  margin: 6rem 0 3rem;
+  padding: 0 7.5rem;
+}
+.modal-wrapper .driver-matching-area .player-slider-area {
+  position: relative;
+  padding: 0 7.5rem;
+}
+
+.modal-wrapper .goods-slider-area {
+  position: relative;
+}
+.modal-wrapper .goods-slider-area .goods-item {
+  padding: 2rem 3.4rem;
+}
+.modal-wrapper .player-slider-area .slider-controls,
+.modal-wrapper .goods-slider-area .slider-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin-top: 1.3rem;
+}
+.modal-wrapper .goods-slider-area .slider-controls {
+  margin-top: 0.3rem;
+}
+.modal-wrapper .player-slider-area .slider-btn-prev,
+.modal-wrapper .goods-slider-area .slider-btn-prev {
+  left: 0;
+}
+.modal-wrapper .player-slider-area .slider-btn-next,
+.modal-wrapper .goods-slider-area .slider-btn-next {
+  right: 0;
+}
+.modal-wrapper .goods-slider-area .swiper-pagination {
+  bottom: -4rem;
+  --swiper-pagination-bullet-width: 1.2rem;
+  --swiper-pagination-bullet-height: 1.2rem;
+  --swiper-pagination-color: var(--primary-color);
+  --swiper-pagination-bullet-inactive-color: rgba(34, 34, 34, 1);
+}
+
+.modal-wrapper .player-slider-area .area-tit {
+  margin-bottom: 4rem;
+  display: flex;
+}
+.modal-wrapper .goods-slider-area .area-tit {
+  margin-bottom: 2rem;
+  display: flex;
+}
+.modal-wrapper .player-slider-area .area-tit span,
+.modal-wrapper .goods-slider-area .area-tit span {
+  margin: 0 auto;
+  padding: 0 2.6rem;
+  font-family: "Score";
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 4.4rem;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  border-radius: 4.6rem;
+}
+
+.modal-wrapper .player-slider-area .player-item .item-inner {
+  position: relative;
+  padding: 3rem 0 0;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(61% 162.45% at 7% 26.26%, #002A20 0%, #181818 100%);
+  border-radius: 0.8rem;
+  /* overflow: hidden; */
+}
+.modal-wrapper .player-slider-area .player-item .item-inner::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid rgba(255, 255, 255, .1);
+  border-radius: inherit;
+}
+.modal-wrapper .player-slider-area .rank {
+  margin: 0 auto;
+  padding: 0 1.9rem;
+  font-family: "Pretendard";
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 3.1rem;
+  letter-spacing: 0.02em;
+  border: 1px solid var(--primary-color);
+  border-radius: 4rem;
+}
+.modal-wrapper .player-slider-area .rank em {
+  color: var(--primary-color);
+}
+.modal-wrapper .player-slider-area .name {
+  margin-top: 2.4rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.1rem;
+  letter-spacing: 0.02em;
+  color: var(--primary-color);
+  text-align: center;
+}
+.modal-wrapper .player-slider-area .number {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 10.9rem;
+  font-family: "Tourney", sans-serif;
+  font-size: 10.4rem;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--primary-color);
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+.modal-wrapper .player-slider-area .player-thumb {
+  position: relative;
+  margin-top: 5.9rem;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+
+.modal-wrapper .goods-slider-area .goods-item {
+  opacity: 0.2;
+}
+.modal-wrapper .player-slider-area .player-item {
+  opacity: 0.2;
+}
+.modal-wrapper .player-slider-area .player-item.swiper-slide-active {
+  opacity: 1;
+}
+.modal-wrapper .goods-slider-area .goods-item.swiper-slide-active {
+  opacity: 1;
+}
+
 @media screen and (max-width: 1300px) {
   .modal-wrapper.is-active {
     padding: 2rem;
   }
-  .modal-wrapper .modal-inner {
+  .modal-wrapper[data-modal-id="playerDetail"] .modal-inner {
     margin: auto 0;
   }
   .modal-wrapper .player-info-area {
@@ -179,8 +465,18 @@
 }
 
 @media screen and (max-width: 1023px) {
+  .modal-wrapper .modal-inner {
+    margin: auto 0;
+  }
+
+  .modal-wrapper .player-slider-area .slider-controls,
+  .modal-wrapper .goods-slider-area .slider-controls,
+  .modal-wrapper .goods-slider-area .swiper-pagination {
+    display: none;
+  }
+
   .modal-wrapper .player-info-area {
-    padding: 3rem 2rem 7rem;
+    padding: 3rem 2rem;
   }
   .modal-wrapper .player-info-area::after {
     content: '';
@@ -204,6 +500,7 @@
   .modal-wrapper .player-info-area .player-info::before {
     display: none;
   }
+  .modal-wrapper .driver-matching-area .player-info-area .player-thumb,
   .modal-wrapper .player-info-area .player-thumb {
     margin: 7.2rem -2rem 0;
     height: auto;
@@ -211,15 +508,18 @@
   .modal-wrapper .player-info-area .player-thumb img {
     width: 100%;
   }
+  .modal-wrapper .driver-matching-area .player-info-area .rank,
   .modal-wrapper .player-info-area .rank {
     font-size: 1.8rem;
     line-height: 3.6rem;
   }
+  .modal-wrapper .driver-matching-area .player-info-area .name,
   .modal-wrapper .player-info-area .name {
     margin-top: 3.1rem;
     font-size: 1.8rem;
     line-height: 2.1rem;
   }
+  .modal-wrapper .driver-matching-area .player-info-area .number,
   .modal-wrapper .player-info-area .number {
     top: 9rem;
     font-size: 12rem;
@@ -232,19 +532,24 @@
   .modal-wrapper .player-info-area .player-detail {
     padding-left: 0;
   }
+  .modal-wrapper .driver-matching-area .player-info-area .player-detail .tit,
   .modal-wrapper .player-info-area .player-detail .tit {
     margin-bottom: 2rem;
     font-size: 2.4rem;
     line-height: 2.9rem;
   }
+  .modal-wrapper .driver-matching-area .player-info-area .detail-list > ul,
   .modal-wrapper .player-info-area .detail-list > ul {
     gap: .4rem;
   }
+  .modal-wrapper .driver-matching-area .player-info-area .detail-item p, 
+  .modal-wrapper .driver-matching-area .player-info-area .detail-item a,
   .modal-wrapper .player-info-area .detail-item p, 
   .modal-wrapper .player-info-area .detail-item a {
     font-size: 1.6rem;
     line-height: 2.4rem;
   }
+  .modal-wrapper .driver-matching-area .player-info-area .player-detail .label,
   .modal-wrapper .player-info-area .detail-item .label {
     width: 10rem;
   }
@@ -266,4 +571,94 @@
   .modal-wrapper .player-info-area .btn-detail .ic {
     rotate: 90deg;
   }
+
+  .modal-wrapper .confirm-area {
+    width: 100%;
+  }
+  .modal-wrapper .confirm-body {
+    padding: 5rem 2rem;
+    min-height: auto;
+  }
+  .modal-wrapper .confirm-tit {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 2.6rem;
+  }
+  .modal-wrapper .confirm-desc{
+    font-weight: 700;
+  }
+
+  .modal-wrapper .driver-matching-area {
+    padding: 4rem 2rem;
+    width: 100%;
+  }
+  .modal-wrapper .driver-matching-tit {
+    margin-bottom: 1rem;
+  }
+  .modal-wrapper .driver-matching-count {
+    margin-top: 4rem;
+  }
+  .modal-wrapper .driver-matching-count .date-group {
+    margin-top: 0;
+    font-size: 2.8rem;
+    gap: 1rem;
+  }
+  .modal-wrapper .driver-matching-area .player-info-area {
+    border-radius: 0;
+  }
+  .modal-wrapper .driver-matching-area .player-info-area {
+    padding: 3rem 2rem;
+  }
+  .modal-wrapper .driver-matching-area .player-info-area .player-intro,
+  .modal-wrapper .driver-matching-area .player-info-area .player-detail {
+    width: 100%;
+    padding: 0;
+  }
+  .modal-wrapper .driver-matching-area .player-info-area .player-intro {
+    padding-bottom: 3rem;
+  }
+  .modal-wrapper .driver-matching-area .player-info-area .logo-box {
+    display: none;
+  }
+  .modal-wrapper .driver-matching-area .goods-slider-area {
+    margin: 4rem -2rem 0;
+    padding: 0;
+  }
+  .modal-wrapper .goods-slider-area .goods-item {
+    padding: 2rem 2.2rem;
+    width: 65.6716%;
+  }
+
+  .modal-wrapper .driver-matching-area .player-slider-area {
+    margin: 0 -2rem 6rem;
+    padding: 0;
+  }
+  .modal-wrapper .player-slider-area .player-item {
+    width: 63.5821%;
+  }
+  .modal-wrapper .player-slider-area .area-tit {
+    margin-bottom: 3rem;
+  }
+  .modal-wrapper .goods-slider-area .area-tit {
+    margin-bottom: 1rem;
+  }
+  .main-wrapper .match-section .driver-matching .area-tit {
+    margin-bottom: 3rem;
+  }
+  .modal-wrapper .player-slider-area .area-tit span,
+  .modal-wrapper .goods-slider-area .area-tit span {
+    padding: 0 2.3rem;
+    font-size: 1.6rem;
+    line-height: 3.8rem;
+  }
+
+  .modal-wrapper .player-slider-area .player-thumb {
+    height: 16.2rem;
+  }
+  .modal-wrapper .player-slider-area .player-thumb img {
+    max-width: none;
+    width: 100%;
+    height: 100%;
+  }
+  
 }

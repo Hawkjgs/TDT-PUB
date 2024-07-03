@@ -132,7 +132,7 @@ const match = {
   }
 }
 
-export const pageMain = {
+const pageMain = {
   init() {
     mainVisual.init();
     notice.init();

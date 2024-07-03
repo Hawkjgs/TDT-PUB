@@ -26,8 +26,23 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.css" integrity="sha512-+pwQ1JBCDk3EJnDMJkIylD98GjOygtUbTAIN2J4s8GXuOvB9j8THTJZBmwhw59oI75Wl8FpIJkbw72/tlFDGhA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js" integrity="sha512-h5Vv+n+z0eRnlJoUlWMZ4PLQv4JfaCVtgU9TtRjNYuNltS5QCqi4D4eZn4UkzZZuG2p4VBz3YIlsB7A2NVrbww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+  <!-- S: STYLE CSS -->
+  <link rel="stylesheet" href="../../assets/css/fonts.css">
+  <link rel="stylesheet" href="../../assets/css/reset.css">
+  <link rel="stylesheet" href="../../assets/css/ui.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/modal.css">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link rel="stylesheet" href="../../assets/css/sub.css">
   <link rel="stylesheet" href="../../assets/css/styles.css">
-  <script type="module" src="../../assets/js/app.js"></script>
+  <!-- E: STYLE CSS -->
+
+  <!-- S: SCRIPT -->
+  <script defer src="../../assets/js/utils.js"></script>
+  <script defer src="../../assets/js/components.js"></script>
+  <script defer src="../../assets/js/pages/main.js"></script>
+  <script defer src="../../assets/js/app.js"></script>
+  <!-- E: SCRIPT -->
 
   <title>TDT PUB</title>
 </head>
@@ -318,7 +333,7 @@
                             <img src="../../assets/images/temp/player_01.png" alt="">
                           </div>
                           <div class="btn-group">
-                            <button class="btn-sm btn-white btn-outline btn-full btn-slot-match">
+                            <button class="btn-sm btn-white btn-outline btn-full btn-slot-match modal-btn" data-modal-id="matchPlayerGoods">
                               매칭 변경
                             </button>
                           </div>
@@ -333,7 +348,7 @@
                             <img src="../../assets/images/temp/player_01.png" alt="">
                           </div>
                           <div class="btn-group">
-                            <button class="btn-sm btn-white btn-outline btn-full btn-slot-match">
+                            <button class="btn-sm btn-white btn-outline btn-full btn-slot-match modal-btn" data-modal-id="matchPlayerGoods">
                               매칭 변경
                             </button>
                           </div>
@@ -348,7 +363,7 @@
                             <img src="../../assets/images/temp/player_01.png" alt="">
                           </div>
                           <div class="btn-group">
-                            <button class="btn-sm btn-white btn-outline btn-full btn-slot-match">
+                            <button class="btn-sm btn-white btn-outline btn-full btn-slot-match modal-btn" data-modal-id="matchPlayerGoods">
                               매칭 변경
                             </button>
                           </div>
@@ -361,7 +376,7 @@
                             <span>SLOT 04</span>
                           </div>
                           <div class="btn-group">
-                            <button class="btn-sm btn-primary btn-outline btn-full btn-slot-match">
+                            <button class="btn-sm btn-primary btn-outline btn-full btn-slot-match modal-btn" data-modal-id="matchPlayerGoods">
                               매칭 하기
                             </button>
                           </div>
@@ -374,7 +389,7 @@
                             <span>SLOT 04</span>
                           </div>
                           <div class="btn-group">
-                            <button class="btn-sm btn-primary btn-outline btn-full btn-slot-match">
+                            <button class="btn-sm btn-primary btn-outline btn-full btn-slot-match modal-btn" data-modal-id="matchPlayerGoods">
                               매칭 하기
                             </button>
                           </div>
@@ -404,17 +419,11 @@
                             <img src="../../assets/images/temp/player_01.png" alt="">
                           </div>
                           <div class="btn-group">
-                            <button class="btn-base btn-primary btn-full btn-player-match">
+                            <button class="btn-base btn-primary btn-full btn-player-match modal-btn" data-modal-id="matchPlayer">
                               매칭 하기
                             </button>
                           </div>
-                          <button class="btn-detail modal-btn" aria-label="선수 상세보기" data-modal-id="playerDetail">
-                            <i class="ic">
-                              <svg>
-                                <use href="#AngleRightBold"></use>
-                              </svg>
-                            </i>
-                          </button>
+                          <button class="btn-detail modal-btn" aria-label="선수 상세보기" data-modal-id="playerDetail"></button>
                         </div>
                       </li>
                       <li class="player-item swiper-slide">
@@ -428,17 +437,11 @@
                             <img src="../../assets/images/temp/player_01.png" alt="">
                           </div>
                           <div class="btn-group">
-                            <button class="btn-base btn-primary btn-full btn-player-match">
+                            <button class="btn-base btn-primary btn-full btn-player-match modal-btn" data-modal-id="matchPlayer">
                               매칭 하기
                             </button>
                           </div>
-                          <button class="btn-detail modal-btn" aria-label="선수 상세보기" data-modal-id="playerDetail">
-                            <i class="ic">
-                              <svg>
-                                <use href="#AngleRightBold"></use>
-                              </svg>
-                            </i>
-                          </button>
+                          <button class="btn-detail modal-btn" aria-label="선수 상세보기" data-modal-id="playerDetail"></button>
                         </div>
                       </li>
                       <li class="player-item swiper-slide">
@@ -452,17 +455,11 @@
                             <img src="../../assets/images/temp/player_01.png" alt="">
                           </div>
                           <div class="btn-group">
-                            <button class="btn-base btn-primary btn-full btn-player-match">
+                            <button class="btn-base btn-primary btn-full btn-player-match modal-btn" data-modal-id="matchPlayer">
                               매칭 하기
                             </button>
                           </div>
-                          <button class="btn-detail modal-btn" aria-label="선수 상세보기" data-modal-id="playerDetail">
-                            <i class="ic">
-                              <svg>
-                                <use href="#AngleRightBold"></use>
-                              </svg>
-                            </i>
-                          </button>
+                          <button class="btn-detail modal-btn" aria-label="선수 상세보기" data-modal-id="playerDetail"></button>
                         </div>
                       </li>
                       <li class="player-item swiper-slide">
@@ -476,17 +473,11 @@
                             <img src="../../assets/images/temp/player_01.png" alt="">
                           </div>
                           <div class="btn-group">
-                            <button class="btn-base btn-primary btn-full btn-player-match">
+                            <button class="btn-base btn-primary btn-full btn-player-match modal-btn" data-modal-id="matchPlayer">
                               매칭 하기
                             </button>
                           </div>
-                          <button class="btn-detail modal-btn" aria-label="선수 상세보기" data-modal-id="playerDetail">
-                            <i class="ic">
-                              <svg>
-                                <use href="#AngleRightBold"></use>
-                              </svg>
-                            </i>
-                          </button>
+                          <button class="btn-detail modal-btn" aria-label="선수 상세보기" data-modal-id="playerDetail"></button>
                         </div>
                       </li>
                     </ul>
@@ -532,6 +523,16 @@
                             <div class="dim">
                               <p class="complete">Matching completed</p>
                             </div>
+                            <video muted playsinline>
+                              <source src="../../assets/videos/nft_lv1_test.mov" type="video/mp4">
+                            </video>
+                            <button class="btn-play">
+                              <i class="ic">
+                                <svg>
+                                  <use href="#CirclePlay" />
+                                </svg>
+                              </i>
+                            </button>
                           </div>
                           <div class="goods-info">
                             <p class="name">DIGITAL GOODS 이름</p>
@@ -543,6 +544,16 @@
                         <div class="item-inner">
                           <div class="goods-thumb">
                             <img src="../../assets/images/temp/goods_rect_01.png" alt="">
+                            <video muted playsinline>
+                              <source src="../../assets/videos/nft_lv1_test.mov" type="video/mp4">
+                            </video>
+                            <button class="btn-play">
+                              <i class="ic">
+                                <svg>
+                                  <use href="#CirclePlay" />
+                                </svg>
+                              </i>
+                            </button>
                           </div>
                           <div class="goods-info">
                             <p class="name">DIGITAL GOODS 이름</p>
@@ -1147,8 +1158,37 @@
     <!-- E: FOOTER D: Included Area -->
 
     <!-- S: MODALS D: Included Area -->
+    <!-- S: 컨펌 모달 -->
+    <div class="modal-wrapper modal-confirm" data-modal-id="confirmExample">
+      <div class="modal-inner">
+        <div class="modal-content">
+          <div class="confirm-area">
+            <div class="confirm-body">
+              <p class="confirm-tit">
+                래플에 응모하시겠습니까?
+              </p>
+              <p class="confirm-desc">
+                여러번 응모 시 당첨 확률이 올라갑니다.
+              </p>
+            </div>
+          </div>
+          <div class="modal-foot">
+            <div class="btn-group">
+              <button class="btn btn-base btn-cancel btn-modal-close">
+                <span>취소</span>
+              </button>
+              <button class="btn btn-base btn-primary" onclick="modal.close('confirmExample')">
+                <span>응모하기</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- E: 컨펌 모달 --> 
+  
     <!-- S: 선수 상세 모달 -->
-    <div class="modal-wrapper" data-modal-id="playerDetail">
+    <div class="modal-wrapper none-style" data-modal-id="playerDetail">
       <div class="modal-inner">
         <div class="modal-content">
           <div class="player-info-area border-gradient">
@@ -1211,18 +1251,369 @@
                 매칭 하기
               </button>
             </div>
-            <button class="btn-detail" aria-label="선수 상세 닫기" onclick="modalClose('playerDetail')">
-              <i class="ic">
-                <svg>
-                  <use href="#AngleRightBold"></use>
-                </svg>
-              </i>
-            </button>
           </div>
         </div>
       </div>
     </div>
     <!-- E: 선수 상세 모달 -->
+
+    <!-- S: 매칭 하기 굿즈 선택 모달 -->
+    <div class="modal-wrapper" data-modal-id="matchPlayer">
+      <div class="modal-inner">
+        <div class="modal-content">
+          <div class="driver-matching-area">
+            <div class="driver-matching-head">
+              <h2 class="driver-matching-tit">driver matching</h2>
+              <p class="driver-matching-desc">
+                매칭 대상 선수를 클릭해서,<br class="mo-only" /> 나만의 NFT와 매칭해 주세요.
+              </p>
+              <div class="driver-matching-count">
+                <p class="desc">매칭 종료 까지 남은시간</p>
+                <div class="date-group">
+                  <p class="d-day">D-Day 8</p>
+                  <p class="time">
+                    <span>08</span>
+                    <span class="cr">:</span>
+                    <span>13</span>
+                    <span class="cr">:</span>
+                    <span>32</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="driver-matching-body">
+              <div class="player-info-area border-gradient">
+                <div class="player-info">
+                  <div class="player-intro">
+                    <div class="player-intro-inner">
+                      <p class="rank">
+                        슈퍼 6000 / <em>1위</em>
+                      </p>
+                      <p class="name">정희철</p>
+                      <p class="number">04</p>
+                      <div class="player-thumb">
+                        <img src="../../assets/images/temp/player_01.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="player-detail">
+                    <div class="tit">PROFILE</div>
+                    <div class="detail-list">
+                      <ul>
+                        <li class="detail-item">
+                          <p class="label">생년월일</p>
+                          <p class="desc">1986년 11월 20일</p>
+                        </li>
+                        <li class="detail-item">
+                          <p class="label">국적</p>
+                          <p class="desc">대한민국</p>
+                        </li>
+                        <li class="detail-item">
+                          <p class="label">신장</p>
+                          <p class="desc">170cm</p>
+                        </li>
+                        <li class="detail-item">
+                          <p class="label">데뷔 연도</p>
+                          <p class="desc">1998</p>
+                        </li>
+                        <li class="detail-item">
+                          <p class="label">데뷔 클래스</p>
+                          <p class="desc">발보린 카트 주니어</p>
+                        </li>
+                        <li class="detail-item">
+                          <p class="label">데뷔 성적</p>
+                          <p class="desc">3위</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="logo-box">
+                  <i class="ic">
+                    <svg>
+                      <use href="#Logo" />
+                    </svg>
+                  </i>
+                </div>
+              </div>
+              <div class="goods-slider-area">
+                <div class="goods-slider swiper">
+                  <ul class="swiper-wrapper">
+                    <li class="goods-item swiper-slide">
+                      <div class="item-inner">
+                        <div class="goods-thumb">
+                          <img src="../../assets/images/temp/goods_rect_01.png" alt="">
+                        </div>
+                        <div class="goods-info">
+                          <p class="name">DIGITAL GOODS 이름</p>
+                          <p class="tier">DIGITAL GOODS 등급</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="goods-item swiper-slide">
+                      <div class="item-inner">
+                        <div class="goods-thumb">
+                          <img src="../../assets/images/temp/goods_rect_01.png" alt="">
+                        </div>
+                        <div class="goods-info">
+                          <p class="name">DIGITAL GOODS 이름</p>
+                          <p class="tier">DIGITAL GOODS 등급</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="goods-item swiper-slide">
+                      <div class="item-inner">
+                        <div class="goods-thumb">
+                          <img src="../../assets/images/temp/goods_rect_01.png" alt="">
+                        </div>
+                        <div class="goods-info">
+                          <p class="name">DIGITAL GOODS 이름</p>
+                          <p class="tier">DIGITAL GOODS 등급</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="goods-item swiper-slide">
+                      <div class="item-inner">
+                        <div class="goods-thumb">
+                          <img src="../../assets/images/temp/goods_rect_01.png" alt="">
+                        </div>
+                        <div class="goods-info">
+                          <p class="name">DIGITAL GOODS 이름</p>
+                          <p class="tier">DIGITAL GOODS 등급</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="goods-item swiper-slide">
+                      <div class="item-inner">
+                        <div class="goods-thumb">
+                          <img src="../../assets/images/temp/goods_rect_01.png" alt="">
+                        </div>
+                        <div class="goods-info">
+                          <p class="name">DIGITAL GOODS 이름</p>
+                          <p class="tier">DIGITAL GOODS 등급</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="slider-controls">
+                  <button class="slider-btn slider-btn-prev" aria-label="이전">
+                    <i class="ic">
+                      <svg>
+                        <use href="#ArrowLeft"></use>
+                      </svg>
+                    </i>
+                  </button>
+                  <button class="slider-btn slider-btn-next" aria-label="다음">
+                    <i class="ic">
+                      <svg>
+                        <use href="#ArrowRight"></use>
+                      </svg>
+                    </i>
+                  </button>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-foot">
+            <div class="btn-group">
+              <button class="btn btn-base btn-cancel btn-modal-close">
+                닫기
+              </button>
+              <button class="btn btn-base btn-primary-gradient">
+                선수 매칭
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <!-- E: 매칭 하기 굿즈 선택 모달 -->
+
+    <!-- S: 매칭 하기 선수 굿즈 선택 모달 -->
+    <div class="modal-wrapper" data-modal-id="matchPlayerGoods">
+      <div class="modal-inner">
+        <div class="modal-content">
+          <div class="driver-matching-area">
+            <div class="driver-matching-head">
+              <h2 class="driver-matching-tit">driver matching</h2>
+              <p class="driver-matching-desc">
+                매칭 대상 선수를 클릭해서,<br class="mo-only" /> 나만의 NFT와 매칭해 주세요.
+              </p>
+              <div class="driver-matching-count">
+                <p class="desc">매칭 종료 까지 남은시간</p>
+                <div class="date-group">
+                  <p class="d-day">D-Day 8</p>
+                  <p class="time">
+                    <span>08</span>
+                    <span class="cr">:</span>
+                    <span>13</span>
+                    <span class="cr">:</span>
+                    <span>32</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="driver-matching-body">
+              <div class="player-slider-area">
+                <p class="area-tit">
+                  <span>선수 매칭</span>
+                </p>
+                <div class="player-slider swiper">
+                  <ul class="swiper-wrapper">
+                    <li class="player-item swiper-slide">
+                      <div class="item-inner">
+                        <p class="rank">
+                          슈퍼 6000 / <em>1위</em>
+                        </p>
+                        <p class="name">정희철</p>
+                        <p class="number">04</p>
+                        <div class="player-thumb">
+                          <img src="../../assets/images/temp/player_01.png" alt="">
+                        </div>
+                      </div>
+                    </li>
+                    <li class="player-item swiper-slide">
+                      <div class="item-inner">
+                        <p class="rank">
+                          슈퍼 6000 / <em>1위</em>
+                        </p>
+                        <p class="name">정희철</p>
+                        <p class="number">04</p>
+                        <div class="player-thumb">
+                          <img src="../../assets/images/temp/player_01.png" alt="">
+                        </div>
+                      </div>
+                    </li>
+                    <li class="player-item swiper-slide">
+                      <div class="item-inner">
+                        <p class="rank">
+                          슈퍼 6000 / <em>1위</em>
+                        </p>
+                        <p class="name">정희철</p>
+                        <p class="number">04</p>
+                        <div class="player-thumb">
+                          <img src="../../assets/images/temp/player_01.png" alt="">
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="slider-controls">
+                  <button class="slider-btn slider-btn-prev" aria-label="이전">
+                    <i class="ic">
+                      <svg>
+                        <use href="#ArrowLeft"></use>
+                      </svg>
+                    </i>
+                  </button>
+                  <button class="slider-btn slider-btn-next" aria-label="다음">
+                    <i class="ic">
+                      <svg>
+                        <use href="#ArrowRight"></use>
+                      </svg>
+                    </i>
+                  </button>
+                </div>
+              </div>
+              <div class="goods-slider-area">
+                <p class="area-tit">
+                  <span>보유 DIGITAL GOODS</span>
+                </p>
+                <div class="goods-slider swiper">
+                  <ul class="swiper-wrapper">
+                    <li class="goods-item swiper-slide">
+                      <div class="item-inner">
+                        <div class="goods-thumb">
+                          <img src="../../assets/images/temp/goods_rect_01.png" alt="">
+                        </div>
+                        <div class="goods-info">
+                          <p class="name">DIGITAL GOODS 이름</p>
+                          <p class="tier">DIGITAL GOODS 등급</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="goods-item swiper-slide">
+                      <div class="item-inner">
+                        <div class="goods-thumb">
+                          <img src="../../assets/images/temp/goods_rect_01.png" alt="">
+                        </div>
+                        <div class="goods-info">
+                          <p class="name">DIGITAL GOODS 이름</p>
+                          <p class="tier">DIGITAL GOODS 등급</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="goods-item swiper-slide">
+                      <div class="item-inner">
+                        <div class="goods-thumb">
+                          <img src="../../assets/images/temp/goods_rect_01.png" alt="">
+                        </div>
+                        <div class="goods-info">
+                          <p class="name">DIGITAL GOODS 이름</p>
+                          <p class="tier">DIGITAL GOODS 등급</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="goods-item swiper-slide">
+                      <div class="item-inner">
+                        <div class="goods-thumb">
+                          <img src="../../assets/images/temp/goods_rect_01.png" alt="">
+                        </div>
+                        <div class="goods-info">
+                          <p class="name">DIGITAL GOODS 이름</p>
+                          <p class="tier">DIGITAL GOODS 등급</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="goods-item swiper-slide">
+                      <div class="item-inner">
+                        <div class="goods-thumb">
+                          <img src="../../assets/images/temp/goods_rect_01.png" alt="">
+                        </div>
+                        <div class="goods-info">
+                          <p class="name">DIGITAL GOODS 이름</p>
+                          <p class="tier">DIGITAL GOODS 등급</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="slider-controls">
+                  <button class="slider-btn slider-btn-prev" aria-label="이전">
+                    <i class="ic">
+                      <svg>
+                        <use href="#ArrowLeft"></use>
+                      </svg>
+                    </i>
+                  </button>
+                  <button class="slider-btn slider-btn-next" aria-label="다음">
+                    <i class="ic">
+                      <svg>
+                        <use href="#ArrowRight"></use>
+                      </svg>
+                    </i>
+                  </button>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-foot">
+            <div class="btn-group">
+              <button class="btn btn-base btn-cancel btn-modal-close">
+                닫기
+              </button>
+              <button class="btn btn-base btn-primary-gradient">
+                선수 매칭
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <!-- E: 매칭 하기 선수 굿즈 선택 모달 -->
     <!-- E: MODALS D: Included Area -->
 
     <!-- S: SVG SPLITE D: Included Area -->

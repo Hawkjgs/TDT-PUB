@@ -131,11 +131,20 @@ img {
 .btn-primary {
   background-color: var(--primary-color);
 }
+.btn-primary-gradient {
+  background: linear-gradient(97.41deg, #6EF0D2 32.72%, #159F7F 78.3%);
+}
+.btn-cancel {
+  background-color: rgba(109, 109, 109, 1);
+}
 .btn-white.btn-outline {
   --outline-color: #fff;
 }
 .btn-primary.btn-outline {
   --outline-color: var(--primary-color);
+}
+.btn-cancel.btn-outline {
+  --outline-color: rgba(109, 109, 109, 1);
 }
 .btn-outline {
   background-color: transparent;
@@ -301,7 +310,7 @@ img {
 }
 .component-player-list .player-item .item-inner {
   position: relative;
-  padding: 4rem 7rem 3rem 3rem;
+  padding: 4rem 3rem 3rem 3rem;
   display: flex;
   flex-direction: column;
   background-color: #181818;
@@ -351,7 +360,7 @@ img {
 .component-player-list .number {
   position: absolute;
   left: 0;
-  right: 4rem;
+  right: 0;
   top: 15rem;
   font-family: "Tourney", sans-serif;
   font-size: 16rem;
@@ -371,15 +380,15 @@ img {
 }
 .component-player-list .btn-detail {
   position: absolute;
-  right: 0;
+  left: 0;
   top: 0;
-  bottom: 0;
+  right: 0;
+  bottom: 12rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 4rem;
-  background-color: #252525;
-  border-radius: 0 .8rem .8rem 0;
+  opacity: 0;
+  z-index: 3;
 }
 
 .component-goods-list {
@@ -398,27 +407,32 @@ img {
   flex-basis: 20%;
   padding: 0 1.7rem;
 }
+.goods-slider-area .item-inner,
 .component-goods-list .item-inner {
   position: relative;
 }
+.goods-slider-area .item-inner .dim,
 .component-goods-list .item-inner .dim {
   position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
+  left: -1px;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: rgba(15, 15, 15, .7);
-  z-index: 3;
+  z-index: 11;
 }
+.goods-slider-area .item-inner .complete,
 .component-goods-list .item-inner .complete {
   padding: 1px 12px;
   line-height: 2.1rem;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
 }
+.goods-slider-area .goods-thumb,
+.goods-slider-area .none-thumb,
 .component-goods-list .goods-thumb,
 .component-goods-list .none-thumb {
   position: relative;
@@ -434,6 +448,8 @@ img {
   overflow: hidden;
   isolation: isolate;
 }
+.goods-slider-area .goods-thumb::before,
+.goods-slider-area .none-thumb::before,
 .component-goods-list .goods-thumb::before,
 .component-goods-list .none-thumb::before {
   content: '';
@@ -446,6 +462,8 @@ img {
   border-radius: inherit;
   pointer-events: none;
 }
+.goods-slider-area .goods-thumb img,
+.goods-slider-area .goods-thumb video,
 .component-goods-list .goods-thumb img,
 .component-goods-list .goods-thumb video {
   position: absolute;
@@ -455,21 +473,26 @@ img {
   height: 100%;
   object-fit: cover;
 }
+.goods-slider-area .goods-thumb img,
 .component-goods-list .goods-thumb img {
   z-index: 5;
 }
+.goods-slider-area .goods-item.is-play video,
 .component-goods-list .goods-item.is-play video {
-  z-index: 6;
+  z-index: 12;
 }
+.goods-slider-area .goods-item.is-play .btn-play,
 .component-goods-list .goods-item.is-play .btn-play {
   display: none;
 }
+.goods-slider-area .none-thumb,
 .component-goods-list .none-thumb {
   gap: .4rem;
   font-size: 1.8rem;
   font-family: "Pretendard";
   color: #333;
 }
+.goods-slider-area .goods-info,
 .component-goods-list .goods-info {
   margin-top: 2.4rem;
   font-family: "Pretendard";
@@ -479,15 +502,18 @@ img {
   color: #666;
   text-align: center;
 }
+.goods-slider-area .btn-group,
 .component-goods-list .btn-group {
   margin-top: 2.4rem;
 }
+.goods-slider-area .btn-play,
 .component-goods-list .btn-play {
   position: absolute;
   right: 1rem;
   top: 1rem;
-  z-index: 10;
+  z-index: 12;
 }
+.goods-slider-area .btn-play .ic,
 .component-goods-list .btn-play .ic {
   width: 3.2rem;
   height: 3.2rem;
@@ -641,14 +667,10 @@ img {
   }
 
   .component-player-list .player-item .item-inner {
-    padding: 4rem 2rem 6rem;
+    padding: 4rem 2rem 2rem;
   }
   .component-player-list .btn-detail {
-    top: auto;
-    left: 0;
-    width: 100%;
-    height: 4rem;
-    border-radius: 0 0 .8rem .8rem;
+    bottom: 10rem;
   }
   .component-player-list .btn-detail .ic {
     rotate: 90deg;
@@ -684,6 +706,7 @@ img {
   .component-goods-list .goods-slider .goods-item {
     width: 62.0895%;
   }
+  .goods-slider-area .none-thumb img,
   .component-goods-list .none-thumb img {
     width: 4.8rem;
   }
@@ -696,6 +719,7 @@ img {
     flex-basis: 50%;
     padding: 0 0.8rem;
   }
+  .goods-slider-area .btn-play .ic,
   .component-goods-list .btn-play .ic {
     width: 2.8rem;
     height: 2.8rem;
