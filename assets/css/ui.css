@@ -606,7 +606,7 @@ img {
 .check-type {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: .6rem;
 }
 .check-type .check-view {
   color: #666;
@@ -627,6 +627,42 @@ img {
   font-weight: 500;
   line-height: 2.4rem;
 }
+
+.radio-type {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.radio-type .radio-view {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  translate: 0 -.1rem;
+}
+.radio-type .radio-label {
+  font-weight: 700;
+  line-height: 2.1rem;
+}
+.radio-type .input-radio:checked + .radio-view {
+  border-color: var(--primary-color);
+}
+.radio-type .input-radio:checked + .radio-view::before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+}
+.radio-type .input-radio:checked ~ .radio-label {
+  color: var(--primary-color);
+}
+
 .input.input-text {
   padding: 0 1.6rem;
   width: 100%;
@@ -638,8 +674,56 @@ img {
   border: 1px solid rgba(255, 255, 255, .2);
   border-radius: 4px;
 }
+.input.input-text.is-active {
+  border-color: var(--primary-color);
+}
+
 input[type="text"]::placeholder {
   color: #666;
+}
+input[type="text"]:read-only,
+input[type="text"]:disabled,
+input[type="text"].is-active {
+  outline: none;
+}
+
+.select-box {
+  display: flex;
+}
+.select-box .select-inner {
+  position: relative;
+  width: 100%;
+}
+.select-box .select {
+  padding: 0 4rem 0 1.6rem;
+  width: 100%;
+  height: 4.5rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, .2);
+  background-color: #181818;
+  border-radius: 0.4rem;
+}
+.select-box .select:invalid {
+  color: #999;
+}
+.select-box .ic {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  margin-top: -1.2rem;
+  translate: 0 -5%;
+  color: #fff;
+}
+
+.accordion-item .accordion-cont {
+  display: none;
+}
+.accordion-item.is-active .accordion-cont {
+  display: block;
+}
+.accordion-item.is-active .ic {
+  rotate: 180deg;
 }
 
 

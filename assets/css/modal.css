@@ -452,6 +452,84 @@
   opacity: 1;
 }
 
+.modal-profile-update .profile-area {
+  width: 54.8rem;
+}
+.modal-profile-update .profile-body {
+  padding: 5rem 7.4rem 4rem;
+}
+.modal-profile-update .profile-tit {
+  margin-bottom: 4rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 0.005em;
+}
+.modal-profile-update .form-group {
+  padding: 0 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.modal-profile-update .form-group .label {
+  flex-shrink: 0;
+  line-height: 1.9rem;
+  letter-spacing: -0.02em;
+  color: #666;
+}
+.modal-profile-update .form-group .input {}
+
+.modal-profile-update .profile-thumb-slider-area {
+  position: relative;
+  margin-bottom: 4rem;
+}
+.modal-profile-update .profile-thumb-item .item-inner {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.modal-profile-update .profile-thumb-item .item-inner img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.modal-profile-update .slider-controls {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin-top: -1.5rem;
+} 
+.modal-profile-update .slider-controls .swiper-button-disabled {
+  opacity: 0.4;
+}
+.modal-profile-update .slider-btn-arrow {
+  position: absolute;
+  color: #fff;
+}
+.modal-profile-update .slider-btn-arrow .ic {
+  width: 3rem;
+  height: 3rem;
+}
+.modal-profile-update .slider-btn-prev {
+  left: -2.2rem;
+  translate: -100% 0;
+}
+.modal-profile-update .slider-btn-prev .ic {
+  rotate: 180deg;
+}
+.modal-profile-update .slider-btn-next {
+  right: -2.2rem;
+  translate: 100% 0;
+}
+
 @media screen and (max-width: 1300px) {
   .modal-wrapper.is-active {
     padding: 2rem;
@@ -659,6 +737,26 @@
     max-width: none;
     width: 100%;
     height: 100%;
+  }
+
+  .modal-profile-update .profile-tit {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+  }
+  .modal-profile-update .profile-thumb-slider-area {
+    padding: 0 7rem;
+  }
+  .modal-profile-update .profile-area {
+    width: 100%;
+  }
+  .modal-profile-update .profile-body {
+    padding: 4rem 2rem;
+  }
+  .modal-profile-update .slider-btn-prev {
+    left: 4rem;
+  }
+  .modal-profile-update .slider-btn-next {
+    right: 4rem;
   }
   
 }

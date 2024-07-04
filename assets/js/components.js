@@ -354,3 +354,23 @@ const goods = {
     this.bindEvents();
   }
 }
+
+const accordion = {
+  init() {
+    const items = Array.from(document.querySelectorAll(".accordion-item"));
+    if (items.length) {
+      console.log(items);
+      items.forEach(item => {
+        const btn = item.querySelector(".accordion-btn");
+        btn.addEventListener("click", () => {
+          if (item.classList.contains("is-active")) {
+            item.classList.remove("is-active");
+            return;
+          }
+          items.forEach(el => el.classList.remove("is-active"));
+          item.classList.add("is-active");
+        });
+      })
+    }
+  }
+}

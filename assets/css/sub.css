@@ -86,6 +86,7 @@
 .signup-area-inner {
   background-color: #181818;
   border-radius: 0.8rem;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, .25);
 }
 .signup-area-inner::before {
   top: -1px;
@@ -209,6 +210,7 @@
   padding: 4rem 6.4rem;
   background-color: #181818;
   border-radius: 0.8rem;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, .25);
 }
 .signup-goods-area-inner::before {
   top: -1px;
@@ -316,6 +318,469 @@
   translate: 100% 0;
 }
 
+/* mypage */
+.mypage-area {
+  position: relative;
+  width: 60.4rem;
+  margin: 0 auto;
+  z-index: 1;
+}
+.mypage-area .border-gradient {
+  background-color: #181818;
+  border-radius: 0.8rem;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, .25);
+}
+.mypage-area .profile-area {
+  margin-bottom: 1.6rem;
+}
+.mypage-area .profile-inner {
+  padding: 3.2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: radial-gradient(61% 162.45% at 7% 26.26%, #002A20 0%, #181818 100%);
+}
+.mypage-area .profile-thumb {
+  position: relative;
+  margin: 0 auto;
+  width: 11rem;
+}
+.mypage-area .profile-thumb .img-box {
+  position: relative;
+  height: 0;
+  padding-bottom: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.mypage-area .profile-thumb .img-box img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.mypage-area .profile-thumb .btn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+}
+.mypage-area .profile-thumb .btn .ic {
+  width: 2.9rem;
+  height: 2.9rem;
+  color: var(--black-color);
+}
+.mypage-area .profile-nickname {
+  margin-top: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+.mypage-area .profile-nickname .nickname {
+  font-family: "Pretendard";
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.3rem;
+}
+.mypage-area .profile-nickname .btn {
+  display: flex;
+  translate: 0 .2rem;
+}
+.mypage-area .inventory-area {
+  display: flex;
+  gap: .8rem;
+}
+.mypage-area .inventory-item {
+  flex: 1;
+}
+.mypage-area .inventory-item-inner .cont-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 13.8rem;
+}
+.mypage-area .inventory-item .inventory-tit {
+  margin-bottom: 2.4rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.8rem;
+}
+.mypage-area .inventory-item .inventory-desc {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--primary-color);
+}
+.mypage-area .inventory-item .inventory-desc small {
+  margin-left: 0.4rem;
+  display: inline-block;
+  font-size: 1rem;
+  translate: 0 -1px;
+}
+.mypage-area .mypage-foot {
+  margin-top: 4rem;
+}
+.mypage-area .mypage-foot .btn-group {
+  display: flex;
+  gap: .8rem;
+}
+.mypage-area .mypage-foot .btn-group .btn {
+  flex: 1;
+}
+
+.my-card-area {
+  margin-top: 4rem;
+}
+.my-card-area .my-card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.my-card-area .my-card-tit {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.6rem;
+}
+.my-card-area .my-card-content-inner {
+  position: relative;
+  padding: 3.2rem;
+}
+.my-card-area .bar {
+  margin: 3.2rem auto;
+  height: 1px;
+  background-color: rgba(255, 255, 255, .1);
+}
+.my-card-area .card-tit {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.my-card-area .card-tit .tit {
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 2.3rem;
+}
+.my-card-area .card-tit .sub {
+  font-size: 1.6rem;
+  color: #666;
+}
+.my-card-area .scroll-area {
+  margin-right: -2rem;
+  padding-right: 2rem;
+  max-height: 26.5rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.my-card-area .scroll-area::-webkit-scrollbar {
+  width: 0.4rem;
+}
+.my-card-area .scroll-area::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 1rem;
+}
+.my-card-area .scroll-area::-webkit-scrollbar-track {
+  background-color: #222;
+  border-radius: 1rem;
+}
+.my-card-area .scroll-box {}
+.my-card-area .grid-area {
+  display: flex;
+  flex-direction: column;
+}
+.my-card-area .grid-row-group {
+  display: flex;
+  width: 100%;
+}
+.my-card-area .grid-row-group .grid-row {
+  width: auto;
+}
+.my-card-area .grid-row {
+  display: flex;
+  width: 100%;
+}
+.my-card-area .grid-col {
+  font-family: "Pretendard";
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+}
+
+.my-card-area .history-area {}
+.my-card-area .history-head {
+  background-color: var(--black-color);
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+.my-card-area .history-head .grid-row {
+  padding: 1rem;
+}
+.my-card-area .history-head .grid-col {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.7rem;
+  letter-spacing: 0.02em;
+  color: var(--primary-color);
+  opacity: 0.4;
+}
+
+.my-card-area .history-body {}
+.my-card-area .history-list {}
+.my-card-area .history-item {
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+.my-card-area .history-item .item-inner {}
+
+.my-card-area .my-card-content {}
+.my-card-area .my-card-content {}
+
+
+.my-card-area .my-recommend .form-group {
+  display: flex;
+  gap: 1rem;
+}
+.my-card-area .my-recommend .form-group .input {
+  width: 33.6rem;
+  height: 5.4rem;
+}
+.my-card-area .my-recommend .form-group .btn {
+  width: 19rem;
+  height: 5.4rem;
+}
+.my-card-area .my-recommend .total-invite {
+  display: flex;
+  font-family: "Score", sans-serif;
+}
+.my-card-area .my-recommend .total-invite span {
+  padding: 0 2.3rem;
+  font-size: 1.6rem;
+  line-height: 3.8rem;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 4rem;
+}
+.my-card-area .my-recommend .total-invite em {
+  font-weight: bold;
+}
+
+.my-card-area .invite-grid .grid-row:not(:first-child) {
+  border-top: 1px solid rgba(255, 255, 255, .1);
+}
+.my-card-area .nft-point-grid .grid-col,
+.my-card-area .nft-history-grid .grid-col,
+.my-card-area .invite-grid .grid-col {
+  padding: 1.6rem 0;
+}
+.my-card-area .invite-grid .grid-col:nth-child(1) {
+  flex: 0 0 4.5rem;
+}
+.my-card-area .invite-grid .grid-col:nth-child(2) {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.my-card-area .invite-grid .grid-col:nth-child(3) {
+  flex: 0 0 10rem;
+  text-align: right;
+}
+
+.my-card-area .nft-point-grid .grid-row-group,
+.my-card-area .nft-history-grid .grid-row-group {
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+.my-card-area .my-nft-history .select-box,
+.my-card-area .my-game-history .select-box {
+  width: 18rem;
+}
+
+.my-card-area .my-nft-history .select-group,
+.my-card-area .my-game-history .select-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.my-card-area .game-history .accordion-btn {
+  position: relative;
+  padding-right: 3.8rem;
+  display: flex;
+  width: 100%;
+}
+.my-card-area .game-history .accordion-btn > .ic {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -1.2rem;
+}
+.my-card-area .game-history .accordion-btn .grid-row {
+  gap: 1.6rem;
+}
+.my-card-area .game-history .accordion-btn .grid-col {
+  padding: 1.6rem 0;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.my-card-area .game-history .history-head .grid-col:nth-child(1) { width: 7.3rem; }
+.my-card-area .game-history .history-head .grid-col:nth-child(2) { width: 11rem; }
+.my-card-area .game-history .history-head .grid-col:nth-child(3) { width: 11.2rem; }
+.my-card-area .game-history .history-head .grid-col:nth-child(4) { width: 11.3rem; }
+.my-card-area .game-history .history-head .grid-col:nth-child(5) { width: 10.8rem; }
+.my-card-area .game-history .accordion-btn .grid-col:nth-child(1) { width: 6.8rem; }
+.my-card-area .game-history .accordion-btn .grid-col:nth-child(2) { width: 9.6rem; }
+.my-card-area .game-history .accordion-btn .grid-col:nth-child(3) { width: 9.6rem; }
+.my-card-area .game-history .accordion-btn .grid-col:nth-child(4) { width: 8.2rem; }
+.my-card-area .game-history .accordion-btn .grid-col:nth-child(5) { flex: 1 1 auto; }
+.my-card-area .game-history .cont-box {
+  padding: 2rem 2rem 3.2rem;
+  background-color: #131313;
+  border-top: 1px solid rgba(255, 255, 255, .1);
+}
+.my-card-area .game-history .cont-head {
+  margin-bottom: 1.6rem;
+}
+.my-card-area .game-history .cont-head .grid-row {
+  gap: 2.9rem;
+}
+.my-card-area .game-history .cont-head .grid-col,
+.my-card-area .game-history .cont-body .grid-col {
+  flex: 0 0 auto;
+}
+.my-card-area .game-history .cont-body .grid-col:nth-child(1) { width: 9.3rem; }
+.my-card-area .game-history .cont-body .grid-col:nth-child(2) { width: 8.2rem; padding-right: 1rem; }
+.my-card-area .game-history .cont-body .grid-col:nth-child(3) { width: 16.3rem; padding-right: 3rem;}
+.my-card-area .game-history .cont-body .grid-col:nth-child(4) { width: 6.1rem; padding-right: 2rem; }
+.my-card-area .game-history .cont-body .grid-col:nth-child(5) { flex: 1 1 auto; text-align: right; }
+.my-card-area .game-history .cont-body .grid-area {
+  gap: 1.6rem;
+}
+.my-card-area .game-history .scroll-area {
+  max-height: 38rem;
+}
+
+.my-card-area .nft-history .history-head .grid-col:nth-child(1) { width: 2.4rem; }
+.my-card-area .nft-history .history-head .grid-col:nth-child(2) { width: 24.6rem; }
+.my-card-area .nft-history .history-head .grid-col:nth-child(3) { width: 13.8rem; }
+.my-card-area .nft-history .history-head .grid-col:nth-child(4) { width: 10.8rem; text-align: right; }
+
+.my-card-area .nft-history .history-body .grid-col.col-01 { width: 3.3rem; }
+.my-card-area .nft-history .history-body .grid-col.col-02 { width: 24.7rem; padding-right: 2rem; }
+.my-card-area .nft-history .history-body .grid-col.col-03 { width: 12.8rem; padding-right: 1rem; }
+.my-card-area .nft-history .history-body .grid-col.col-04 { width: 12.8rem; text-align: right; }
+
+.my-card-area .nft-history .history-body .grid-col.col-01 { width: 3.3rem; }
+.my-card-area .nft-history .history-body .grid-col.col-02 { width: 24.7rem; padding-right: 2rem; }
+.my-card-area .nft-history .history-body .grid-col.col-03 { width: 12.8rem; padding-right: 1rem; }
+.my-card-area .nft-history .history-body .grid-col.col-04 { width: 12.8rem; text-align: right; }
+
+.my-card-area .my-point-history .grid-col.col-01 { width: 17.9rem; }
+.my-card-area .my-point-history .grid-col.col-02 { width: 17.9rem; padding-right: 2rem; }
+.my-card-area .my-point-history .grid-col.col-03 { width: 17.9rem; text-align: right; }
+
+.my-card-area .my-point-history .point-filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.my-card-area .my-point-history .point-filter .radio-group {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.my-card-area .my-point-history .point-filter .my-point {
+  display: flex;
+  gap: 0.8rem;
+  font-family: "Pretendard";
+}
+.my-card-area .my-point-history .point-filter .my-point span {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4rem;
+}
+.my-card-area .my-point-history .point-filter .my-point em {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+}
+
+.my-card-area .my-info .my-info-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.6rem 0;
+  font-family: "Pretendard";
+}
+.my-card-area .my-info .my-info-item:not(:first-child) {
+  border-top: 1px solid rgba(255, 255, 255, .1);
+}
+.my-card-area .my-info .my-info-item .info-tit {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.3rem;
+}
+.my-card-area .my-info .my-info-item .info-desc {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.3rem;
+}
+.my-card-area .my-info .btn-resign {
+  margin-top: 3.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5.4rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #999;
+  border: 1px solid rgba(255, 255, 255, .2);
+  border-radius: 0.4rem;
+}
+
+.my-card-area .my-card-content {}
+.my-card-area .my-card-content {}
+.my-card-area .my-card-content {}
+.my-card-area .my-card-content {}
+
+
+.my-card-area small {
+  font-weight: 700;
+  font-size: 1rem;
+}
+.my-card-area .text-hidden {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.my-card-area .font-sm {
+  font-size: 1.4rem;
+}
+.my-card-area .font-lg {
+  font-size: 1.8rem;
+}
+.my-card-area .bold {
+  font-weight: 700;
+}
+.my-card-area .semibold {
+  font-weight: 600;
+}
+.my-card-area .primary {
+  color: var(--primary-color);
+}
+.my-card-area .gray {
+  color: #666;
+}
+.my-card-area .mb-1 { margin-bottom: 0.4rem; }
+.my-card-area .mb-2 { margin-bottom: 0.8rem; }
+.my-card-area .mb-3 { margin-bottom: 1.2rem; }
+.my-card-area .mb-4 { margin-bottom: 1.6rem; }
+.my-card-area .mb-5 { margin-bottom: 2rem; }
+.my-card-area .mb-6 { margin-bottom: 2.4rem; }
+.my-card-area .mb-7 { margin-bottom: 2.8rem; }
+.my-card-area .mb-8 { margin-bottom: 3.2rem; }
+.my-card-area .mb-9 { margin-bottom: 3.6rem; }
+.my-card-area .mb-10 { margin-bottom: 4rem; }
+
 @media screen and (max-width: 1200px) {
 
 }
@@ -402,5 +867,153 @@
   }
   .signup-goods-area .signup-goods-item .item-inner::before {
     border-width: 2px;
+  }
+
+  .mypage-area {
+    padding: 0 2rem;
+    width: 100%;
+  }
+  .mypage-area .profile-inner {
+    padding: 2rem;
+  }
+  .mypage-area .profile-thumb {
+    width: 8rem;
+  }
+  .mypage-area .profile-thumb .btn {
+    width: 3rem;
+    height: 3rem;
+  }
+  .mypage-area .profile-thumb .btn .ic {
+    translate: 0 .1rem;
+  }
+  .mypage-area .profile-nickname {
+    margin-top: 2rem;
+  }
+  .mypage-area .profile-nickname .nickname {
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+  }
+  .mypage-area .profile-nickname .btn .ic {
+    translate: 0 -.1rem;
+  }
+
+  .mypage-area .inventory-item-inner  {
+    height: 100%;
+  }
+  .mypage-area .inventory-item-inner .cont-box {
+    padding: 2rem;
+    height: auto;
+  }
+  .mypage-area .inventory-item .inventory-tit {
+    margin-bottom: 3.2rem;
+  }
+  .mypage-area .inventory-item .inventory-desc {
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 1;
+  }
+  .mypage-area .inventory-item .inventory-desc small {
+    display: block;
+    line-height: 1.4rem;
+    margin-left: 0;
+  }
+
+  .my-card-area .my-card-tit {
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+  }
+  
+  .my-card-area .card-tit {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .my-card-area .card-tit .tit {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+  .my-card-area .card-tit .sub {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+  .my-card-area .my-card-content-inner {
+    padding: 2rem;
+  }
+  .my-card-area .scroll-area {
+    margin-right: -1rem;
+    padding-right: 1rem;
+  }
+  .my-card-area .history-head {
+    display: none;
+  }
+
+  .my-card-area .select-group .card-tit .tit {
+    display: none;
+  }
+  .my-card-area .grid-col {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+  .my-card-area .my-nft-history .select-box, 
+  .my-card-area .my-game-history .select-box {
+    width: 100%;
+  }
+
+  .my-card-area .invite-grid .grid-col:nth-child(1) { flex: 0 0 3.1rem; }
+  .my-card-area .invite-grid .grid-col:nth-child(3) { flex: 0 0 9rem; }
+
+
+
+  .my-card-area .my-recommend .form-group {
+    flex-direction: column;
+  }
+  .my-card-area .my-recommend .form-group .input {
+    width: 100%;
+  }
+  .my-card-area .my-recommend .form-group .btn {
+    width: 100%;
+    font-size: 1.6rem;
+  }
+  .my-card-area .my-recommend .total-invite span {
+    font-size: 1.4rem;
+    line-height: 3.6rem;
+  }
+
+  .my-card-area .game-history .accordion-btn .grid-row {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .my-card-area .game-history .accordion-btn .grid-col {
+    padding: 0;
+    width: auto !important;
+  }
+  .my-card-area .game-history .accordion-btn .grid-col:nth-child(1) {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .my-card-area .history-item {
+    margin-bottom: 1.6rem;
+    padding-bottom: 1.6rem;
+  }
+  .my-card-area .game-history .accordion-btn {
+    padding-left: 6rem;
+  }
+  .my-card-area .game-history .accordion-btn > .ic {
+    margin-top: 0;
+    top: 0;
+  }
+  .my-card-area .game-history .cont-box {
+
+  }
+  .my-card-area .game-history .cont-head .grid-col:not(:first-child) {
+    display: none !important;
+  }
+  .my-card-area .game-history .cont-body .grid-row {
+    flex-direction: column;
+  }
+  .my-card-area .game-history .cont-body .grid-col {
+    padding-right: 0 !important;
+    width: 100% !important;
+    text-align: left !important;
   }
 }

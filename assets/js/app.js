@@ -13,24 +13,18 @@ window.addEventListener("DOMContentLoaded", () => {
   modal.init();
   // MODAL SLIDER
   modalSlider.init();
+  // ACCORDINO
+  accordion.init();
 
-  if (body.classList.contains("main")) {
-    // 메인 페이지
-    pageMain.init();
-  }
   // 섹션 이동 스크롤 탭
   scrollTab.init();
   // 굿즈 목록 비디오 플레이 버튼 클릭
   goods.init();
 
-  // window.modalOpen = modal.open.bind(modal);
-  // window.modalClose = modal.close.bind(modal);
-  // window.modalSliderClear = modalSlider.destroy.bind(modalSlider);
-  // window.modalSliderInit = modalSlider.init.bind(modalSlider);
-
-  // modalOpen('matchPlayerGoods');
-  // modalOpen('matchPlayer');
-  // modal.open('confirmExample');
+  if (body.classList.contains("main")) {
+    // 메인 페이지
+    pageMain.init();
+  }
 });
 
 window.addEventListener("scroll", () => {
