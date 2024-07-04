@@ -174,6 +174,7 @@ const scrollTab = {
 };
 
 const modal = {
+  initCondition: false,
   scrollY: 0,
   elements: {
     modals: undefined,
@@ -222,10 +223,14 @@ const modal = {
     })
   },
   init() {
-    this.elements.modals = Array.from(document.querySelectorAll(":not(.modal-btn)[data-modal-id]"));
-    this.elements.modalBtns = Array.from(document.querySelectorAll(".modal-btn[data-modal-id]"));
+    // init 한번 만 실행
+    if (!this.initCondition) {
+      this.elements.modals = Array.from(document.querySelectorAll(":not(.modal-btn)[data-modal-id]"));
+      this.elements.modalBtns = Array.from(document.querySelectorAll(".modal-btn[data-modal-id]"));
 
-    this.bindEvents();
+      this.bindEvents();
+      this.initCondition = true;
+    }
   }
 }
 
