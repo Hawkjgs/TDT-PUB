@@ -53,6 +53,11 @@
   background: transparent url("../images/pages_bg/market_bg_pc.jpg") center top no-repeat;
   background-size: max(160rem, 100%) auto;
 }
+.notice-wrapper {
+  min-height: 100svh;
+  background: transparent url("../images/pages_bg/notice_bg_pc.jpg") center top no-repeat;
+  background-size: max(160rem, 100%) auto;
+}
 
 /* Login Style */
 .account-wrapper {
@@ -1157,6 +1162,13 @@
   color: #666;
 }
 
+/* Notice */
+.notice-area {
+  margin: 0 auto;
+  max-width: 70rem;
+  width: 100%;
+}
+
 
 @media screen and (min-width: 1024px) {
   .data-center-wrapper .data-center-list-body .row:nth-child(-n+3) .rank,
@@ -1211,6 +1223,10 @@
   }
   .market-wrapper {
     background: transparent url("../images/pages_bg/market_bg_mo.jpg") center top no-repeat;
+    background-size: 100% auto;
+  }
+  .notice-wrapper {
+    background: transparent url("../images/pages_bg/notice_bg_mo.jpg") center top no-repeat;
     background-size: 100% auto;
   }
 
