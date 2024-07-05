@@ -90,7 +90,7 @@
 .main-wrapper .section-quick-menu.is-floating .menu-list {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: min(100%, 1920px);
   background: #000;
   z-index: 20;
 }
