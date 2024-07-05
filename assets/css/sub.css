@@ -48,6 +48,11 @@
   background: transparent url("../images/pages_bg/data_center_bg_pc.jpg") center top no-repeat;
   background-size: max(160rem, 100%) auto;
 }
+.market-wrapper {
+  min-height: 100svh;
+  background: transparent url("../images/pages_bg/market_bg_pc.jpg") center top no-repeat;
+  background-size: max(160rem, 100%) auto;
+}
 
 /* Login Style */
 .account-wrapper {
@@ -1129,6 +1134,29 @@
 }
 
 
+.market-wrapper .component-goods-list {
+  overflow: hidden;
+}
+.market-wrapper .market-area {
+  padding-top: 5.2rem;
+}
+.market-wrapper .market-head {
+  margin-bottom: 6rem;
+}
+.market-wrapper .market-head .tit {
+  margin-bottom: 0.8rem;
+  font-family: "Pretendard";
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.1rem;
+  color: var(--primary-color);
+}
+.market-wrapper .market-head .desc {
+  line-height: 2.1rem;
+  color: #666;
+}
+
+
 @media screen and (min-width: 1024px) {
   .data-center-wrapper .data-center-list-body .row:nth-child(-n+3) .rank,
   .data-center-wrapper .data-center-list-body .row:nth-child(-n+3) .ply {
@@ -1178,6 +1206,10 @@
   }
   .data-center-wrapper {
     background: transparent url("../images/pages_bg/data_center_bg_mo.jpg") center top no-repeat;
+    background-size: 100% auto;
+  }
+  .market-wrapper {
+    background: transparent url("../images/pages_bg/market_bg_mo.jpg") center top no-repeat;
     background-size: 100% auto;
   }
 
@@ -1642,5 +1674,9 @@
   .data-center-wrapper .data-center-list-body .row:nth-child(-n+3) .ply-tem .desc,
   .data-center-wrapper .data-center-list-body .row:nth-child(-n+3) .scr {
     color: var(--primary-color);
+  }
+
+  .market-wrapper .market-area {
+    padding: 0;
   }
 }
