@@ -31,10 +31,24 @@ body {
   -webkit-text-size-adjust: none;
   -moz-text-size-adjust: none;
   -ms-text-size-adjust: none;
+  word-break: keep-all;
 }
 
 img {
   object-fit: cover;
+}
+
+.img-full {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.img-full picture,
+.img-full img {
+  position: absolute;
+  max-width: none;
+  width: max(160rem, 100%);
 }
 
 .skip-nav {
@@ -812,6 +826,42 @@ input[type="text"].is-active {
   color: #666;
 }
 
+.tab-buttons {
+  margin-bottom: 8rem;
+  display: flex;
+}
+.tab-buttons .tab-btn {
+  flex: 1;
+  position: relative;
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+  text-align: center;
+  color: #666;
+}
+.tab-buttons .tab-btn::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 2px;
+  background: currentColor;
+}
+.tab-buttons .tab-btn.is-active {
+  color: var(--primary-color);
+}
+.tab-contents .tab-content {
+  display: none;
+}
+.tab-contents .tab-content.is-active {
+  display: block;
+}
+
 @media screen and (min-width: 1920px) {
   html {
     font-size: 12px;
@@ -850,6 +900,12 @@ input[type="text"].is-active {
 
   html {
     font-size: calc(1px + 2.4vw);
+  }
+
+  .img-full picture,
+  .img-full img {
+    position: static;
+    width: 100%;
   }
 
   .swiper-pagination-bullets.swiper-pagination-horizontal {
@@ -971,5 +1027,14 @@ input[type="text"].is-active {
   .none-area .desc {
     font-size: 1.4rem;
     line-height: 2.1rem;
+  }
+
+  .tab-buttons {
+    margin-bottom: 6rem;
+  }
+  .tab-buttons .tab-btn {
+    padding: 1.5rem 0;
+    font-size: 1.8rem;
+    line-height: 1.3;
   }
 }

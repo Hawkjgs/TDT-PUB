@@ -1,6 +1,7 @@
 /* Sub Common Style */
 .sub-wrapper {
   padding-top: 20rem;
+  padding-bottom: 8rem;
 }
 .sub-wrapper .sub-content-head {
   margin-bottom: 13rem;
@@ -20,12 +21,20 @@
   color: var(--primary-color);
 }
 
+/* Page Bg */
+.account-wrapper {
+  background: transparent url("../images/pages_bg/account_bg_pc.jpg") center top no-repeat;
+  background-size: max(160rem, 100%) auto;
+}
+.championship-wrapper {
+  background: transparent url("../images/pages_bg/championship_bg_pc.jpg") center top no-repeat;
+  background-size: max(160rem, 100%) auto;
+}
+
 /* Login Style */
 .account-wrapper {
   min-height: 100svh;
   padding: 15rem 0 8rem;
-  background: transparent url("../images/pages_bg/account_bg_pc.jpg") center top no-repeat;
-  background-size: max(160rem, 100%) auto;
 }
 .account-wrapper .sub-content-head {
   margin-bottom: 8rem;
@@ -186,7 +195,6 @@
 .signup-area .check-group .check-item {
   flex: 1;
 }
-.signup-area .input-group {}
 
 /* SignUp Goods Style */
 .signup-goods-area {
@@ -489,7 +497,6 @@
   background-color: #222;
   border-radius: 1rem;
 }
-.my-card-area .scroll-box {}
 .my-card-area .grid-area {
   display: flex;
   flex-direction: column;
@@ -511,7 +518,6 @@
   line-height: 2.1rem;
 }
 
-.my-card-area .history-area {}
 .my-card-area .history-head {
   background-color: var(--black-color);
   border-bottom: 1px solid rgba(255, 255, 255, .1);
@@ -528,15 +534,9 @@
   opacity: 0.4;
 }
 
-.my-card-area .history-body {}
-.my-card-area .history-list {}
 .my-card-area .history-item {
   border-bottom: 1px solid rgba(255, 255, 255, .1);
 }
-.my-card-area .history-item .item-inner {}
-
-.my-card-area .my-card-content {}
-.my-card-area .my-card-content {}
 
 
 .my-card-area .my-recommend .form-group {
@@ -739,12 +739,6 @@
   border-radius: 0.4rem;
 }
 
-.my-card-area .my-card-content {}
-.my-card-area .my-card-content {}
-.my-card-area .my-card-content {}
-.my-card-area .my-card-content {}
-
-
 .my-card-area small {
   font-weight: 700;
   font-size: 1rem;
@@ -783,6 +777,218 @@
 .my-card-area .mb-9 { margin-bottom: 3.6rem; }
 .my-card-area .mb-10 { margin-bottom: 4rem; }
 
+
+/* Championship */
+.championship-wrapper .kv-area {
+  position: relative;
+}
+.championship-wrapper .kv-area .img-box {
+  height: 60rem;
+}
+.championship-wrapper .kv-area .text-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  text-align: center;
+  z-index: 2;
+}
+.championship-wrapper .kv-area .tit {
+  font-size: 8rem;
+  line-height: 1.2;
+}
+.championship-wrapper .kv-area .desc {
+  font-weight: 500;
+}
+.championship-wrapper .tab-area {
+  margin-top: 8rem;
+}
+.championship-wrapper .schedule-area {
+  overflow: hidden;
+}
+.championship-wrapper .schedule-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 4rem;
+  margin: 0 -1rem;
+}
+.championship-wrapper .schedule-item {
+  flex: 0 0 calc(25%);
+  position: relative;
+  padding: 0 1rem 7rem;
+  display: flex;
+  justify-content: space-between;
+}
+.championship-wrapper .schedule-item::before {
+  content: '';
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  bottom: 0;
+  height: 1px;
+  background-color: #222;
+}
+.championship-wrapper .schedule-item .round-place {}
+.championship-wrapper .schedule-item .round-place .round {
+  margin-bottom: 1.2rem;
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+  color: var(--primary-color);
+}
+.championship-wrapper .schedule-item .round-place .place {
+  font-family: "Pretendard";
+  font-weight: 400;
+  line-height: 1.5;
+  color: #666;
+  text-transform: uppercase;
+}
+.championship-wrapper .schedule-item .date-place {
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1.6rem;
+  display: flex;
+  align-items: center;
+}
+.championship-wrapper .schedule-item .date-place .date {
+  position: relative;
+  padding-right: 1.3rem;
+  margin-right: 1.2rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+}
+.championship-wrapper .schedule-item .date-place .date::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1px;
+  height: 2.3rem;
+  background-color: #222;
+}
+.championship-wrapper .schedule-item .date-place .date .ic {
+  margin-right: 0.6rem;
+}
+.championship-wrapper .schedule-item .date-place .place {
+  flex: 1 1 auto;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #666;
+}
+.championship-wrapper .schedule-item .thumb {
+  width: 15rem;
+}
+
+.championship-wrapper .tab-head {
+  margin-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+}
+.championship-wrapper .tab-label {
+  margin: 0 auto 4rem;
+  padding: 0 1.6rem;
+  font-family: "Pretendard";
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 3.4rem;
+  background-color: var(--primary-color);
+  color: var(--black-color);
+  border-radius: 0.4rem;
+}
+.championship-wrapper .tab-tit {
+  margin-bottom: 1.2rem;
+  font-size: 4.6rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+.championship-wrapper .tab-desc {
+  font-weight: 500;
+  color: #666;
+  text-align: center;
+}
+
+.championship-wrapper .class-area {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+.championship-wrapper .class-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+  row-gap: 2rem;
+}
+.championship-wrapper .class-item {
+  flex: 0 0 25%;
+  padding: 0 1rem;
+}
+.championship-wrapper .class-item .item-inner {
+  padding: 2rem;
+  min-height: 40rem;
+  background-color: #181818;
+  border-radius: 0.8rem;
+}
+.championship-wrapper .class-item .item-inner::before {
+  top: -1px;
+  right: -1px;
+  left: -1px;
+  bottom: -1px;
+}
+.championship-wrapper .class-item .tit {
+  padding-bottom: 2rem;
+  margin-bottom: 4rem;
+  font-size: 2.4rem;
+  line-height: 3.1rem;
+  color: var(--primary-color);
+  border-bottom: 1px solid rgba(217, 217, 217, 0.2);
+}
+.championship-wrapper .class-item .desc {
+  margin-bottom: 2rem;
+  font-family: "Pretendard";
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.3rem;
+}
+.championship-wrapper .class-item .spac-list {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: "Pretendard";
+}
+.championship-wrapper .class-item .spac-list .spac {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.championship-wrapper .class-item .spac-list .s-tit {
+  font-weight: 500;
+  line-height: 2.1rem;
+}
+.championship-wrapper .class-item .spac-list .s-desc {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: #666;
+}
+.championship-wrapper .class-item .ic {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  width: 5.6rem;
+  height: 5.6rem;
+  color: var(--primary-color);
+}
+
+
 @media screen and (max-width: 1200px) {
 
 }
@@ -795,17 +1001,29 @@
   .sub-wrapper .sub-content-tit {
     font-size: 6rem;
     line-height: 1;
+    text-align: center;
   }
   .sub-wrapper .sub-content-desc {
     font-size: 1.5rem;
     line-height: 1.5;
   }
 
-  /* Login Style */
+  .sub-wrapper.championship-wrapper .sub-content-tit {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Page Bg */
   .account-wrapper {
     background: transparent url("../images/pages_bg/account_bg_mo.jpg") center top no-repeat;
     background-size: 100% auto;
   }
+  .championship-wrapper {
+    background: transparent url("../images/pages_bg/championship_bg_mo.jpg") center top no-repeat;
+    background-size: 100% auto;
+  }
+
+  /* Login Style */
   .login-area-inner {
     width: 100%;
     padding: 0 2rem;
@@ -1113,5 +1331,51 @@
     flex-direction: column;
     gap: 1.2rem;
   }
+
+
+  .championship-wrapper .kv-area .img-box {
+    height: auto;
+  }
+  .championship-wrapper .kv-area .text-box {
+    bottom: 5.2rem;
+  }
+  .championship-wrapper .kv-area .tit {
+    font-size: 4rem;
+  }
+  .championship-wrapper .kv-area .desc {
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .championship-wrapper .tab-area {
+    margin-top: 6rem;
+  }
   
+  .championship-wrapper .schedule-list {
+    gap: 6rem;
+  }
+  .championship-wrapper .schedule-item {
+    flex: 1 1 100%;
+  }
+  .championship-wrapper .schedule-item .round-place .place {
+    font-size: 1.8rem;
+  }
+  .championship-wrapper .schedule-item .date-place .place {
+    font-size: 1.6rem;
+  }
+
+  .championship-wrapper .class-list {
+    margin: 0;
+    padding: 0 1.5rem;
+  }
+  .championship-wrapper .class-item {
+    flex: 1 1 100%;
+    padding: 0;
+  }
+
+  .championship-wrapper .tab-tit {
+    margin-bottom: 2rem;
+    font-size: 2.8rem;
+    line-height: 1.3;
+  }
 }

@@ -434,3 +434,23 @@ const customSelect = {
     }
   }
 }
+
+const tabContent = {
+  init(container) {
+    if (!container) return;
+    const items = Array.from(container.querySelectorAll(".tab-btn[data-tab-id]"));
+    const contents = Array.from(container.querySelectorAll(".tab-content[data-tab-id]"));
+    if (items.length) {
+      items.forEach(item => {
+        item.addEventListener("click", (e) => {
+          const id = e.currentTarget.dataset.tabId;
+          
+          contents.forEach(content => content.classList.remove("is-active"));
+          items.forEach(item => item.classList.remove("is-active"));
+          e.currentTarget.classList.add("is-active");
+          contents.filter(content => content.dataset.tabId === id)?.[0].classList.add("is-active");
+        })
+      })
+    }
+  }
+}

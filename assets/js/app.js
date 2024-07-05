@@ -17,6 +17,8 @@ window.addEventListener("DOMContentLoaded", () => {
   accordion.init();
   // CUSTOM SELECT
   customSelect.init();
+  // TAB CONTENT
+  tabContent.init();
 
   // 섹션 이동 스크롤 탭
   scrollTab.init();
