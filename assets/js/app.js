@@ -15,6 +15,8 @@ window.addEventListener("DOMContentLoaded", () => {
   modalSlider.init();
   // ACCORDINO
   accordion.init();
+  // CUSTOM SELECT
+  customSelect.init();
 
   // 섹션 이동 스크롤 탭
   scrollTab.init();

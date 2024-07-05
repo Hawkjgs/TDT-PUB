@@ -592,6 +592,8 @@
   border-bottom: 1px solid rgba(255, 255, 255, .1);
 }
 
+.my-card-area .my-nft-history .custom-select-box,
+.my-card-area .my-game-history .custom-select-box,
 .my-card-area .my-nft-history .select-box,
 .my-card-area .my-game-history .select-box {
   width: 18rem;
@@ -953,6 +955,8 @@
     font-size: 1.4rem;
     line-height: 1.8rem;
   }
+  .my-card-area .my-nft-history .custom-select-box,
+  .my-card-area .my-game-history .custom-select-box,
   .my-card-area .my-nft-history .select-box, 
   .my-card-area .my-game-history .select-box {
     width: 100%;
@@ -986,6 +990,9 @@
     padding: 0;
     width: auto !important;
   }
+  .my-card-area .game-history .accordion-btn .grid-col br {
+    display: none;
+  }
   .my-card-area .game-history .accordion-btn .grid-col:nth-child(1) {
     position: absolute;
     left: 0;
@@ -1003,17 +1010,108 @@
     top: 0;
   }
   .my-card-area .game-history .cont-box {
-
+    margin-top: 1.6rem;
+  }
+  .my-card-area .game-history .cont-head .grid-col {
+    font-weight: 600;
   }
   .my-card-area .game-history .cont-head .grid-col:not(:first-child) {
     display: none !important;
   }
   .my-card-area .game-history .cont-body .grid-row {
     flex-direction: column;
+    gap: 0.6rem;
   }
   .my-card-area .game-history .cont-body .grid-col {
     padding-right: 0 !important;
     width: 100% !important;
     text-align: left !important;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4rem;
   }
+  .my-card-area .game-history .cont-body .grid-col .label {
+    flex-shrink: 0;
+    color: #666;
+  }
+  .my-card-area .game-history .cont-body .grid-area {
+    gap: 2rem;
+  }
+  .my-card-area .game-history .cont-head {
+    margin-bottom: 2rem;
+  }
+
+  .my-card-area .my-nft-history .select-group {
+    flex-direction: column;
+  }
+  .my-card-area .my-nft-history .select-group .card-tit {
+    margin-right: auto;
+    margin-bottom: 3.2rem;
+  }
+  .my-card-area .my-nft-history .select-group .card-tit .tit {
+    display: block;
+    font-size: 1.5rem;
+  }
+  .my-card-area .nft-point-grid .grid-row-group, 
+  .my-card-area .nft-history-grid .grid-row-group {
+    padding-bottom: 1.8rem;
+    margin-bottom: 1.8rem;
+    justify-content: space-between;
+  }
+  .my-card-area .nft-point-grid .grid-row,
+  .my-card-area .nft-history-grid .grid-row {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .my-card-area .nft-history-grid .grid-row:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+  .my-card-area .my-point-history .grid-col,
+  .my-card-area .nft-history .history-body .grid-col {
+    padding: 0 !important;
+    width: auto !important;
+  }
+  .my-card-area .my-point-history .point-filter {
+    flex-direction: column;
+  }
+  .my-card-area .my-point-history .point-filter .radio-group {
+    flex-wrap: wrap;
+  }
+  .my-card-area .my-point-history .point-filter .radio-item:nth-child(1) {
+    width: 100%;
+  }
+  .my-card-area .my-point-history .point-filter .my-point {
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3.2rem;
+    padding: 0 1.6rem;
+    width: 100%;
+    height: 4.5rem;
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-radius: .4rem;
+  }
+  .my-card-area .my-point-history .point-filter .my-point span {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+  .my-card-area .my-point-history .point-filter .my-point span:nth-child(2) {
+    color: var(--primary-color);
+  }
+  .my-card-area .my-point-history .point-filter .my-point em {
+    font-size: 1.6rem;
+  }
+  .my-card-area .my-info .my-info-item .info-tit,
+  .my-card-area .my-info .my-info-item .info-desc {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .my-card-area .my-info .btn-resign {
+    height: 5.1rem;
+    font-size: 1.6rem;
+  }
+  .mypage-area .mypage-foot .btn-group {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  
 }

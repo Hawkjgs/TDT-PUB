@@ -359,7 +359,6 @@ const accordion = {
   init() {
     const items = Array.from(document.querySelectorAll(".accordion-item"));
     if (items.length) {
-      console.log(items);
       items.forEach(item => {
         const btn = item.querySelector(".accordion-btn");
         btn.addEventListener("click", () => {
@@ -371,6 +370,67 @@ const accordion = {
           item.classList.add("is-active");
         });
       })
+    }
+  }
+}
+
+const customSelect = {
+  init() {
+    const items = Array.from(document.querySelectorAll(".custom-select-box"));
+    if (items.length) {
+      items.forEach(item => {
+        const btn = item.querySelector(".select-btn");
+        const options = Array.from(item.querySelectorAll(".select-option"));
+        const scrollEl = item.querySelector(".select-list > ul");
+
+        const selected = options.filter(option => option.dataset.hasOwnProperty("selected"));
+        
+        if (selected.length) {
+          selected[0].classList.add("is-selected");
+          btn.textContent = selected[0].dataset.optionLabel;
+        } else {
+          options[0].classList.add("is-selected");
+          btn.textContent = options[0].dataset.optionLabel;
+        }
+
+        function hide() {
+          item.classList.remove("is-active");
+        }
+        function show() {
+          item.classList.add("is-active");
+          scrollEl.scrollTop = 0;
+        }
+
+        item.addEventListener("click", (e) => {
+          if (e.target === btn) {
+            if (item.classList.contains("is-active")) {
+              hide();
+              return;
+            }
+            show();
+            return;
+          }
+          if (options.includes(e.target)) {
+            const value = e.target.dataset.optionValue;
+            const label = e.target.dataset.optionLabel;
+            options.forEach(v => v.classList.remove("is-selected"));
+            e.target.classList.add("is-selected");
+            btn.textContent = label;
+            hide();
+            item.dispatchEvent(new CustomEvent("customChange", { detail: { value, label } }));
+            return;
+          }
+        });
+      });
+
+      function clickSide(e) {
+        if (!e.target.closest(".custom-select-box") && !e.target.matches('.select-btn')) {
+          items.forEach(el => el.classList.remove("is-active"));
+        }
+      }
+
+      window.addEventListener("click", clickSide);
+      window.addEventListener("touchstart", clickSide);
     }
   }
 }
