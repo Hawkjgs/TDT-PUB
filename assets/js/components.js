@@ -397,6 +397,7 @@ const customSelect = {
           item.classList.remove("is-active");
         }
         function show() {
+          items.forEach(el => el.classList.remove("is-active"));
           item.classList.add("is-active");
           scrollEl.scrollTop = 0;
         }

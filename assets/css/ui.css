@@ -709,7 +709,10 @@ input[type="text"].is-active {
   outline: none;
 }
 
-.custom-select-box
+.custom-select-box {
+  position: relative;
+}
+.custom-select-box,
 .select-box {
   display: flex;
 }
@@ -773,6 +776,7 @@ input[type="text"].is-active {
   padding: .4rem .4rem .4rem 1.6rem;
   display: block;
   width: 100%;
+  font-family: "Pretendard";
   font-size: 1.6rem;
   line-height: 2.4rem;
   text-align: left;
@@ -782,6 +786,9 @@ input[type="text"].is-active {
   color: var(--primary-color);
 }
 
+.custom-select-box.is-active {
+  z-index: 5;
+}
 .custom-select-box.is-active .select-btn {
   border-bottom-color: transparent;
   border-radius: .4rem .4rem 0 0;
