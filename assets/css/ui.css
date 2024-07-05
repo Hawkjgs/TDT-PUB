@@ -532,12 +532,17 @@ img {
 .goods-slider-area .btn-play,
 .component-goods-list .btn-play {
   position: absolute;
-  right: 1rem;
-  top: 1rem;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
   z-index: 12;
 }
 .goods-slider-area .btn-play .ic,
 .component-goods-list .btn-play .ic {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
   width: 3.2rem;
   height: 3.2rem;
 }
@@ -722,10 +727,16 @@ input[type="text"].is-active {
   height: 4.5rem;
   font-size: 1.6rem;
   font-weight: 500;
+  line-height: 4.5rem;
   text-align: left;
   border: 1px solid rgba(255, 255, 255, .2);
   background-color: #181818;
   border-radius: 0.4rem;
+}
+.custom-select-box.lg .select-btn {
+  height: 5.4rem;
+  line-height: 5.4rem;
+  font-size: 1.8rem;
 }
 .select-box .select:focus,
 .select-box .select:focus-within {
@@ -777,6 +788,11 @@ input[type="text"].is-active {
 }
 .custom-select-box.is-active .select-list {
   display: block;
+}
+
+.custom-select-box:not(.is-active).none-bg .select-list,
+.custom-select-box:not(.is-active).none-bg .select-btn {
+  background: transparent;
 }
 
 .custom-select-box .ic,

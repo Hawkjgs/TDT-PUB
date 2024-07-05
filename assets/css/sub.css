@@ -19,6 +19,12 @@
   font-family: "Pretendard";
   font-weight: 500;
   color: var(--primary-color);
+  text-align: center;
+}
+.sub-wrapper .sub-content-desc span {
+  margin-top: 0.8rem;
+  display: block;
+  opacity: 0.4;
 }
 
 /* Page Bg */
@@ -28,6 +34,10 @@
 }
 .championship-wrapper {
   background: transparent url("../images/pages_bg/championship_bg_pc.jpg") center top no-repeat;
+  background-size: max(160rem, 100%) auto;
+}
+.storage-wrapper {
+  background: transparent url("../images/pages_bg/storage_bg_pc.jpg") center top no-repeat;
   background-size: max(160rem, 100%) auto;
 }
 
@@ -834,7 +844,6 @@
   height: 1px;
   background-color: #222;
 }
-.championship-wrapper .schedule-item .round-place {}
 .championship-wrapper .schedule-item .round-place .round {
   margin-bottom: 1.2rem;
   font-size: 2.2rem;
@@ -988,6 +997,46 @@
   color: var(--primary-color);
 }
 
+.storage-wrapper .component-goods-list {
+  overflow: hidden;
+}
+.storage-wrapper .btn-more-box {
+  margin-top: 8rem;
+}
+.storage-wrapper .storage-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.storage-wrapper .storage-top-bar {
+  margin-bottom: 8rem;
+}
+.storage-wrapper .storage-top-bar .custom-select-box {
+  width: 26.4rem;
+}
+.storage-wrapper .storage-top-bar .my-inventory {
+  display: flex;
+  gap: 4rem;
+}
+.storage-wrapper .storage-top-bar .my-inventory .item {
+  display: flex;
+  gap: 1.2rem;
+}
+.storage-wrapper .storage-top-bar .my-inventory .label {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.storage-wrapper .storage-top-bar .my-inventory .desc {
+  font-family: "Pretendard";
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+.storage-wrapper .storage-top-bar .my-inventory .desc small {
+  font-size: 1rem;
+}
+
+
 
 @media screen and (max-width: 1200px) {
 
@@ -1020,6 +1069,10 @@
   }
   .championship-wrapper {
     background: transparent url("../images/pages_bg/championship_bg_mo.jpg") center top no-repeat;
+    background-size: 100% auto;
+  }
+  .storage-wrapper {
+    background: transparent url("../images/pages_bg/storage_bg_mo.jpg") center top no-repeat;
     background-size: 100% auto;
   }
 
@@ -1377,5 +1430,26 @@
     margin-bottom: 2rem;
     font-size: 2.8rem;
     line-height: 1.3;
+  }
+
+  .storage-wrapper .storage-top-bar {
+    flex-direction: column;
+  }
+  .storage-wrapper .storage-top-bar .select-group {
+    margin-bottom: 2rem;
+  }
+  .storage-wrapper .storage-top-bar .select-group,
+  .storage-wrapper .storage-top-bar .custom-select-box {
+    width: 100%;
+  }
+  .storage-wrapper .storage-top-bar .my-inventory {
+    padding: 1.6rem 0;
+  }
+  .storage-wrapper .storage-top-bar .my-inventory .item {}
+  .storage-wrapper .storage-top-bar .my-inventory .label {
+    font-size: 1.6rem;
+  }
+  .storage-wrapper .storage-top-bar .my-inventory .desc {
+    font-size: 1.6rem;
   }
 }
