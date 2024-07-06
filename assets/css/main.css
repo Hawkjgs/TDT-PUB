@@ -193,6 +193,42 @@
 .main-wrapper .match-section .driver-matching {
   margin-top: 8rem;
 }
+.main-wrapper .match-section .driver-matching .slot-area{
+  position: relative;
+}
+.main-wrapper .match-section .driver-matching .match-end-dim {
+  position: absolute;
+  left: 0;
+  top: -4rem;
+  right: 0;
+  bottom: -4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1A1A1A;
+  text-align: center;
+  opacity: 0.9;
+  color: var(--primary-color);
+  border-radius: 0.8rem;
+  z-index: 1;
+}
+.main-wrapper .match-section .driver-matching .match-end-dim .ic {
+  margin-bottom: 1.2rem;
+  width: 6.6rem;
+  height: 6.6rem;
+}
+.main-wrapper .match-section .driver-matching .match-end-dim .tit {
+  margin-bottom: 2.4rem;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.main-wrapper .match-section .driver-matching .match-end-dim .desc {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1;
+}
 .main-wrapper .match-section .driver-matching > .container {
   padding-top: 8rem;
   border-top: 1px solid rgba(255, 255, 255, .1);
@@ -653,6 +689,18 @@
     height: 100%;
   }
 
+  .main-wrapper .match-section .driver-matching .match-end-dim .ic {
+    width: 4rem;
+    height: 4rem;
+  }
+  .main-wrapper .match-section .driver-matching .match-end-dim .tit {
+    margin-bottom: 1.6rem;
+    font-size: 2.4rem;
+  }
+  .main-wrapper .match-section .driver-matching .match-end-dim .desc {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
   .main-wrapper .match-section .driver-matching {
     margin-top: 6rem;
   }
