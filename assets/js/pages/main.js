@@ -1,4 +1,6 @@
 const mainVisual = {
+  timeoutInstance: undefined,
+  currentVideoInstance: undefined,
   swiper: undefined,
   elements: {
     conatiner: undefined,
@@ -14,13 +16,57 @@ const mainVisual = {
         speed: 450,
         spaceBetween: 0,
         slidesPerView: 1,
-        autoplay: {
-          delay: 4500,
-          disableOnInteraction: false,
-        },
+        // autoplay: {
+        //   delay: 4500,
+        //   disableOnInteraction: false,
+        // },
         pagination: {
           el: this.elements.conatiner.querySelector(".swiper-pagination"),
           clickable: true,
+        },
+        on: {
+          init(v) {
+
+          },
+          slideChange(v) {
+            if (this.timeoutInstance) {
+              clearTimeout(this.timeoutInstance);
+              this.timeoutInstance = undefined;
+            }
+
+            const item = v.slides[v.activeIndex];
+            const mediaType = item.dataset.mediaType;
+
+            if (this.currentVideoInstance) {
+              // 슬라이드 넘어갈 때 영상 450ms 뒤에 초기화
+              const prevVideo = this.currentVideoInstance;
+              setTimeout(() => {
+                  prevVideo.pause();
+                  prevVideo.style.zIndex = null;
+                  prevVideo.currentTime = 0;
+              }, 450);
+            }
+            if (mediaType === "video") {
+              this.currentVideoInstance = item.querySelector("video");
+            } else {
+              this.currentVideoInstance = undefined;
+            }
+
+          },
+          slideChangeTransitionEnd(v) {
+            if (this.currentVideoInstance) {
+              this.currentVideoInstance.style.zIndex = 2;
+              this.currentVideoInstance.volume = 0;
+              this.currentVideoInstance.play();
+              this.currentVideoInstance.onended = () => {
+                v.slideNext();
+              }
+            } else {
+              this.timeoutInstance = setTimeout(() => {
+                v.slideNext();
+              }, 4500);
+            }
+          }
         }
       })
     }

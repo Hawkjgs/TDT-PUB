@@ -125,10 +125,12 @@
 .main-wrapper .main-visual .main-visual-item {
   height: 100svh;
 }
-.main-wrapper .main-visual .main-visual-item .img-box,
-.main-wrapper .main-visual .main-visual-item .img-box img {
+.main-wrapper .main-visual .main-visual-item .media-box,
+.main-wrapper .main-visual .main-visual-item .media-box img,
+.main-wrapper .main-visual .main-visual-item .media-box video {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .main-wrapper .match-section {
