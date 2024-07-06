@@ -281,6 +281,7 @@
 }
 .signup-goods-area .signup-goods-item {
   height: calc((var(--slider-height) - var(--slider-gap)) / 2);
+  opacity: 0.3;
 }
 .signup-goods-area .signup-goods-item .item-inner {
   position: relative;
@@ -299,6 +300,7 @@
   border: 1px solid rgba(255, 255, 255, .3);
   border-radius: inherit;
   pointer-events: none;
+  z-index: 1;
 }
 .signup-goods-area .signup-goods-item .img-box {
   position: relative;
@@ -315,6 +317,9 @@
   right: 0.8rem;
   color: var(--primary-color);
   display: none;
+}
+.signup-goods-area .signup-goods-item.is-active {
+  opacity: 1;
 }
 .signup-goods-area .signup-goods-item.is-active .item-inner::before {
   border-width: .2rem;
