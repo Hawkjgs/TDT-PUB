@@ -1,6 +1,7 @@
 const header = {
   elements: {
     container: undefined,
+    audio: undefined,
     btnSounds: undefined,
   },
   bindEvents() {
@@ -10,15 +11,18 @@ const header = {
         if (!target.classList.contains("is-muted")) {
           // 사운드 ON
           this.elements.btnSounds.forEach(btn => btn.classList.add("is-muted"));
+          this.elements.audio?.pause();
         } else {
           // 사운드 OFF
           this.elements.btnSounds.forEach(btn => btn.classList.remove("is-muted"));
+          this.elements.audio?.play();
         }
       });
     });
   },
   init() {
     if (!this.elements.container) this.elements.container = document.querySelector(".header");
+    if (!this.elements.audio) this.elements.audio = document.querySelector(".main-audio");
     if (!this.elements.btnSounds) this.elements.btnSounds = Array.from(this.elements.container.querySelectorAll(".btn-sound"));
 
     this.bindEvents();
