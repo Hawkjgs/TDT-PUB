@@ -311,6 +311,34 @@
   bottom: 0;
   background-color: rgba(217, 217, 217, .1);
 }
+.main-wrapper .ranking-section .total-tdtp {
+  margin: 3.2rem auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 2.1rem 2rem;
+  font-family: "Pretendard";
+  border: 1px solid rgba(255, 255, 255, .1);
+  border-radius: 0.4rem;
+}
+.main-wrapper .ranking-section .total-tdtp .tit {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 2.9rem;
+}
+.main-wrapper .ranking-section .total-tdtp .tit .ic {
+  color: var(--primary-color);
+}
+.main-wrapper .ranking-section .total-tdtp .desc {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 2.9rem;
+  color: var(--primary-color);
+}
 .main-wrapper .ranking-section .rank-player {
   flex-basis: 54rem;
 }
@@ -355,25 +383,27 @@
   justify-content: space-between;
 }
 .main-wrapper .ranking-section .rank-info .player {
-  flex-basis: 18.2rem;
+  flex-basis: 18rem;
 }
 .main-wrapper .ranking-section .rank-info .game {
   flex: 1;
   display: flex;
-  justify-content: space-between;
 }
 .main-wrapper .ranking-section .rank-info .game > div {
   flex-grow: 0;
   flex-shrink: 0;
 }
-.main-wrapper .ranking-section .rank-info .game > div:nth-child(1) {
-  flex-basis: 7.5rem;
+.main-wrapper .ranking-section .rank-player .rank-info .game {
+  justify-content: space-between;
 }
-.main-wrapper .ranking-section .rank-info .game > div:nth-child(2) {
-  flex-basis: 7.5rem;
+.main-wrapper .ranking-section .rank-manager .rank-info .game {
+  justify-content: flex-end;
 }
-.main-wrapper .ranking-section .rank-info .game > div:nth-child(3) {
-  flex-basis: 8.2rem;
+.main-wrapper .ranking-section .rank-player .rank-info .game > div:nth-child(1) {
+  flex-basis: 14.7rem;
+}
+.main-wrapper .ranking-section .rank-player .rank-info .game > div:nth-child(2) {
+  flex-basis: auto;
 }
 .main-wrapper .ranking-section .rank-info .label {
   margin-bottom: 0.8rem;
@@ -402,6 +432,12 @@
 }
 .main-wrapper .ranking-section .btn-more-box.mo-only {
   display: none;
+}
+.main-wrapper .ranking-section .rank-item:nth-child(n+6) {
+  display: none;
+}
+.main-wrapper .ranking-section .is-active .rank-item:nth-child(n+6) {
+  display: block;
 }
 
 .main-wrapper .event-section .event-list {
@@ -458,6 +494,21 @@
   margin-top: 3.4rem;
 }
 
+@media screen and (min-width: 1024px) {
+  .main-wrapper .ranking-section {
+    position: relative;
+    overflow: hidden;
+  }
+  .main-wrapper .ranking-section.is-active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(100% - 15rem);
+    bottom: 0;
+    background-color: var(--black-color);
+  }
+}
 @media screen and (max-width: 1420px) {
   .main-wrapper .match-section .driver-matching .player-area .slider-controls {
     display: none;
@@ -717,6 +768,22 @@
     margin-top: 6rem;
   }
 
+  .main-wrapper .ranking-section .total-tdtp {
+    margin: 2rem 2rem 0;
+    flex-direction: column;
+  }
+  .main-wrapper .ranking-section .total-tdtp .tit,
+  .main-wrapper .ranking-section .total-tdtp .desc {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+  .main-wrapper .ranking-section .total-tdtp .tit {
+    gap: 0.8rem;
+  }
+  .main-wrapper .ranking-section .total-tdtp .tit .ic {
+    width: 2rem;
+    height: 2rem;
+  }
   .main-wrapper .ranking-section .rank-inner {
     flex-direction: column;
     justify-content: flex-start;
@@ -754,14 +821,18 @@
   .main-wrapper .ranking-section .rank-info .player {
     flex-basis: 10rem;
   }
-  .main-wrapper .ranking-section .rank-info .game > div:nth-child(1) {
-    display: none;
+  .main-wrapper .ranking-section .rank-player .rank-info {
+    flex-direction: column;
   }
-  .main-wrapper .ranking-section .rank-info .game > div:nth-child(2) {
-    width: 8rem;
+  .main-wrapper .ranking-section .rank-info .player {
+    flex: 1 1 auto;
   }
-  .main-wrapper .ranking-section .rank-info .game > div:nth-child(3) {
-    width: 6rem;
+  .main-wrapper .ranking-section .rank-player .rank-info .game {
+
+  }
+  .main-wrapper .ranking-section .rank-player .rank-info .game > div:nth-child(1),
+  .main-wrapper .ranking-section .rank-player .rank-info .game > div:nth-child(2) {
+    flex: 1 1 auto;
   }
   .main-wrapper .ranking-section .rank-info .player .text,
   .main-wrapper .ranking-section .rank-info .text {
