@@ -508,6 +508,9 @@
     bottom: 0;
     background-color: var(--black-color);
   }
+  .main-wrapper .ranking-section .rank-item:nth-child(n+10) .num {
+    translate: -20% 0;
+  }
 }
 @media screen and (max-width: 1420px) {
   .main-wrapper .match-section .driver-matching .player-area .slider-controls {
