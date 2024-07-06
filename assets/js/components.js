@@ -235,11 +235,13 @@ const modal = {
 }
 
 const modalSlider = {
+  playerInfoSwipers: [],
   playerSwipers: [],
   goodsSwipers: [],
   elements: {
+    playerInfoSliders: undefined,
     playerSliders: undefined,
-    goodsSliders: undefined
+    goodsSliders: undefined,
   },
   destroy() {
     if (this.playerSwipers.length) {
@@ -257,8 +259,32 @@ const modalSlider = {
     }
   },
   init() {
+    if (!this.elements.playerInfoSliders) this.elements.playerInfoSliders = Array.from(document.querySelectorAll(".modal-wrapper .player-info-slider"));
     if (!this.elements.playerSliders) this.elements.playerSliders = Array.from(document.querySelectorAll(".modal-wrapper .player-slider"));
     if (!this.elements.goodsSliders) this.elements.goodsSliders = Array.from(document.querySelectorAll(".modal-wrapper .goods-slider"));
+
+    if (!this.playerInfoSwipers.length) {
+      this.elements.playerInfoSliders.forEach(el => {
+        const btns = el.parentNode.querySelectorAll(".slider-btn");
+
+        const swiper = new Swiper(el, {
+          speed: 450,
+          spaceBetween: 16,
+          slidesPerView: "auto",
+          centeredSlides: true,
+          navigation: {
+            nextEl: btns.length ? btns[1] : null,
+            prevEl: btns.length ? btns[0] : null,
+          },
+          on: {
+            init(v) {},
+            slideChange(v) {}
+          }
+        });
+
+        this.playerInfoSwipers.push(swiper);
+      });
+    }
 
     if (!this.playerSwipers.length) {
       this.elements.playerSliders.forEach(el => {

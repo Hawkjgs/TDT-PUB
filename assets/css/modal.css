@@ -195,9 +195,7 @@
   letter-spacing: 0.02em;
 }
 .modal-wrapper .player-info-area .detail-item .label {
-  flex-shrink: 0;
   padding-right: 1rem;
-  width: 13.4rem;
   color: #666;
 }
 .modal-wrapper .player-info-area .detail-item .link {
@@ -209,20 +207,22 @@
   width: 110rem;
 }
 .modal-wrapper .driver-matching-area .player-info-area {
-  width: 100%;
   padding: 4rem 0;
+  width: 72rem;
 }
 .modal-wrapper .driver-matching-area .player-info-area .player-info {
   gap: 0;
 }
 .modal-wrapper .driver-matching-area .player-info-area .player-intro,
 .modal-wrapper .driver-matching-area .player-info-area .player-detail {
-  flex-shrink: 0;
-  width: 50%;
-  padding: 0 6.5rem;
+  flex: 0 0 50%;
 }
-.modal-wrapper .driver-matching-area .player-info-area .player-intro {}
-.modal-wrapper .driver-matching-area .player-info-area .player-detail {}
+.modal-wrapper .driver-matching-area .player-info-area .player-intro {
+  padding: 0 2rem;
+}
+.modal-wrapper .driver-matching-area .player-info-area .player-detail {
+  padding: 0 4.6rem;
+}
 .modal-wrapper .driver-matching-area .player-info-area .player-detail .tit {
   margin-bottom: 3.6rem;
   font-size: 2.8rem;
@@ -236,9 +236,11 @@
   line-height: 2.4rem;
 }
 .modal-wrapper .driver-matching-area .player-info-area .player-detail .label {
-  width: 12.4rem;
+  flex: 0 0 12.4rem;
 }
-.modal-wrapper .driver-matching-area .player-info-area .player-detail .desc {}
+.modal-wrapper .driver-matching-area .player-info-area .player-detail .desc {
+  flex: 1 1 auto;
+}
 .modal-wrapper .driver-matching-area .player-info-area .rank {
   font-size: 2rem;
 }
@@ -313,6 +315,14 @@
 .modal-wrapper .driver-matching-count .date-group .cr {
   translate: 0 -.3rem;
 }
+.modal-wrapper .driver-matching-area .player-info-slider-area {
+  position: relative;
+  padding: 0 calc(9rem - 2px);
+  overflow: hidden;
+}
+.modal-wrapper .driver-matching-area .player-info-slider-area .swiper-slide {
+  padding: 1px;
+}
 .modal-wrapper .driver-matching-area .goods-slider-area {
   margin: 6rem 0 3rem;
   padding: 0 7.5rem;
@@ -328,6 +338,7 @@
 .modal-wrapper .goods-slider-area .goods-item {
   padding: 2rem 3.4rem;
 }
+.modal-wrapper .player-info-slider-area .slider-controls,
 .modal-wrapper .player-slider-area .slider-controls,
 .modal-wrapper .goods-slider-area .slider-controls {
   position: absolute;
@@ -336,13 +347,19 @@
   right: 0;
   margin-top: 1.3rem;
 }
+.modal-wrapper .player-info-slider-area .slider-controls {
+  margin-top: -3rem;
+}
 .modal-wrapper .goods-slider-area .slider-controls {
   margin-top: 0.3rem;
 }
+
+.modal-wrapper .player-info-slider-area .slider-btn-prev,
 .modal-wrapper .player-slider-area .slider-btn-prev,
 .modal-wrapper .goods-slider-area .slider-btn-prev {
   left: 0;
 }
+.modal-wrapper .player-info-slider-area .slider-btn-next,
 .modal-wrapper .player-slider-area .slider-btn-next,
 .modal-wrapper .goods-slider-area .slider-btn-next {
   right: 0;
@@ -547,6 +564,7 @@
     margin: auto 0;
   }
 
+  .modal-wrapper .player-info-slider-area .slider-controls,
   .modal-wrapper .player-slider-area .slider-controls,
   .modal-wrapper .goods-slider-area .slider-controls,
   .modal-wrapper .goods-slider-area .swiper-pagination {
@@ -580,7 +598,8 @@
   }
   .modal-wrapper .driver-matching-area .player-info-area .player-thumb,
   .modal-wrapper .player-info-area .player-thumb {
-    margin: 7.2rem -2rem 0;
+    margin: 5.4rem -2rem 0;
+    width: auto;
     height: auto;
   }
   .modal-wrapper .player-info-area .player-thumb img {
@@ -588,19 +607,19 @@
   }
   .modal-wrapper .driver-matching-area .player-info-area .rank,
   .modal-wrapper .player-info-area .rank {
-    font-size: 1.8rem;
-    line-height: 3.6rem;
+    font-size: 1.6rem;
+    line-height: 3.3rem;
   }
   .modal-wrapper .driver-matching-area .player-info-area .name,
   .modal-wrapper .player-info-area .name {
-    margin-top: 3.1rem;
-    font-size: 1.8rem;
-    line-height: 2.1rem;
+    margin-top: 2.6rem;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
   }
   .modal-wrapper .driver-matching-area .player-info-area .number,
   .modal-wrapper .player-info-area .number {
-    top: 9rem;
-    font-size: 12rem;
+    top: 8rem;
+    font-size: 10rem;
   }
   .modal-wrapper .player-info-area .player-intro {
     margin-bottom: 3rem;
@@ -613,8 +632,8 @@
   .modal-wrapper .driver-matching-area .player-info-area .player-detail .tit,
   .modal-wrapper .player-info-area .player-detail .tit {
     margin-bottom: 2rem;
-    font-size: 2.4rem;
-    line-height: 2.9rem;
+    font-size: 2rem;
+    line-height: 2.4rem;
   }
   .modal-wrapper .driver-matching-area .player-info-area .detail-list > ul,
   .modal-wrapper .player-info-area .detail-list > ul {
@@ -624,12 +643,12 @@
   .modal-wrapper .driver-matching-area .player-info-area .detail-item a,
   .modal-wrapper .player-info-area .detail-item p, 
   .modal-wrapper .player-info-area .detail-item a {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
   }
   .modal-wrapper .driver-matching-area .player-info-area .player-detail .label,
   .modal-wrapper .player-info-area .detail-item .label {
-    width: 10rem;
+    flex: 0 0 7.8rem;
   }
   .modal-wrapper .player-info-area .btn-group {
     gap: .8rem;
@@ -681,8 +700,18 @@
     font-size: 2.8rem;
     gap: 1rem;
   }
+  .modal-wrapper .driver-matching-area .player-info-slider-area {
+    margin: 0 -2rem;
+    padding: 0 4.3rem;
+  }
+  .modal-wrapper .driver-matching-area .player-info-slider {
+    overflow: visible;
+  }
+  .modal-wrapper .driver-matching-area .player-info-slider-area .swiper-slide {
+    padding: 0;
+  }
   .modal-wrapper .driver-matching-area .player-info-area {
-    border-radius: 0;
+    width: 100%;
   }
   .modal-wrapper .driver-matching-area .player-info-area {
     padding: 3rem 2rem;
