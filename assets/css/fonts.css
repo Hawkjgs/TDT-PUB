@@ -107,14 +107,36 @@
 /* 영문자, 기본 특수 문자, 숫자 폰트 - bebaskai */
 @font-face {
   font-family: 'TDT FontSet';
+  font-weight: 400;
   src: url('../fonts/bebaskai/BebasKai.otf') format('opentype'),
        url('../fonts/bebaskai/BebasKai.woff') format('woff');
   font-display: swap;
   unicode-range: U+0020-007E, U+2000-206F, U+0030-0039; /* 영문자, 기본 특수 문자, 숫자 범위 */
 }
-
-
-
+@font-face {
+	font-family: 'TDT FontSet';
+	font-weight: 500;
+	src: url('../fonts/bebaskai/BebasKai.otf') format('opentype'),
+		 url('../fonts/bebaskai/BebasKai.woff') format('woff');
+	font-display: swap;
+	unicode-range: U+0020-007E, U+2000-206F, U+0030-0039;
+}
+@font-face {
+	font-family: 'TDT FontSet';
+	font-weight: 600;
+	src: url('../fonts/bebaskai/BebasKai.otf') format('opentype'),
+		 url('../fonts/bebaskai/BebasKai.woff') format('woff');
+	font-display: swap;
+	unicode-range: U+0020-007E, U+2000-206F, U+0030-0039;
+}
+@font-face {
+	font-family: 'TDT FontSet';
+	font-weight: 700;
+	src: url('../fonts/bebaskai/BebasKai.otf') format('opentype'),
+		 url('../fonts/bebaskai/BebasKai.woff') format('woff');
+	font-display: swap;
+	unicode-range: U+0020-007E, U+2000-206F, U+0030-0039;
+}
 
 @font-face {
 	font-family: 'Pretendard';
