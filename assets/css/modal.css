@@ -43,6 +43,9 @@
   font-weight: 700;
   line-height: 1.5;
 }
+.modal-wrapper .confirm-tit.lg {
+  font-size: 2.4rem;
+}
 .modal-wrapper .confirm-desc {
   margin-top: 1.2rem;
   font-weight: 600;
@@ -546,6 +549,33 @@
 .modal-profile-update .slider-btn-next {
   right: -2.2rem;
   translate: 100% 0;
+}
+
+.modal-apply .cost-box {
+  padding: 2.4rem 3rem;
+  margin: 4rem auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  width: 27.2rem;
+  border: 1px solid var(--green-color);
+  border-radius: 0.8rem;
+}
+.modal-apply .cost-box .item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.3rem;
+}
+.modal-apply .cost-box .item:nth-child(1) {
+  color: var(--primary-color);
+}
+.modal-apply .cost-box .tit {}
+.modal-apply .cost-box .desc {}
+.modal-apply .cost-box .desc small {
+  margin-left: 0.4rem;
+  font-size: 1.2rem;
 }
 
 @media screen and (max-width: 1300px) {
