@@ -1264,6 +1264,9 @@
   }
 
   /* SignUp Goods Style */
+  .modal-wrapper .signup-goods-area {
+    padding: 0;
+  }
   .signup-goods-area {
     padding: 0 2rem;
     width: 100%;
