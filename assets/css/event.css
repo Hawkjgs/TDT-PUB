@@ -4,6 +4,7 @@
 .event-area {
   position: relative;
   padding-bottom: 10rem;
+  min-height: 200vh;
   overflow: hidden;
 }
 .event-area .content-img {
@@ -46,6 +47,7 @@
 .event-02-wrapper .apply-item {
   flex: 0 0 33.333%;
   padding: 0 1rem;
+  font-family: "Pretendard";
 }
 .event-02-wrapper .apply-item .border-inner {
   background-color: #181818;
