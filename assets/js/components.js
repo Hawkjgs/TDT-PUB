@@ -213,7 +213,7 @@ const modal = {
     this.elements.modals.forEach(el => {
       const id = el.dataset.modalId;
       el.addEventListener("click", (e) => {
-        if (e.target === e.currentTarget) {
+        if (e.target === e.currentTarget && !e.currentTarget.classList.contains("none-close-side")) {
           // 모달 여백 클릭 시 닫기
           this.close(id);
           return;
@@ -248,6 +248,13 @@ const modalSlider = {
     goodsSliders: undefined,
   },
   destroy() {
+    if (this.playerInfoSwipers.length) {
+      this.playerInfoSwipers.forEach(el => {
+        el.destroy();
+      });
+      this.playerInfoSwipers.length = 0;
+    }
+    
     if (this.playerSwipers.length) {
       this.playerSwipers.forEach(el => {
         el.destroy();
@@ -281,7 +288,10 @@ const modalSlider = {
             prevEl: btns.length ? btns[0] : null,
           },
           on: {
-            init(v) {},
+            init(v) {
+              console.log(v.slides);
+              // v.slides[v.activeIndex].("id", "MatchSelectedDriver");
+            },
             slideChange(v) {}
           }
         });
