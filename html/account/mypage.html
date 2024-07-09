@@ -1539,6 +1539,7 @@
       (() => {
         const container = document.querySelector(".modal-profile-update");
         const slider = container.querySelector(".profile-thumb-slider");
+        const sliderItem = Array.from(container.querySelectorAll(".profile-thumb-item"));
         const sliderBtns = container.querySelectorAll(".slider-btn-arrow");
 
         const swiper = new Swiper(slider, {
@@ -1555,6 +1556,14 @@
             },
           },
         });
+
+        sliderItem.forEach(item => {
+          const btn = item.querySelector("button");
+          btn.addEventListener("click", () => {
+            sliderItem.forEach(el => el.classList.remove("is-active"));
+            item.classList.add("is-active");
+          });
+        })
 
         // Custom Select Change Event
         const customGameSelect = document.querySelector("#GameSelect");
