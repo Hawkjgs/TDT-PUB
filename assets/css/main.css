@@ -444,6 +444,9 @@
 .main-wrapper .ranking-section .rank-player .rank-info .game {
   justify-content: space-between;
 }
+.main-wrapper .ranking-section .rank-manager .rank-info {
+  align-items: center;
+}
 .main-wrapper .ranking-section .rank-manager .rank-info .game {
   justify-content: flex-end;
 }
@@ -884,11 +887,20 @@
   .main-wrapper .ranking-section .rank-info .player {
     flex-basis: 10rem;
   }
+  .main-wrapper .ranking-section .rank-manager .rank-info {
+    gap: 0;
+  }
+  .main-wrapper .ranking-section .rank-manager .rank-info .player {
+    flex: 0 0 10.5rem;
+  }
+  .main-wrapper .ranking-section .rank-manager .rank-info .game {
+    flex: 1 1 auto;
+  }
   .main-wrapper .ranking-section .rank-player .rank-info {
     flex-direction: column;
   }
   .main-wrapper .ranking-section .rank-info .player {
-    flex: 1 1 auto;
+    flex: 1;
   }
   .main-wrapper .ranking-section .rank-player .rank-info .game {
 
