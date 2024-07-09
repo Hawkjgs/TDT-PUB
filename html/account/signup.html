@@ -301,12 +301,12 @@
                 </div>
                 <div class="form-row-group">
                   <div class="label-group">
-                    <label for="" class="label">성별 정보 (필수)</label>
+                    <label for="" class="label">성별 정보 (선택)</label>
                   </div>
                   <div class="check-group">
                     <div class="check-item">
                       <label class="check-type">
-                        <input type="radio" name="gender" class="input-check" hidden>
+                        <input type="checkbox" name="gender" class="input-check" hidden>
                         <span class="check-view">
                           <i class="ic ic-check-on">
                             <svg>
@@ -324,7 +324,7 @@
                     </div>
                     <div class="check-item">
                       <label class="check-type">
-                        <input type="radio" name="gender" class="input-check" hidden>
+                        <input type="checkbox" name="gender" class="input-check" hidden>
                         <span class="check-view">
                           <i class="ic ic-check-on">
                             <svg>
@@ -369,6 +369,18 @@
     
     <!-- E: 선수 상세 모달 -->
     <!-- E: MODALS D: Included Area -->
+
+    <script>
+      (() => {
+        const genderInput = Array.from(document.querySelectorAll("input[name='gender']"));
+        
+        genderInput.forEach(input => {
+          input.addEventListener("change", (e) => {
+            genderInput.filter(el => el !== e.target).forEach(el => el.checked = false);
+          });
+        })
+      })();
+    </script>
 
     <!-- S: SVG SPLITE D: Included Area -->
     <svg hidden>
