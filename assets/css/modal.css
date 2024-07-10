@@ -207,11 +207,11 @@
 }
 
 .modal-wrapper .driver-matching-area {
-  padding: 4rem 10rem 4rem;
+  padding: 2rem 10rem 4rem;
   width: 110rem;
 }
 .modal-wrapper .driver-matching-area .player-info-area {
-  padding: 3rem 0 2rem;
+  padding: 2rem 0;
   width: 72rem;
 }
 .modal-wrapper .driver-matching-area .player-info-area .player-info {
@@ -295,7 +295,7 @@
   color: rgba(102, 102, 102, 1);
 }
 .modal-wrapper .driver-matching-count {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .modal-wrapper .driver-matching-count .desc {
   line-height: 2.1rem;
@@ -329,7 +329,7 @@
   padding: 1px;
 }
 .modal-wrapper .driver-matching-area .goods-slider-area {
-  margin: 3rem 0;
+  margin: 0;
   padding: 0 7.5rem;
 }
 .modal-wrapper .driver-matching-area .player-slider-area {
@@ -370,7 +370,7 @@
   right: 0;
 }
 .modal-wrapper .goods-slider-area .swiper-pagination {
-  bottom: -4rem;
+  bottom: -2rem;
   --swiper-pagination-bullet-width: 1.2rem;
   --swiper-pagination-bullet-height: 1.2rem;
   --swiper-pagination-color: var(--primary-color);
@@ -589,6 +589,12 @@
 .modal-apply .cost-box .desc small {
   margin-left: 0.4rem;
   font-size: 1.2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .modal-wrapper[data-modal-id="matchPlayer"] {
+    padding: 0 2rem;
+  }
 }
 
 @media screen and (max-width: 1300px) {
