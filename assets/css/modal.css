@@ -211,7 +211,7 @@
   width: 110rem;
 }
 .modal-wrapper .driver-matching-area .player-info-area {
-  padding: 3rem 0;
+  padding: 3rem 0 2rem;
   width: 72rem;
 }
 .modal-wrapper .driver-matching-area .player-info-area .player-info {
@@ -236,8 +236,8 @@
 }
 .modal-wrapper .driver-matching-area .player-info-area .detail-item p,
 .modal-wrapper .driver-matching-area .player-info-area .detail-item a {
-  font-size: 1.8rem;
-  line-height: 2.4rem;
+  font-size: 1.6rem;
+  line-height: 2rem;
 }
 .modal-wrapper .driver-matching-area .player-info-area .player-detail .label {
   flex: 0 0 12.4rem;
@@ -246,21 +246,22 @@
   flex: 1 1 auto;
 }
 .modal-wrapper .driver-matching-area .player-info-area .rank {
-  font-size: 2rem;
+  font-size: 1.6rem;
+  line-height: 3.3rem;
 }
 .modal-wrapper .driver-matching-area .player-info-area .name {
-  margin-top: 3rem;
-  font-size: 2rem;
-  line-height: 2.4rem;
+  margin-top: 1.6rem;
+  font-size: 1.6rem;
+  line-height: 1.3;
 }
 .modal-wrapper .driver-matching-area .player-info-area .number {
-  top: 9.2rem;
-  font-size: 13rem;
+  top: 6.4rem;
+  font-size: 11rem;
 }
 .modal-wrapper .driver-matching-area .player-info-area .player-thumb {
-  margin: 7.5rem auto 0;
-  width: 29rem;
-  height: 20rem;
+  margin: 4.3rem auto 0;
+  width: 26.7rem;
+  height: 18.4rem;
 }
 .modal-wrapper .driver-matching-area .player-info-area .player-thumb img {
   width: 100%;
