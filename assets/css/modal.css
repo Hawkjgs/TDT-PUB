@@ -207,11 +207,11 @@
 }
 
 .modal-wrapper .driver-matching-area {
-  padding: 6rem 10rem 12rem;
+  padding: 4rem 10rem 4rem;
   width: 110rem;
 }
 .modal-wrapper .driver-matching-area .player-info-area {
-  padding: 4rem 0;
+  padding: 3rem 0;
   width: 72rem;
 }
 .modal-wrapper .driver-matching-area .player-info-area .player-info {
@@ -280,7 +280,7 @@
   height: 1.6rem;
 }
 .modal-wrapper .driver-matching-head {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   text-align: center;
 }
 .modal-wrapper .driver-matching-tit {
@@ -294,7 +294,7 @@
   color: rgba(102, 102, 102, 1);
 }
 .modal-wrapper .driver-matching-count {
-  margin-top: 6rem;
+  margin-top: 2rem;
 }
 .modal-wrapper .driver-matching-count .desc {
   line-height: 2.1rem;
@@ -328,7 +328,7 @@
   padding: 1px;
 }
 .modal-wrapper .driver-matching-area .goods-slider-area {
-  margin: 6rem 0 3rem;
+  margin: 3rem 0;
   padding: 0 7.5rem;
 }
 .modal-wrapper .driver-matching-area .player-slider-area {
