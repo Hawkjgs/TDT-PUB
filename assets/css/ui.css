@@ -951,6 +951,10 @@ input::-webkit-search-results-decoration{
   font-weight: 500;
   line-height: 2.4rem;
 }
+.board-pagination .left a,
+.board-pagination .right a {
+  padding: 0.5rem;
+}
 .board-pagination .is-active a {
   color: var(--primary-color);
 }
