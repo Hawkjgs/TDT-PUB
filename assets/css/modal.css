@@ -356,7 +356,7 @@
   margin-top: -3rem;
 }
 .modal-wrapper .goods-slider-area .slider-controls {
-  margin-top: 0.3rem;
+  margin-top: -3rem;
 }
 
 .modal-wrapper .player-info-slider-area .slider-btn-prev,
@@ -591,9 +591,104 @@
   font-size: 1.2rem;
 }
 
+@media screen and (min-width: 1600px) {
+  .modal-wrapper .driver-matching-area {
+    padding: 20px 100px 40px;
+    width: 1100px;
+  }
+  .modal-wrapper .driver-matching-head {
+    margin-bottom: 20px;
+  }
+  .modal-wrapper .driver-matching-tit {
+    margin-bottom: 8px;
+    font-size: 32px;
+  }
+  .modal-wrapper .driver-matching-desc {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .modal-wrapper .driver-matching-count {
+    margin-top: 10px;
+  }
+  .modal-wrapper .driver-matching-count .desc {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .modal-wrapper .driver-matching-count .date-group {
+    margin-top: 4px;
+    gap: 20px;
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .modal-wrapper .driver-matching-area .player-info-slider-area {
+    padding: 0 calc(90px - 2px);
+  }
+  .modal-wrapper .driver-matching-area .player-info-area {
+    padding: 20px 0;
+    width: 720px;
+  }
+  .modal-wrapper .driver-matching-area .player-info-area .player-intro {
+    padding: 0 20px;
+  }
+  .modal-wrapper .driver-matching-area .player-info-area .player-detail {
+    padding: 0 46px;
+  }
+  .modal-wrapper .driver-matching-area .player-info-area .rank {
+    padding: 0 19px;
+    font-size: 16px;
+    line-height: 33px;
+  }
+  .modal-wrapper .driver-matching-area .player-info-area .name {
+    margin-top: 16px;
+    font-size: 16px;
+  }
+  .modal-wrapper .driver-matching-area .player-info-area .number {
+    top: 64px;
+    font-size: 110px;
+  }
+  .modal-wrapper .driver-matching-area .player-info-area .player-thumb {
+    margin: 43px auto 0;
+    width: 267px;
+    height: 184px;
+  }
+  .modal-wrapper .driver-matching-area .player-info-area .player-detail .tit {
+    margin-bottom: 36px;
+    font-size: 28px;
+  }
+  .modal-wrapper .driver-matching-area .player-info-area .detail-list > ul {
+    gap: 12px;
+  }
+  .modal-wrapper .driver-matching-area .player-info-area .player-detail .label {
+    flex: 0 0 124px;
+  }
+  .modal-wrapper .driver-matching-area .player-info-area .detail-item p, 
+  .modal-wrapper .driver-matching-area .player-info-area .detail-item a {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .modal-wrapper .driver-matching-area .goods-slider-area {
+    padding: 0 75px;
+  }
+  .modal-wrapper .goods-slider-area .goods-item {
+    padding: 20px 34px;
+  }
+  .goods-slider-area .goods-info {
+    margin-bottom: 24px;
+    font-size: 16px;
+  }
+  .modal-wrapper[data-modal-id="matchPlayer"] .slider-btn {
+    width: 60px;
+    height: 60px;
+  }
+  .modal-wrapper[data-modal-id="matchPlayer"] .slider-btn .ic {
+    width: 36px;
+    height: 36px;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .modal-wrapper[data-modal-id="matchPlayer"] {
-    padding: 0 2rem;
+    padding: 0;
   }
 }
 
