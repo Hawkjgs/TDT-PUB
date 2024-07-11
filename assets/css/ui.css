@@ -230,6 +230,9 @@ img {
   width: 3.6rem;
   height: 3.6rem;
 }
+.slider-btn.swiper-button-disabled {
+  opacity: 0.4;
+}
 
 .component-slot-list {
   /* overflow: hidden; */
