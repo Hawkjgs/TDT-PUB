@@ -190,8 +190,13 @@ const modal = {
   open(id) {
     const findIdx = this.modalFind(id);
     if (findIdx > -1) {
-      this.scrollY = window.scrollY;
-      scrollLock(this.scrollY);
+      const showModals = this.elements.modals.filter(el => el.classList.contains("is-active"));
+      
+      // 처음 활성화 된 모달인 경우 scrollLock
+      if (showModals.length === 0) {
+        this.scrollY = window.scrollY;
+        scrollLock(this.scrollY);
+      }
       this.elements.modals[findIdx].classList.add("is-active");
       this.elements.modals[findIdx].scrollTop = 0;
     };
@@ -199,8 +204,14 @@ const modal = {
   close(id) {
     const findIdx = this.modalFind(id);
     if (findIdx > -1) {
-      scrolled(this.scrollY);
       this.elements.modals[findIdx].classList.remove("is-active");
+
+      const showModals = this.elements.modals.filter(el => el.classList.contains("is-active"));
+
+      // 활성화 상태 모달이 없는 경우 scolled
+      if (showModals.length === 0) {
+        scrolled(this.scrollY);
+      }
     };
   },
   bindEvents() {
