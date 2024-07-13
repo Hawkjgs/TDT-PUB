@@ -1473,27 +1473,6 @@
                         </div>
                       </button>
                     </li>
-                    <li class="profile-thumb-item swiper-slide">
-                      <button class="item-inner">
-                        <div class="img-box">
-                          <img src="../../assets/images/temp/profile_select_02.jpg" alt="">
-                        </div>
-                      </button>
-                    </li>
-                    <li class="profile-thumb-item swiper-slide">
-                      <button class="item-inner">
-                        <div class="img-box">
-                          <img src="../../assets/images/temp/profile_select_03.jpg" alt="">
-                        </div>
-                      </button>
-                    </li>
-                    <li class="profile-thumb-item swiper-slide">
-                      <button class="item-inner">
-                        <div class="img-box">
-                          <img src="../../assets/images/temp/profile_select_03.jpg" alt="">
-                        </div>
-                      </button>
-                    </li>
                   </ul>
                 </div>
                 <div class="slider-controls">
@@ -1545,6 +1524,7 @@
         const swiper = new Swiper(slider, {
           slidesPerView: "auto",
           spaceBetween: 20,
+          centeredSlides: true,
           navigation: {
             nextEl: sliderBtns[1],
             prevEl: sliderBtns[0],
