@@ -17,10 +17,68 @@
   position: absolute;
   left: 0;
   top: 21.9rem;
+  display: flex;
+  justify-content: center;
   width: 100%;
+  text-align: center;
+  z-index: 5;
 }
-.event-01-wrapper .kv-title img {
-  margin: 0 auto;
+.event-01-wrapper .kv-title .kv-title-inner {
+  display: flex;
+  flex-direction: column;
+}
+.event-01-wrapper .kv-title .label {
+  display: flex;
+  justify-content: center;
+}
+.event-01-wrapper .kv-title .label span {
+  margin-bottom: 4rem;
+  padding: 0 1.5rem;
+  font-family: "Score", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 3.4rem;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 3.4rem;
+}
+.event-01-wrapper .kv-title .title {
+  font-family: "Score", sans-serif;
+  font-size: 8rem;
+  font-weight: 200;
+  color: #fff;
+  line-height: 1.1;
+}
+.event-01-wrapper .kv-title .strong {
+  margin-top: 1rem;
+  font-family: "Score", sans-serif;
+  font-size: 8rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  line-height: 1.1;
+}
+.event-01-wrapper .kv-title .strong-box {
+  position: relative;
+}
+.event-01-wrapper .kv-title .tdtp {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.event-01-wrapper .kv-title .tdtp .bar {
+  flex: 1 1 auto;
+  height: 5px;
+  background-color: var(--primary-color);
+}
+.event-01-wrapper .kv-title .tdtp em {
+  font-family: "Pretendard";
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
 }
 .event-01-wrapper .content-img {
   height: 475rem;
@@ -533,6 +591,23 @@
   .event-01-wrapper .kv-title {
     padding: 0 2rem;
     top: 9rem;
+  }
+  .event-01-wrapper .kv-title .label span {
+    margin-bottom: 2.4rem;
+    font-size: 1.4rem;
+    line-height: 3.2rem;
+  }
+  .event-01-wrapper .kv-title .title {
+    font-size: 5.2rem;
+  }
+  .event-01-wrapper .kv-title .strong {
+    font-size: 5.2rem;
+  }
+  .event-01-wrapper .kv-title .tdtp .bar {
+    height: 3px;
+  }
+  .event-01-wrapper .kv-title .tdtp em {
+    font-size: 1.4rem;
   }
   .event-01-wrapper .title-area .desc-box-group {
     margin-top: 6rem;
