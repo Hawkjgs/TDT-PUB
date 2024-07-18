@@ -167,6 +167,7 @@
 
 .main-wrapper .match-section .content-head {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 .main-wrapper .match-section .content-tit {
@@ -174,6 +175,9 @@
   letter-spacing: 0.005em;
   line-height: 1;
   color: var(--primary-color);
+}
+.main-wrapper .match-section .game-schedule .game-select {
+  width: 264px;
 }
 .main-wrapper .match-section .game-schedule .content-head {
   margin-bottom: 3.2rem;
@@ -689,6 +693,10 @@
     margin-bottom: 2rem;
     font-size: 2rem;
     line-height: 1;
+  }
+  .main-wrapper .match-section .game-schedule .game-select {
+    width: 100%;
+    margin-bottom: 20px;
   }
   .main-wrapper .match-section .game-schedule .game-thumb {
     position: relative;
