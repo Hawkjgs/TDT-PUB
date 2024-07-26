@@ -918,6 +918,11 @@
 .championship-wrapper .schedule-item .thumb {
   width: 15rem;
 }
+.championship-wrapper .schedule-text{
+  font-size: 1.6rem;
+  color: #999;
+  margin-top: 4rem;
+}
 
 .championship-wrapper .tab-head {
   margin-bottom: 6rem;
@@ -1576,6 +1581,9 @@
   }
   .championship-wrapper .schedule-item .date-place .place {
     font-size: 1.6rem;
+  }
+  .championship-wrapper .schedule-text{
+    margin-top: 3rem;
   }
 
   .championship-wrapper .class-list {
