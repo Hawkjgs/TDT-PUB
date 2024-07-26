@@ -46,8 +46,11 @@ body {
   display: flex;
   align-items: center;
   height: var(--header-height);
-  font-size: 2rem;
+  font-size: 1.8rem;
   letter-spacing: 1px;
+}
+.header .gnb .gnb-btn.en-text{
+  font-size: 2rem;
 }
 .header .gnb .gnb-btn.is-active,
 .header .gnb .gnb-btn:focus-within,
@@ -224,6 +227,10 @@ body {
     gap: 0.8rem;
   }
   .gnb-mo .gnb-menu-btn {
+    font-size: 3rem;
+    line-height: 5.5rem;
+  }
+  .gnb-mo .gnb-menu-btn.en-text {
     font-size: 3.4rem;
     line-height: 5.1rem;
   }
