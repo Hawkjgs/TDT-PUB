@@ -24,6 +24,16 @@
   overflow: hidden;
   isolation: isolate;
 }
+.modal-wrapper .modal-close {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  color: #666;
+}
+.modal-wrapper .modal-close .ic {
+  width: 1.8rem;
+  height: 2.4rem;
+}
 
 .modal-wrapper .confirm-area {
   width: 50rem;
@@ -591,6 +601,101 @@
   font-size: 1.2rem;
 }
 
+.modal-wrapper[data-modal-id="GoodsDetailModal"] .modal-content {
+  position: relative;
+}
+.modal-wrapper .goods-buy-detail-area {
+  padding: 8rem;
+  width: 50rem;
+}
+.modal-wrapper .goods-buy-detail-area .component-goods-list {
+  margin: 0 auto;
+  max-width: 20.8rem;
+}
+.modal-wrapper .goods-buy-detail-area .component-goods-list ul {
+  margin: 0;
+  padding: 0;
+}
+.modal-wrapper .goods-buy-detail-area .component-goods-list .goods-item {
+  flex: 1 1 auto;
+  padding: 0;
+}
+.modal-wrapper .goods-buy-detail-area .component-goods-list .goods-info {
+  margin-top: 2rem;
+  color: #fff;
+}
+.modal-wrapper .goods-buy-detail-area .component-goods-list .name {
+  margin-bottom: 4px;
+  font-family: "Pretendard";
+  font-size: 2rem;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+.modal-wrapper .goods-buy-detail-area .component-goods-list .tier {
+  font-family: "Pretendard";
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: var(--primary-color);
+}
+.modal-wrapper .goods-buy-detail-area .goods-thumb-title {}
+.modal-wrapper .goods-buy-detail-area .goods-buying-info {
+  margin-top: 6rem;
+}
+.modal-wrapper .goods-buy-detail-area .goods-buying-info .goods-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Pretendard";
+  line-height: 1;
+}
+.modal-wrapper .goods-buy-detail-area .goods-buying-info .tit {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+.modal-wrapper .goods-buy-detail-area .goods-buying-info .price {
+  display: flex;
+  gap: 0.4em;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #fff;
+}
+.modal-wrapper .goods-buy-detail-area .goods-buying-info .btn-group {
+  margin-top: 3.2rem;
+}
+.modal-wrapper .goods-buy-detail-area .goods-buying-info .price::before {
+  content: "₩";
+}
+.modal-wrapper .goods-buy-detail-area .goods-detail-info {
+  margin-top: 4rem;
+  padding-top: 4rem;
+  border-top: 1px solid rgba(255, 255, 255, .1);
+}
+.modal-wrapper .goods-buy-detail-area .goods-detail-info .info-item:not(:first-child) {
+  margin-top: 4rem;
+}
+.modal-wrapper .goods-buy-detail-area .goods-detail-info .info-item {
+  word-break: break-all;
+  font-family: "Pretendard";
+  letter-spacing: 0.05em;
+}
+.modal-wrapper .goods-buy-detail-area .goods-detail-info .tit {
+  margin-bottom: 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--primary-color);
+}
+.modal-wrapper .goods-buy-detail-area .goods-detail-info .desc {
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  color: #999;
+}
+.modal-wrapper .goods-buy-detail-area .goods-detail-foot {
+  margin-top: 4rem;
+}
+
 @media screen and (min-width: 1600px) {
   .modal-wrapper .driver-matching-area {
     padding: 20px 100px 40px;
@@ -707,6 +812,10 @@
 @media screen and (max-width: 1023px) {
   .modal-wrapper .modal-inner {
     margin: auto 0;
+  }
+  .modal-wrapper .modal-close {
+    right: 1.6rem;
+    top: 1.6rem;
   }
 
   .modal-wrapper .player-info-slider-area .slider-controls,
@@ -932,5 +1041,22 @@
   .modal-profile-update .slider-btn-next {
     right: 4rem;
   }
-  
+
+  .modal-wrapper .goods-buy-detail-area .component-goods-list {
+    max-width: 15.6rem;
+  }
+  .modal-wrapper .goods-buy-detail-area .component-goods-list .name {
+    font-size: 1.8rem;
+  }
+  .modal-wrapper .goods-buy-detail-area .component-goods-list .tier {
+    font-size: 1.6rem;
+  }
+  .modal-wrapper .goods-buy-detail-area {
+    padding: 6rem 3.8rem;
+    width: 100%;
+  }
+  .modal-wrapper .goods-buy-detail-area .goods-buying-info .tit {}
+  .modal-wrapper .goods-buy-detail-area .goods-buying-info .price {
+    font-size: 2rem;
+  }
 }

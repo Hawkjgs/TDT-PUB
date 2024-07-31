@@ -384,7 +384,7 @@ const goods = {
     items: undefined,
   },
   bindEvents() {
-    if (this.elements.items.length > 1) {
+    if (this.elements.items.length > 0) {
       this.elements.items.forEach(el => {
         const btnPlay = el.querySelector(".btn-play");
         const video = el.querySelector("video");
