@@ -47,9 +47,10 @@ body {
   align-items: center;
   height: var(--header-height);
   font-size: 1.8rem;
+  font-weight: 700;
   letter-spacing: 1px;
 }
-.header .gnb .gnb-btn.en-text{
+.header .gnb .gnb-btn.en-text {
   font-size: 2rem;
 }
 .header .gnb .gnb-btn.is-active,
@@ -95,7 +96,7 @@ body {
   justify-content: space-between;
   font-size: 1.4rem;
   line-height: 2rem;
-  color: #BABABA;
+  color: #bababa;
 }
 .footer .links {
   display: flex;
@@ -110,9 +111,9 @@ body {
   margin-left: 2.5rem;
 }
 .footer .policy-group .btn::before {
-  content: '';
+  content: "";
   position: absolute;
-  top: .4rem;
+  top: 0.4rem;
   left: -1.3rem;
   width: 1px;
   height: 1.2rem;
@@ -132,7 +133,7 @@ body {
   align-items: center;
   height: 3.4rem;
   padding: 0 1.4rem;
-  border: 1px solid rgba(255, 255, 255, .1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .footer .sns-group .btn:not(:first-child) {
   border-left: 0;
@@ -198,7 +199,7 @@ body {
     flex-direction: column;
     height: 100%;
     background-color: #fff;
-    color: #16384B;;
+    color: #16384b;
     z-index: 10;
   }
   .gnb-mo .gnb-top {
@@ -252,7 +253,7 @@ body {
     height: 4.6rem;
     font-size: 2rem;
     color: #999;
-    border: 1px solid #DCDCDC;
+    border: 1px solid #dcdcdc;
   }
   .gnb-mo .gnb-bottom .btn:not(:first-child) {
     border-left: 0;
@@ -265,18 +266,18 @@ body {
     bottom: 0;
     z-index: 1;
     opacity: 0;
-    background-color: rgba(0, 0, 0, .4);
+    background-color: rgba(0, 0, 0, 0.4);
     will-change: opacity;
   }
   .gnb-mo.is-active {
     opacity: 1;
     translate: 0 0;
-    transition: opacity .5s ease, translate .5s ease;
+    transition: opacity 0.5s ease, translate 0.5s ease;
   }
   .gnb-mo.is-active .dim {
     opacity: 1;
-    transition: opacity .5s ease;
-    transition-delay: .5s;
+    transition: opacity 0.5s ease;
+    transition-delay: 0.5s;
   }
 
   .footer .footer-inner {
