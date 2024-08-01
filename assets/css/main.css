@@ -122,6 +122,7 @@
 }
 
 .main-wrapper .main-visual {
+  position: relative;
   min-height: auto;
   height: 100svh;
 }
@@ -174,6 +175,26 @@
 .main-wrapper .main-visual .main-visual-item .media-box video {
   position: absolute;
 }
+.main-wrapper .main-visual .sns-links {
+  position: absolute;
+  top: 50%;
+  right: 4rem;
+  translate: 0 -50%;
+  z-index: 20;
+}
+.main-wrapper .main-visual .sns-links .inner {
+  padding: 0.4rem 0;
+  background-color: #0f0f0f;
+  border-radius: 12px;
+}
+.main-wrapper .main-visual .sns-links .sns-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6.2rem;
+  height: 5.4rem;
+}
+.main-wrapper .main-visual .sns-links .sns-item img {}
 
 .main-wrapper .match-section {
   padding: 15rem 0 6rem;

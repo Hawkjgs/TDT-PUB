@@ -194,7 +194,7 @@ body {
 
   .gnb-mo .gnb-inner {
     position: relative;
-    padding: 1.8rem 0 9.4rem;
+    padding: 1.8rem 0 15.9rem;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -241,6 +241,17 @@ body {
     right: 0;
     bottom: 0;
     padding: 0 2.4rem 2.4rem;
+  }
+  .gnb-mo .gnb-bottom .sns-group {
+    margin-bottom: 1.2rem;
+    display: flex;
+  }
+  .gnb-mo .gnb-bottom .sns-group .item {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
   }
   .gnb-mo .gnb-bottom .btn-group {
     display: flex;
