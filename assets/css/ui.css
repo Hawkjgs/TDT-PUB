@@ -483,6 +483,7 @@ img {
 .goods-slider-area .item-inner .complete,
 .component-goods-list .item-inner .complete {
   padding: 1px 12px;
+  font-weight: 700;
   line-height: 2.1rem;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
