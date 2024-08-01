@@ -303,6 +303,30 @@ img {
   width: 100%;
   height: calc(100% - 3.2rem);
 }
+.component-slot-list .player-info {
+  position: absolute;
+  right: 1.4rem;
+  top: 1.4rem;
+  text-align: right;
+}
+.component-slot-list .player-info .num {
+  margin-bottom: 0.6rem;
+  font-family: "Tourney";
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--primary-color);
+}
+.component-slot-list .player-info .member-name {
+  display: flex;
+  flex-direction: column;
+  font-family: "Pretendard";
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  letter-spacing: 0.05em;
+  color: #666;
+}
 .component-slot-list .none-thumb {
   gap: .4rem;
   font-size: 1.8rem;
@@ -1183,6 +1207,18 @@ input::-webkit-search-results-decoration{
   .component-slot-list .none-thumb {
     padding-top: 53.6111%;
     padding-bottom: 53.6111%;
+  }
+  .component-slot-list .player-info {
+    top: 1.2rem;
+    right: 1.2rem;
+  }
+  .component-slot-list .player-info .num {
+    margin-bottom: 0.4rem;
+    font-size: 3.2rem;
+  }
+  .component-slot-list .player-info .member-name {
+    font-size: 1rem;
+    line-height: 1.2rem;
   }
   .component-slot-list .none-thumb {
     font-size: 1.6rem;

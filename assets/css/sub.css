@@ -11,6 +11,7 @@
 }
 .sub-wrapper .sub-content-tit {
   font-size: 8rem;
+  font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
@@ -1616,7 +1617,10 @@
     width: 100%;
   }
   .storage-wrapper .storage-top-bar .my-inventory {
+    width: 100%;
+    justify-content: space-between;
     padding: 1.6rem 0;
+    gap: 0;
   }
   .storage-wrapper .storage-top-bar .my-inventory .label {
     font-size: 1.6rem;
