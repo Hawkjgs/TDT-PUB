@@ -1168,11 +1168,12 @@ input::-webkit-search-results-decoration{
   }
 
   .btn-sm {
+    padding: 0;
     height: 3.7rem;
     font-size: 1.4rem;
   }
   .btn-base {
-    padding: 0 1.4rem;
+    padding: 0;
     font-size: 1.6rem;
   }
   .btn-more {
