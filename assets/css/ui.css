@@ -1172,6 +1172,7 @@ input::-webkit-search-results-decoration{
     font-size: 1.4rem;
   }
   .btn-base {
+    padding: 0 1.4rem;
     font-size: 1.6rem;
   }
   .btn-more {
