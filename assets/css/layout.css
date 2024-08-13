@@ -106,22 +106,27 @@ body {
 .footer .policy-group {
   display: flex;
 }
+.footer .inquiry .item,
 .footer .policy-group .btn {
   position: relative;
   margin-left: 2.5rem;
 }
+.footer .inquiry .item::before,
 .footer .policy-group .btn::before {
   content: "";
   position: absolute;
-  top: 0.4rem;
+  top: 50%;
   left: -1.3rem;
   width: 1px;
   height: 1.2rem;
+  margin-top: -0.6rem;
   background-color: #666;
 }
+.footer .inquiry .item:first-child,
 .footer .policy-group .btn:first-child {
   margin-left: 0;
 }
+.footer .inquiry .item:first-child::before,
 .footer .policy-group .btn:first-child::before {
   display: none;
 }
@@ -137,6 +142,11 @@ body {
 }
 .footer .sns-group .btn:not(:first-child) {
   border-left: 0;
+}
+.footer .inquiry {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.6rem;
 }
 
 #container {
@@ -316,5 +326,12 @@ body {
   .footer .sns-group .btn {
     height: 3.3rem;
     padding: 0 1.2rem;
+  }
+  .footer .inquiry {
+    margin-top: 2.4rem;
+    justify-content: flex-start;
+  }
+  .footer .inquiry .item::before {
+    margin-top: -.5rem;
   }
 }
