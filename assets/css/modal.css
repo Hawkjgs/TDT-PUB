@@ -609,7 +609,7 @@
 }
 .modal-wrapper .goods-buy-detail-area .component-goods-list {
   margin: 0 auto;
-  max-width: 20.8rem;
+  /* max-width: 20.8rem; */
 }
 .modal-wrapper .goods-buy-detail-area .component-goods-list ul {
   margin: 0;
@@ -1159,7 +1159,7 @@
   }
 
   .modal-wrapper .goods-buy-detail-area .component-goods-list {
-    max-width: 15.6rem;
+    /* max-width: 15.6rem; */
   }
   .modal-wrapper .goods-buy-detail-area .component-goods-list .name {
     font-size: 1.8rem;
