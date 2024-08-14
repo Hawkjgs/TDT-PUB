@@ -808,6 +808,21 @@
   flex: 0 0 26.5rem;
 }
 
+.modal-wrapper .modal-notice-area {
+  width: 1000px;
+}
+.modal-wrapper .modal-notice-area .day-close {
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.modal-wrapper .modal-notice-area .img-box {
+  
+}
+.modal-wrapper .modal-notice-area .img-box img {
+  width: 100%;
+}
+
 @media screen and (min-width: 1600px) {
   .modal-wrapper .driver-matching-area {
     padding: 20px 100px 40px;
@@ -1174,5 +1189,12 @@
   .modal-wrapper .goods-buy-detail-area .goods-buying-info .tit {}
   .modal-wrapper .goods-buy-detail-area .goods-buying-info .price {
     font-size: 2rem;
+  }
+
+  .modal-wrapper .modal-notice-area {
+    width: 100%;
+  }
+  .modal-wrapper .modal-notice-area .day-close {
+    padding: 2rem;
   }
 }
