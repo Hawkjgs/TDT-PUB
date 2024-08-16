@@ -188,23 +188,15 @@
                 <img src="../../assets/images/temp/notice_modal_temp.jpg" alt="">
               </a>
             </div>
-            <div class="day-close">
-              <label class="check-type">
-                <input type="checkbox" class="input-check" hidden>
-                <span class="check-view">
-                  <i class="ic ic-check-on">
-                    <svg>
-                      <use href="#CheckOn"></use>
-                    </svg>
-                  </i>
-                  <i class="ic ic-check-off">
-                    <svg>
-                      <use href="#CheckOff"></use>
-                    </svg>
-                  </i>
-                </span>
-                <em class="check-label">오늘은 그만보기</em>
-              </label>
+          </div>
+          <div class="modal-foot">
+            <div class="btn-group">
+              <button class="btn btn-base btn-cancel day-close">
+                오늘은 그만보기
+              </button>
+              <button class="btn btn-base btn-primary-gradient btn-modal-close">
+                닫기
+              </button>
             </div>
           </div>
           <button class="modal-close btn-modal-close">
@@ -244,18 +236,16 @@
         }
         
         const noticeCookie = getCookie("notice_modal");
-        console.log(noticeCookie);
+
         if (!noticeCookie) {
           modal.init();
           modal.open("NoticeModal");
         }
 
-        const noticeModalDayClose = document.querySelector(".day-close input[type='checkbox']");
-        noticeModalDayClose.addEventListener("change", () => {
-          if (noticeModalDayClose.checked) {
-            setCookie("notice_modal", true, 1);
-            modal.close("NoticeModal");
-          }
+        const noticeModalDayClose = document.querySelector(".day-close");
+        noticeModalDayClose.addEventListener("click", () => {
+          setCookie("notice_modal", true, 1);
+          modal.close("NoticeModal");
         })
       })();
     </script>
