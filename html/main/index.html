@@ -2107,6 +2107,39 @@
       </div>
     </div>
     <!-- E: 컨펌 모달 -->
+
+    <!-- S: 공지 모달 -->
+    <div class="modal-wrapper has-close-btn" data-modal-id="NoticeModal">
+      <div class="modal-inner">
+        <div class="modal-content">
+          <div class="modal-notice-area">
+            <div class="img-box">
+              <a href="#">
+                <img src="../../assets/images/temp/notice_modal_temp.jpg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="modal-foot">
+            <div class="btn-group">
+              <button class="btn btn-base btn-cancel day-close">
+                오늘은 그만보기
+              </button>
+              <button class="btn btn-base btn-primary-gradient btn-modal-close">
+                닫기
+              </button>
+            </div>
+          </div>
+          <button class="modal-close btn-modal-close">
+            <i class="ic">
+              <svg>
+                <use href="#CloseType1" />
+              </svg>
+            </i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- E: 공지 모달 -->
     <!-- E: MODALS D: Included Area -->
 
     <script>
@@ -2159,10 +2192,11 @@
           });
         })
 
-        // modal.init();
+        modal.init();
         // modal.open("firstGoodsSelect");
         // modal.open("alertExample");
-        // modal.open("confirmExample");
+        modal.open("NoticeModal");
+        // modal.open("matchPlayer");
       })();
     </script>
 
